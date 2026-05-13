@@ -64,6 +64,10 @@
 
 ## Review / Bridge 規則
 
+- 只要要產出「今天」的正式教材，開始規劃前先同步最新 SRS 資料：
+  - 先 `git fetch`，並確認本地 `vocabulary/learning.json` 已包含遠端最新提交
+  - 若遠端有較新的 SRS 更新，先同步到本地後，再生成當天的 Review Quiz、Review Words、Speaking Bridge
+- 不可用過期的本地 `learning.json` 直接產出當天教材，否則會讓 review 單字重複或狀態錯誤。
 - Review Quiz、Review Words、Speaking Bridge 都必須從 `vocabulary/learning.json` 即時生成。
 - 不要直接複製既有某一天頁面中的 review 內容。
 - Speaking Bridge 不可使用今天剛新增的新單字，應依正式 SKILL 規則從 2–7 天前的單字中挑選。
