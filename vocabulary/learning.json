@@ -1319,6 +1319,36 @@
       "reviewCount": 0,
       "nextReview": "2026-05-16",
       "lastReviewedDate": null
+    },
+    {
+      "word": "package",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "包裹",
+      "exampleSentence": "I am here to pick up a package.",
+      "dateAdded": "2026-05-18",
+      "reviewCount": 0,
+      "nextReview": "2026-05-19",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "code",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "代碼、取貨碼",
+      "exampleSentence": "Please show the pickup code.",
+      "dateAdded": "2026-05-18",
+      "reviewCount": 0,
+      "nextReview": "2026-05-19",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "scan",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "掃描",
+      "exampleSentence": "Can you scan this code?",
+      "dateAdded": "2026-05-18",
+      "reviewCount": 0,
+      "nextReview": "2026-05-19",
+      "lastReviewedDate": null
     }
   ]
 }
