@@ -78,3 +78,11 @@
 ## 2026-05-01
 - 完成：產出 Day 29 正式英文學習材料，主題為車站找出口與確認路線，並同步首頁、profile、SRS 字彙資料與 16 句分句音檔。
 - 修改：`daily/2026-05-01/`、`index.html`、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`
+
+## 2026-05-25 — Day 44 今日英文練習產出
+
+- 同步遠端 `vocabulary/learning.json` 後，依 `profile.json.lastTopic = travel` 產出 daily 主題。
+- 新增 `daily/2026-05-25/`，主題 `Using a Cafe Coupon`，包含完整 HTML 與 17 個逐句音檔。
+- 新增單字：`coupon`、`cashier`、`total`；文章融入複習字：`crowded`、`app`、`code`。
+- 更新首頁清單、`profile.json`、`vocabulary/learning.json` 與 `.ai/PROJECT_STATE.md`。
+- 驗證：JSON parse、句子編號、HTML placeholder 檢查、HTTP 200、音檔存在與 mp3 header。

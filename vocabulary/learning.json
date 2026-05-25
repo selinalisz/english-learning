@@ -1439,6 +1439,36 @@
       "reviewCount": 0,
       "nextReview": "2026-05-22",
       "lastReviewedDate": null
+    },
+    {
+      "word": "coupon",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "優惠券",
+      "exampleSentence": "Can I use this coupon?",
+      "dateAdded": "2026-05-25",
+      "reviewCount": 0,
+      "nextReview": "2026-05-26",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "cashier",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "收銀員",
+      "exampleSentence": "The cashier smiles and asks, \"Are you ready?\"",
+      "dateAdded": "2026-05-25",
+      "reviewCount": 0,
+      "nextReview": "2026-05-26",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "total",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "總金額、總數",
+      "exampleSentence": "The total is 90 dollars.",
+      "dateAdded": "2026-05-25",
+      "reviewCount": 0,
+      "nextReview": "2026-05-26",
+      "lastReviewedDate": null
     }
   ]
 }
