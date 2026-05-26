@@ -1469,6 +1469,36 @@
       "reviewCount": 0,
       "nextReview": "2026-05-26",
       "lastReviewedDate": null
+    },
+    {
+      "word": "breakfast",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "早餐",
+      "exampleSentence": "Breakfast is on Floor 2.",
+      "dateAdded": "2026-05-26",
+      "reviewCount": 0,
+      "nextReview": "2026-05-27",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "confirm",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "確認",
+      "exampleSentence": "Could you confirm the breakfast time?",
+      "dateAdded": "2026-05-26",
+      "reviewCount": 0,
+      "nextReview": "2026-05-27",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "floor",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "樓層",
+      "exampleSentence": "The breakfast room is on Floor 2.",
+      "dateAdded": "2026-05-26",
+      "reviewCount": 0,
+      "nextReview": "2026-05-27",
+      "lastReviewedDate": null
     }
   ]
 }

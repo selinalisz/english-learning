@@ -86,3 +86,12 @@
 - 新增單字：`coupon`、`cashier`、`total`；文章融入複習字：`crowded`、`app`、`code`。
 - 更新首頁清單、`profile.json`、`vocabulary/learning.json` 與 `.ai/PROJECT_STATE.md`。
 - 驗證：JSON parse、句子編號、HTML placeholder 檢查、HTTP 200、音檔存在與 mp3 header。
+
+---
+## 2026-05-26 — Day 45 今日英文練習產出
+
+- 同步遠端 `vocabulary/learning.json` 後，依 `profile.json.lastTopic = daily` 產出 travel 主題。
+- 新增 `daily/2026-05-26/`，主題 `Confirming Hotel Breakfast`，包含完整 HTML 與 16 個逐句音檔。
+- 新增單字：`breakfast`、`confirm`、`floor`；文章融入複習字：`screen`、`available`、`fee`。
+- 更新首頁清單、`profile.json`、`vocabulary/learning.json` 與 `.ai/PROJECT_STATE.md`。
+- 驗證：JSON parse、句子編號、Review Quiz 8 題、瀏覽器載入、HTTP 200、音檔存在。
