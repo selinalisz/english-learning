@@ -1559,6 +1559,36 @@
       "reviewCount": 0,
       "nextReview": "2026-05-29",
       "lastReviewedDate": null
+    },
+    {
+      "word": "special",
+      "partOfSpeech": "n./adj.",
+      "chineseMeaning": "特餐；特別的",
+      "exampleSentence": "The lunch special is cheap today.",
+      "dateAdded": "2026-05-29",
+      "reviewCount": 0,
+      "nextReview": "2026-05-30",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "spicy",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "辣的",
+      "exampleSentence": "This soup is spicy but very good.",
+      "dateAdded": "2026-05-29",
+      "reviewCount": 0,
+      "nextReview": "2026-05-30",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "mild",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "不辣的；溫和的",
+      "exampleSentence": "I want a mild curry today.",
+      "dateAdded": "2026-05-29",
+      "reviewCount": 0,
+      "nextReview": "2026-05-30",
+      "lastReviewedDate": null
     }
   ]
 }
