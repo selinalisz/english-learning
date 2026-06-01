@@ -121,3 +121,12 @@
 - 新增單字：`checkout`、`price`、`wallet`；文章融入複習字：`order`、`available`、`receipt`。
 - 更新首頁清單、`profile.json`、`vocabulary/learning.json` 與 `.ai/PROJECT_STATE.md`。
 - 驗證：JSON parse、句子編號、Review Quiz 15 題、瀏覽器載入、HTTP 200、音檔存在。
+
+## 2026-06-01 — 產出 Day 49 正式教材
+
+- 先 `git fetch --all --prune` 並 `git pull --ff-only`，同步遠端 `vocabulary/learning.json` 的最新 SRS 更新。
+- 依 `profile.json.lastTopic = daily` 產出 `travel` 主題，新增 `daily/2026-06-01/`，標題為 `Checking a Gate Change`。
+- 今日新字：`change`、`wrong`、`late`；文章融入複習字：`boarding pass`、`passport`、`gate`。
+- Review Quiz / Review Words 依最新 `learning.json` 生成，共納入 45 個到期複習字。
+- Speaking Bridge 使用 `confirm`、`exit`、`subway`、`wallet`。
+- 驗證：檢查 HTML 結構、JSON 更新、音檔檔案存在與本機 HTTP 200。

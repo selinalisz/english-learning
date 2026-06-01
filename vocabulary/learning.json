@@ -1589,6 +1589,66 @@
       "reviewCount": 0,
       "nextReview": "2026-05-30",
       "lastReviewedDate": null
+    },
+    {
+      "word": "change",
+      "partOfSpeech": "n./v.",
+      "chineseMeaning": "變更；改變",
+      "exampleSentence": "The gate change is on the screen.",
+      "dateAdded": "2026-06-01",
+      "reviewCount": 0,
+      "nextReview": "2026-06-02",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "wrong",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "錯的；不對的",
+      "exampleSentence": "This is the wrong line for the airport.",
+      "dateAdded": "2026-06-01",
+      "reviewCount": 0,
+      "nextReview": "2026-06-02",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "late",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "晚的；延誤的",
+      "exampleSentence": "The bus is late this morning.",
+      "dateAdded": "2026-06-01",
+      "reviewCount": 0,
+      "nextReview": "2026-06-02",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "change",
+      "partOfSpeech": "n./v.",
+      "chineseMeaning": "變更；改變",
+      "exampleSentence": "The gate change is on the screen.",
+      "dateAdded": "2026-06-01",
+      "reviewCount": 0,
+      "nextReview": "2026-06-02",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "wrong",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "錯的；不對的",
+      "exampleSentence": "This is the wrong line for the airport.",
+      "dateAdded": "2026-06-01",
+      "reviewCount": 0,
+      "nextReview": "2026-06-02",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "late",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "晚的；延誤的",
+      "exampleSentence": "The bus is late this morning.",
+      "dateAdded": "2026-06-01",
+      "reviewCount": 0,
+      "nextReview": "2026-06-02",
+      "lastReviewedDate": null
     }
   ]
 }
