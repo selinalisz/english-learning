@@ -1416,9 +1416,9 @@
       "chineseMeaning": "月台；軌道",
       "exampleSentence": "The airport train leaves from Track 4.",
       "dateAdded": "2026-05-21",
-      "reviewCount": 2,
-      "nextReview": "2026-06-04",
-      "lastReviewedDate": "2026-05-28"
+      "reviewCount": 3,
+      "nextReview": "2026-06-18",
+      "lastReviewedDate": "2026-06-04"
     },
     {
       "word": "direct",
@@ -1426,9 +1426,9 @@
       "chineseMeaning": "直達的",
       "exampleSentence": "We took a direct train to the airport.",
       "dateAdded": "2026-05-21",
-      "reviewCount": 2,
-      "nextReview": "2026-06-04",
-      "lastReviewedDate": "2026-05-28"
+      "reviewCount": 3,
+      "nextReview": "2026-06-18",
+      "lastReviewedDate": "2026-06-04"
     },
     {
       "word": "full",
@@ -1436,9 +1436,9 @@
       "chineseMeaning": "已滿的；沒有空位的",
       "exampleSentence": "The lockers are full today.",
       "dateAdded": "2026-05-21",
-      "reviewCount": 2,
-      "nextReview": "2026-06-04",
-      "lastReviewedDate": "2026-05-28"
+      "reviewCount": 3,
+      "nextReview": "2026-06-18",
+      "lastReviewedDate": "2026-06-04"
     },
     {
       "word": "coupon",
@@ -1566,9 +1566,9 @@
       "chineseMeaning": "特餐；特別的",
       "exampleSentence": "The lunch special is cheap today.",
       "dateAdded": "2026-05-29",
-      "reviewCount": 1,
-      "nextReview": "2026-06-04",
-      "lastReviewedDate": "2026-06-01"
+      "reviewCount": 2,
+      "nextReview": "2026-06-11",
+      "lastReviewedDate": "2026-06-04"
     },
     {
       "word": "spicy",
@@ -1576,9 +1576,9 @@
       "chineseMeaning": "辣的",
       "exampleSentence": "This soup is spicy but very good.",
       "dateAdded": "2026-05-29",
-      "reviewCount": 1,
-      "nextReview": "2026-06-04",
-      "lastReviewedDate": "2026-06-01"
+      "reviewCount": 2,
+      "nextReview": "2026-06-11",
+      "lastReviewedDate": "2026-06-04"
     },
     {
       "word": "mild",
@@ -1586,9 +1586,9 @@
       "chineseMeaning": "不辣的；溫和的",
       "exampleSentence": "I want a mild curry today.",
       "dateAdded": "2026-05-29",
-      "reviewCount": 1,
-      "nextReview": "2026-06-04",
-      "lastReviewedDate": "2026-06-01"
+      "reviewCount": 2,
+      "nextReview": "2026-06-11",
+      "lastReviewedDate": "2026-06-04"
     },
     {
       "word": "change",
@@ -1657,8 +1657,8 @@
       "exampleSentence": "Wait at Bay 12 for the airport bus.",
       "dateAdded": "2026-06-03",
       "reviewCount": 0,
-      "nextReview": "2026-06-04",
-      "lastReviewedDate": null
+      "nextReview": "2026-06-05",
+      "lastReviewedDate": "2026-06-04"
     },
     {
       "word": "express",
@@ -1666,9 +1666,9 @@
       "chineseMeaning": "直達的；快速的",
       "exampleSentence": "This is the express train to the city.",
       "dateAdded": "2026-06-03",
-      "reviewCount": 0,
-      "nextReview": "2026-06-04",
-      "lastReviewedDate": null
+      "reviewCount": 1,
+      "nextReview": "2026-06-07",
+      "lastReviewedDate": "2026-06-04"
     },
     {
       "word": "staff",
@@ -1676,9 +1676,9 @@
       "chineseMeaning": "工作人員",
       "exampleSentence": "The station staff can help you.",
       "dateAdded": "2026-06-03",
-      "reviewCount": 0,
-      "nextReview": "2026-06-04",
-      "lastReviewedDate": null
+      "reviewCount": 1,
+      "nextReview": "2026-06-07",
+      "lastReviewedDate": "2026-06-04"
     },
     {
       "word": "ready",
