@@ -155,3 +155,10 @@
 - 今日新字：`bay`、`express`、`staff`；文章融入複習字：`message`、`busy`、`minute`
 - 更新首頁清單、`profile.json`、`vocabulary/learning.json` 與 `.ai/PROJECT_STATE.md`
 - 驗證：本機頁面載入成功、console 無錯誤、音檔 HTTP 200、句子與單句音檔數量一致
+
+## 2026-06-05 — Day 53 正式教材產出
+
+- 先 `git fetch --all --prune` / `git pull --ff-only` 同步遠端 `vocabulary/learning.json`
+- 依 `profile.json.lastTopic = daily` 產出 travel 主題，新增 `daily/2026-06-05/`，標題為 `Checking the Baggage Claim Screen`
+- 今日新字：`claim`、`belt`、`hall`；文章融入複習字：`late`、`wrong`、`staff`
+- 更新首頁清單、`profile.json`、`vocabulary/learning.json` 與 `.ai/PROJECT_STATE.md`

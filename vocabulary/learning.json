@@ -1709,6 +1709,36 @@
       "reviewCount": 0,
       "nextReview": "2026-06-05",
       "lastReviewedDate": null
+    },
+    {
+      "word": "claim",
+      "partOfSpeech": "n./v.",
+      "chineseMeaning": "領取；提領處",
+      "exampleSentence": "Go to baggage claim after the flight.",
+      "dateAdded": "2026-06-05",
+      "reviewCount": 0,
+      "nextReview": "2026-06-06",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "belt",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "輸送帶；行李轉盤",
+      "exampleSentence": "Our bags are on Belt 8.",
+      "dateAdded": "2026-06-05",
+      "reviewCount": 0,
+      "nextReview": "2026-06-06",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "hall",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "大廳",
+      "exampleSentence": "Please wait in the arrivals hall.",
+      "dateAdded": "2026-06-05",
+      "reviewCount": 0,
+      "nextReview": "2026-06-06",
+      "lastReviewedDate": null
     }
   ]
 }
