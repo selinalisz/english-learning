@@ -1889,6 +1889,36 @@
       "reviewCount": 0,
       "nextReview": "2026-06-16",
       "lastReviewedDate": null
+    },
+    {
+      "word": "bottom",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "底部、最下面",
+      "exampleSentence": "The note is at the bottom of the receipt.",
+      "dateAdded": "2026-06-16",
+      "reviewCount": 0,
+      "nextReview": "2026-06-17",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "printed",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "印出來的、印刷的",
+      "exampleSentence": "A printed message is on the ticket.",
+      "dateAdded": "2026-06-16",
+      "reviewCount": 0,
+      "nextReview": "2026-06-17",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "warning",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "警告、提醒",
+      "exampleSentence": "The sign is a warning for drivers.",
+      "dateAdded": "2026-06-16",
+      "reviewCount": 0,
+      "nextReview": "2026-06-17",
+      "lastReviewedDate": null
     }
   ]
 }

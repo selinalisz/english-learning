@@ -6,6 +6,11 @@
 
 ---
 
+## 2026-06-16
+- 正式每日英文材料的文章主體改為「連載小說」模式，目標是提高持續閱讀動機；下方學習結構仍維持既有正式格式，包括 New Words、Key Phrases、Quiz、Active Recall Quiz、Speaking Bridge、Learning Tips、Review Words、完整音檔與逐句播放。
+- 連載小說模式的長期設定、第一季方向、風格規範與每日接續狀態分別維護於 `.ai/serial-story/SERIES_BIBLE.md`、`.ai/serial-story/SEASON_1_OUTLINE.md`、`.ai/serial-story/STYLE_GUIDE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
+- 連載小說模式下，`profile.json.lastTopic` 的 `daily / travel` 輪替不再作為文章題材硬限制；原核心目標改為透過故事自然訓練旅行溝通、日常外出互動與英文資訊判讀。
+
 ## 2026-04-30
 - 正式每日英文材料的評估標準不再只是「有完成一篇」，而是內容是否明確支援學習者兩個核心動機：`travel communication` 與 `read English online content`。若某篇完成後缺少明確的真實使用回報，下一輪規劃必須修正題材或句子設計。
 - `daily` 題材後續優先改成外出互動、資訊取得、流程判斷型場景；若近期缺少「看資訊 / 問資訊 / 確認資訊」類情境，產出時應主動補足。

@@ -33,6 +33,11 @@ cd "$PROJECT_ROOT"
 ### Step 1：讀取現有資料
 - 讀取 `./profile.json`（取得程度、學習天數、上次主題）
 - 讀取 `./vocabulary/learning.json`（取得已學單字，避免重複）
+- 若正式內容採連載小說模式，另讀取：
+  - `.ai/serial-story/SERIES_BIBLE.md`
+  - `.ai/serial-story/SEASON_1_OUTLINE.md`
+  - `.ai/serial-story/STYLE_GUIDE.md`
+  - `.ai/serial-story/CONTINUITY_LOG.md`
 
 ---
 
@@ -50,7 +55,9 @@ mkdir -p ./daily/$TODAY
 在進入詳細規劃前，先用以下規則約束整體產出：
 
 - **唯一正式規格**：正式每日教材以本檔為準；`AGENTS.md` 只提供高層守則，`PROJECT_STATE.md` / `WORKLOG.md` 不作為內容規格。
-- **主題輪替**：依 `profile.json.lastTopic` 嚴格交替 `daily ↔ travel`，不可連續同主題，除非使用者明確覆寫。
+- **連載小說模式**：自 2026-06-16 起，文章主體預設為連續小說 episode；必須依 serial story 文件接續劇情，並在產出後更新 `CONTINUITY_LOG.md`。
+- **連載優先**：連載小說模式下，不再用 `profile.json.lastTopic` 硬切文章題材；旅行溝通、日常外出互動與英文資訊判讀要自然融入故事。
+- **非連載主題輪替**：只有在使用者明確要求回到舊版任務式教材時，才依 `profile.json.lastTopic` 嚴格交替 `daily ↔ travel`。
 - **核心目標**：每篇都要支援「旅行溝通」或「英文網路查資料」；不能只是完成一篇簡單文章。
 - **每日帶走**：每篇至少讓學習者得到 1 句旅行 / 外出可直接套用的英文，以及 1 個查資料可辨識或可搜尋的說法。
 - **任務感設計**：每篇都必須有一個 real-life mission，並在內容中自然放入 survival sentence 與 mini dialogue，讓練習像真實生活任務，不像單純寫作業。
@@ -65,8 +72,15 @@ mkdir -p ./daily/$TODAY
 根據讀取的資料，在腦中規劃好以下所有內容，**不要個別輸出檔案**，全部填入 Step 4 的 HTML 模板：
 
 #### 3a. 文章
-- 120–160 字英文文章（⬇️ 縮短，降低閱讀負擔）
-- 主題：只允許 `daily`（日常生活）或 `travel`（旅遊）
+- 連載小說模式：130–180 字英文 episode，以故事吸引讀者想看下一集
+- 非連載任務式教材：120–160 字英文文章
+- 連載小說模式的文章目標：
+  - 接續 `.ai/serial-story/CONTINUITY_LOG.md` 的最新事件
+  - 保持 `SERIES_BIBLE.md` 的角色、主線與謎團設定
+  - 每集至少放入 1 個英文線索、訊息、標示、收據、app 畫面或短對話
+  - 每集至少有 1 句角色可直接說出口的實用英文
+  - 結尾盡量留下小懸念，但不可犧牲清楚度
+- 非連載任務式教材主題：只允許 `daily`（日常生活）或 `travel`（旅遊）
 - **目標對齊規則（優先順序高）**：
   - 今天的內容必須明確服務學習者兩個核心動機之一或兩者兼具：
     - 旅行中開口、聽懂、應對
@@ -80,7 +94,7 @@ mkdir -p ./daily/$TODAY
   - 文章中必須自然出現 1 句最值得直接背起來的 survival sentence，能在真實情境直接開口使用，例如 `Is my order ready?`、`Where is the ticket counter?`、`Can I leave my bag here?`
   - 文章中至少放入 1 段極短 mini dialogue（2–4 句即可），讓學習者看到「對方問什麼、我怎麼回」；句子必須維持 A2、自然口語
   - Quiz 或 Speaking Bridge 至少有 1 題要回扣這個 mission，讓學習者練「當下反應」，不是只考文章記憶
-- **主題輪替規則（嚴格執行，不可自行漂移）**：
+- **主題輪替規則（只適用非連載任務式教材）**：
   - 若 `profile.json` 的 `lastTopic` 是 `daily`，今天**必須**產出 `travel`
   - 若 `profile.json` 的 `lastTopic` 是 `travel`，今天**必須**產出 `daily`
   - 也就是固定交替：`daily → travel → daily → travel`
@@ -157,6 +171,9 @@ mkdir -p ./daily/$TODAY
 - 建議內容不要只說「多聽多念」；要優先指出：
   - 今天哪一句最值得直接背起來拿去用
   - 今天哪個字 / 片語在看英文資訊時特別有用
+- 連載小說模式下，Learning Tips 應點出：
+  - 故事中哪一句可以直接拿去真實情境使用
+  - 今天哪個英文線索或資訊詞值得記住
 
 #### 3h. 橋接訓練（Speaking Bridge）
 - 從 learning.json 中篩選 `dateAdded` 在 **2–7 天前**的單字（最多取 4 個，優先選 reviewCount 較低的，即較不熟悉的）
@@ -167,6 +184,15 @@ mkdir -p ./daily/$TODAY
   - **Lv.2 中翻英（新情境）**：設計一個**與 exampleSentence 不同**的中文情境句，讓學習者用同一個單字自由生產英文，搭配參考答案。目的是讓 Lv.2 對 Lv.1 的答案無提示效果
 - Lv.2 新情境若可選，優先偏向旅行口說、問路、購物、搭車、看資訊、確認流程，而不是再次落回房間整理 / 清潔
 - 計算每個單字距今幾天（today − dateAdded），顯示在標題旁（例如「3 天前」）
+
+#### 3i. 連載紀錄更新
+- 連載小說模式下，產出 episode 後更新 `.ai/serial-story/CONTINUITY_LOG.md`
+- 更新內容至少包含：
+  - 今日 episode 標題與日期
+  - 已發生事件摘要
+  - 新增線索
+  - 角色目前知道什麼
+  - 下一集接點
 
 ---
 

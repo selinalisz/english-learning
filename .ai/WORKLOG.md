@@ -205,3 +205,13 @@
 - 新增單字：`Wi-Fi code`、`outlet`、`refill`；文章融入複習字：`busy`、`message`、`card`。
 - 補齊 `article.mp3` 與 `s01.mp3` 到 `s18.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`。
 - 驗證：句子編號連續、18 個單句音檔存在、Review Quiz 24 題、首頁條目存在、本機 HTTP 200。
+
+## 2026-06-16 — Day 59 連載小說模式啟動
+
+- 先 `git fetch --all --prune` / `git pull --ff-only` 同步遠端 `vocabulary/learning.json`，確保 review 區塊使用最新 SRS。
+- 建立 `.ai/serial-story/` 文件：`SERIES_BIBLE.md`、`SEASON_1_OUTLINE.md`、`STYLE_GUIDE.md`、`CONTINUITY_LOG.md`。
+- 更新 `AGENTS.md`、`.ai/daily-english-learning/SKILL.md`、`.ai/DECISIONS.md`，將每日文章主體改為連載小說模式，下方練習與 SRS 複習維持原樣。
+- 新增 `daily/2026-06-16/`，標題為 `The Blue Receipt · Episode 1`。
+- 新增單字：`bottom`、`printed`、`warning`；文章融入複習字：`window`、`Wi-Fi code`、`outlet`、`refill`。
+- 補齊 `article.mp3` 與 `s01.mp3` 到 `s18.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
+- 驗證：句子編號連續、18 個單句音檔存在、Review Quiz 3 題、首頁條目存在、本機 HTTP 200。
