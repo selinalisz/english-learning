@@ -1919,6 +1919,36 @@
       "reviewCount": 0,
       "nextReview": "2026-06-17",
       "lastReviewedDate": null
+    },
+    {
+      "word": "listed",
+      "partOfSpeech": "adj./v.",
+      "chineseMeaning": "列出的；被標示為",
+      "exampleSentence": "The bus is listed on the app.",
+      "dateAdded": "2026-06-17",
+      "reviewCount": 0,
+      "nextReview": "2026-06-18",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "nearby",
+      "partOfSpeech": "adj./adv.",
+      "chineseMeaning": "附近的；在附近",
+      "exampleSentence": "There is a nearby stop by the bank.",
+      "dateAdded": "2026-06-17",
+      "reviewCount": 0,
+      "nextReview": "2026-06-18",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "block",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "街區",
+      "exampleSentence": "The cafe is one block from the station.",
+      "dateAdded": "2026-06-17",
+      "reviewCount": 0,
+      "nextReview": "2026-06-18",
+      "lastReviewedDate": null
     }
   ]
 }

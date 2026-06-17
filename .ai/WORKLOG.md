@@ -5,6 +5,15 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-06-17 — Day 60 連載小說 Episode 2
+
+- 先 `git fetch --all --prune` / `git pull --ff-only` 同步遠端 `vocabulary/learning.json`，避免用過期 SRS 生成今日 review。
+- 延續 `The Blue Receipt` 主線，新增 `daily/2026-06-17/`，標題為 `The Blue Receipt · Episode 2`。
+- 新增單字：`listed`、`nearby`、`block`；文章融入複習字：`bottom`、`printed`、`warning`。
+- 補齊 `article.mp3` 與 `s01.mp3` 到 `s17.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
+- 驗證：句子編號連續、17 個單句音檔存在、Review Quiz 3 題、首頁條目存在、本機 HTTP 200。
+
+---
 ## 2026-06-10 — Day 56 今日英文練習產出
 
 - 同步遠端 `vocabulary/learning.json` 後，依 `profile.json.lastTopic = travel` 產出 daily 主題。
