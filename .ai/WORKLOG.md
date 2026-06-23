@@ -234,3 +234,13 @@
 - Speaking Bridge 使用 `block`、`listed`、`nearby`、`warning`。
 - 補齊 `article.mp3` 與 `s01.mp3` 到 `s20.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
 - 驗證：句子編號連續、20 個單句音檔存在、本機 HTTP 200。
+
+## 2026-06-23 — Day 62 正式教材產出
+
+- 先同步遠端 SRS；同步過程中第一次 `git fetch` 出現 remote ref 鎖衝突，但後續 `git pull --ff-only` 已成功更新到最新 `vocabulary/learning.json`。
+- 延續 serial story continuity，新增 `daily/2026-06-23/`，標題為 `The Blue Receipt · Episode 4`。
+- 今日新字：`search`、`post`、`title`；文章融入複習字：`front`、`saved`、`ride`。
+- Review Quiz / Review Words 依最新 `learning.json` 生成，共納入 4 個到期複習字。
+- Speaking Bridge 使用 `listed`、`block`、`nearby`、`warning`。
+- 補齊 `article.mp3` 與 `s01.mp3` 到 `s22.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
+- 驗證：句子編號連續、22 個單句音檔存在、本機 HTTP 200。

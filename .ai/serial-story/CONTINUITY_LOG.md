@@ -7,7 +7,7 @@
 ## Current Status
 
 - Series: `The Blue Receipt`
-- Current episode: Episode 3, `The Blue Receipt · Episode 3`
+- Current episode: Episode 4, `The Blue Receipt · Episode 4`
 - Main mystery: unknown messages appear in everyday English text and warn Mina about the blue bus.
 - Current known facts:
   - Mina found a strange printed line at the bottom of her coffee receipt.
@@ -26,6 +26,10 @@
   - A card on an empty seat said: `This seat is saved for M.L.`
   - The card later showed a second line: `Do not miss your ride.`
   - Someone or something on the bus knows Mina's initials and route choice in real time.
+  - Mina contacted Lina from the bus and asked her to search `Blue Route M.L.`
+  - Lina found a local post from last year written by May Lin.
+  - The post title first said: `M.L. missed the last blue bus.`
+  - While Mina was reading, the title changed to: `Mina, get off at River Street.`
 
 ## Open Threads
 
@@ -67,6 +71,17 @@
 - The card uses Mina's initials even though she did not tell anyone her plan.
 - Hook: the gray bus starts moving just after the card flips over by itself.
 
+### 2026-06-23 — Episode 4: Lina's Message
+
+- Location: gray bus, still moving through the city at night.
+- Mina stays in the front seat and contacts Lina for help.
+- Useful sentence: `Should I get off at River Street?`
+- Lina searches online and finds a local post about the blue bus.
+- English clue: the title `M.L. missed the last blue bus.`
+- Small answer: `M.L.` may connect to `May Lin`, a woman from last year's post.
+- New danger signal: the title changes live to `Mina, get off at River Street.`
+- Hook: the next stop sign turns on and Mina stands up as the bus slows down.
+
 ## Next Episode Pointer
 
-Episode 4 should let Mina contact Lina or compare what just happened on the bus with something searchable online. Keep the mystery quiet and practical: route information, public screens, or old local posts. The next step should answer one small question about `M.L.` while opening a bigger question about who is guiding Mina.
+Episode 5 should show what Mina finds at River Street after getting off the bus. Keep the setting ordinary and public: a stop sign, route map, shop window, or station notice. The next step can confirm whether May Lin is a real lead, but it should also raise a bigger question about how the online post changed in real time.

@@ -1979,6 +1979,36 @@
       "reviewCount": 0,
       "nextReview": "2026-06-23",
       "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "search",
+      "partOfSpeech": "v./n.",
+      "chineseMeaning": "搜尋；查找",
+      "exampleSentence": "I search the route name on my phone.",
+      "dateAdded": "2026-06-23",
+      "reviewCount": 0,
+      "nextReview": "2026-06-24",
+      "lastReviewedDate": "2026-06-23"
+    },
+    {
+      "word": "post",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "貼文",
+      "exampleSentence": "She found a local post about the bus line.",
+      "dateAdded": "2026-06-23",
+      "reviewCount": 0,
+      "nextReview": "2026-06-24",
+      "lastReviewedDate": "2026-06-23"
+    },
+    {
+      "word": "title",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "標題",
+      "exampleSentence": "The title changed while Mina was reading.",
+      "dateAdded": "2026-06-23",
+      "reviewCount": 0,
+      "nextReview": "2026-06-24",
+      "lastReviewedDate": "2026-06-23"
     }
   ]
 }
