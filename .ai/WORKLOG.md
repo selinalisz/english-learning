@@ -253,3 +253,13 @@
 - Speaking Bridge 使用 `front`、`ride`、`saved`、`listed`。
 - 補齊 `article.mp3` 與 `s01.mp3` 到 `s21.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
 - 驗證：句子編號連續、21 個單句音檔存在、本機 HTTP 200。
+
+## 2026-06-25 — Day 64 正式教材產出
+
+- 先同步遠端 SRS；第一次 `pull` 因 repo 設定失敗，改用 `git merge --ff-only FETCH_HEAD` 補到最新遠端狀態。
+- 依最新 `vocabulary/learning.json` 重算 review，今天共 9 個到期複習字。
+- 延續 serial story continuity，新增 `daily/2026-06-25/`，標題為 `The Blue Receipt · Episode 6`。
+- 今日新字：`locked`、`hallway`、`basement`；文章融入複習字：`arrow`、`poster`、`photo`。
+- Speaking Bridge 使用 `post`、`search`、`title`、`front`。
+- 補齊 `article.mp3` 與 `s01.mp3` 到 `s21.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
+- 驗證：句子編號連續、21 個單句音檔存在、本機 HTTP 200。

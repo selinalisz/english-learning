@@ -7,7 +7,7 @@
 ## Current Status
 
 - Series: `The Blue Receipt`
-- Current episode: Episode 5, `The Blue Receipt · Episode 5`
+- Current episode: Episode 6, `The Blue Receipt · Episode 6`
 - Main mystery: unknown messages appear in everyday English text and warn Mina about the blue bus.
 - Current known facts:
   - Mina found a strange printed line at the bottom of her coffee receipt.
@@ -35,6 +35,12 @@
   - A note under the bus map said: `This stop closed last year.`
   - A blue arrow on the wall matched Lina's newest message.
   - An old man said there is no station there now, but he also pointed at the same arrow.
+  - Mina followed the blue arrow behind the stop and found a side gate.
+  - The gate looked locked, but it opened into a narrow hallway.
+  - Inside, Mina found another old photo of the same woman from the poster.
+  - A sign inside said: `Employees only.`
+  - A second arrow led toward old stairs and the basement.
+  - The old man did not stop Mina; instead, he quietly pointed her down.
 
 ## Open Threads
 
@@ -98,6 +104,17 @@
 - A local old man confirms there is no station there now.
 - Hook: he still points at the same blue arrow, so Mina moves closer instead of leaving.
 
+### 2026-06-25 — Episode 6: The Side Gate
+
+- Location: behind the River Street stop, inside a hidden entrance.
+- Mina follows the arrow and reaches a side gate that should look closed.
+- Useful sentence: `Is this place still open?`
+- New public clue: another old photo of the same woman appears inside.
+- English clue on the sign: `Employees only.`
+- New direction clue: `Go down to the basement.`
+- The old man acts like he expects Mina to keep moving.
+- Hook: a light turns on at the bottom of the stairs just as Mina goes down.
+
 ## Next Episode Pointer
 
-Episode 6 should follow the blue arrow into an ordinary but slightly hidden place, such as an old entrance, closed stairs, or side passage. The next step should connect May Lin to a physical location, while raising a bigger question about who still keeps that place active.
+Episode 7 should show what waits in the basement: a room, office, platform edge, or storage space that still connects to the old route. The next step should give Mina a stronger physical link to May Lin while raising a bigger question about who turned on the light for her.

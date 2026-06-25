@@ -2039,6 +2039,36 @@
       "reviewCount": 0,
       "nextReview": "2026-06-25",
       "lastReviewedDate": "2026-06-24"
+    },
+    {
+      "word": "locked",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "上鎖的",
+      "exampleSentence": "The old gate was locked.",
+      "dateAdded": "2026-06-25",
+      "reviewCount": 0,
+      "nextReview": "2026-06-26",
+      "lastReviewedDate": "2026-06-25"
+    },
+    {
+      "word": "hallway",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "走廊",
+      "exampleSentence": "A dim hallway was behind the gate.",
+      "dateAdded": "2026-06-25",
+      "reviewCount": 0,
+      "nextReview": "2026-06-26",
+      "lastReviewedDate": "2026-06-25"
+    },
+    {
+      "word": "basement",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "地下室",
+      "exampleSentence": "The stairs went down to the basement.",
+      "dateAdded": "2026-06-25",
+      "reviewCount": 0,
+      "nextReview": "2026-06-26",
+      "lastReviewedDate": "2026-06-25"
     }
   ]
 }
