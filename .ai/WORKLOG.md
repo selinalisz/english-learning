@@ -5,6 +5,15 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-06-29 — Day 66 正式教材產出
+
+- 先 `git fetch --all --prune` 同步遠端狀態，確認本地 `HEAD` 與 `origin/main` 一致後再生成今日教材。
+- 延續 `The Blue Receipt` 主線，新增 `daily/2026-06-29/`，標題為 `The Blue Receipt · Episode 8`。
+- 新增單字：`result`、`history`、`match`；文章融入複習字：`folder`、`photo`、`record`。
+- 補齊 `article.mp3` 與 `s01.mp3` 到 `s25.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
+- 驗證：句子編號連續、25 個單句音檔存在、Review Quiz 65 題、Speaking Bridge 4 題、本機 HTTP 200。
+
+---
 ## 2026-06-17 — Day 60 連載小說 Episode 2
 
 - 先 `git fetch --all --prune` / `git pull --ff-only` 同步遠端 `vocabulary/learning.json`，避免用過期 SRS 生成今日 review。

@@ -7,7 +7,7 @@
 ## Current Status
 
 - Series: `The Blue Receipt`
-- Current episode: Episode 7, `The Blue Receipt · Episode 7`
+- Current episode: Episode 8, `The Blue Receipt · Episode 8`
 - Main mystery: unknown messages appear in everyday English text and warn Mina about the blue bus.
 - Current known facts:
   - Mina found a strange printed line at the bottom of her coffee receipt.
@@ -51,6 +51,20 @@
   - Mina found a small key under the folder.
   - The message chain now suggests someone wanted Mina to find the room on purpose.
   - The final screen message said: `Come before 8:10 tomorrow.`
+  - Mina returned the next evening with the folder and key.
+  - The key opened a desk drawer in the same basement room.
+  - Inside the drawer, Mina found an old phone and a note.
+  - The note told her: `Search Route 8:10 now.`
+  - Mina searched `May Lin Route 8:10` on the old phone.
+  - The first search result showed a local bus forum.
+  - The result title changed while Mina was reading.
+  - The warning on the screen said: `Do not trust the last map.`
+  - A second line added: `Check the route history before 8:10.`
+  - Mina saw the same blue bus photo again on the page.
+  - One map on the page did not match the bus record she found yesterday.
+  - Lina reached the gate outside and texted Mina in real time.
+  - Lina heard a bus coming while Mina checked the changing result.
+  - Mina looked at the clock and saw it was 8:07.
 
 ## Open Threads
 
@@ -136,6 +150,18 @@
 - New object clue: a small key is hidden under the folder.
 - Hook: the final message tells Mina, `Come before 8:10 tomorrow.`
 
+### 2026-06-29 — Episode 8: The Search Result
+
+- Location: same basement room, one evening later, just before 8:10.
+- Mina comes back with the folder and key and opens a desk drawer.
+- Useful sentence: `Is this the right result?`
+- English clue on the note: `Search Route 8:10 now.`
+- Main online clue: the first result changes while Mina is reading it.
+- New warning: `Do not trust the last map.`
+- Second clue: `Check the route history before 8:10.`
+- Important mismatch: the map on the page does not match the bus record from Episode 7.
+- Hook: Lina texts that she is outside the gate and hears a bus coming at 8:07.
+
 ## Next Episode Pointer
 
-Episode 8 should follow Mina's decision before 8:10 tomorrow. She now has the folder and key, so the next step should reveal who expects her to return, how May Lin used the old route, and whether the key opens something tied to the blue bus.
+Episode 9 should begin with the bus arriving just after Lina's warning. The next step can reveal whether the changing route history leads to May Lin's missing trip, and whether a ticket or map appears before 8:10 ends.

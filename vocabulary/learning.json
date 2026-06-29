@@ -2099,6 +2099,36 @@
       "reviewCount": 0,
       "nextReview": "2026-06-27",
       "lastReviewedDate": "2026-06-26"
+    },
+    {
+      "word": "result",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "結果；搜尋結果",
+      "exampleSentence": "The first result showed a local bus forum.",
+      "dateAdded": "2026-06-29",
+      "reviewCount": 0,
+      "nextReview": "2026-06-30",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "history",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "歷史；過往紀錄",
+      "exampleSentence": "Check the route history before you go.",
+      "dateAdded": "2026-06-29",
+      "reviewCount": 0,
+      "nextReview": "2026-06-30",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "match",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "相符；符合",
+      "exampleSentence": "The number did not match the record.",
+      "dateAdded": "2026-06-29",
+      "reviewCount": 0,
+      "nextReview": "2026-06-30",
+      "lastReviewedDate": "2026-06-29"
     }
   ]
 }
