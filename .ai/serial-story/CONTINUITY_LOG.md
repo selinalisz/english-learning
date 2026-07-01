@@ -7,7 +7,7 @@
 ## Current Status
 
 - Series: `The Blue Receipt`
-- Current episode: Episode 9, `The Blue Receipt · Episode 9`
+- Current episode: Episode 10, `The Blue Receipt · Episode 10`
 - Main mystery: unknown messages appear in everyday English text and warn Mina about the blue bus.
 - Current known facts:
   - Mina found a strange printed line at the bottom of her coffee receipt.
@@ -75,6 +75,15 @@
   - Mina compared the ticket with the record and the time and seat matched.
   - A final line on the ticket said: `Seat 12. One rider only.`
   - Blue light moved across the wall before someone knocked on the gate.
+  - The knock came again while Lina waited outside the gate.
+  - Mina stayed inside the gate and heard a man speak through the door.
+  - The man had the same calm voice as the blue bus driver.
+  - The driver asked Mina: `Did you get my messages?`
+  - The bus door opened outside, but no other rider got off.
+  - The driver slid another note under the gate.
+  - The new note repeated the same strange date: `Tomorrow`.
+  - A new warning on the note said: `Seat 12 is not for you.`
+  - When Mina asked why he helped her, the driver said: `Because she could not come back.`
 
 ## Open Threads
 
@@ -184,6 +193,17 @@
 - New rule on the ticket: `Seat 12. One rider only.`
 - Hook: blue light crosses the wall and someone knocks on the gate.
 
+### 2026-07-01 — Episode 10: The Driver's Question
+
+- Location: inside the gate, with Lina outside and the blue bus waiting nearby.
+- Mina finally hears the blue bus driver speak to her directly.
+- Useful sentence: `Did you get my messages?`
+- Spoken clue: the driver uses the same calm voice Mina remembers.
+- New warning note: `Seat 12 is not for you.`
+- Stronger mystery link: the note still points to `Tomorrow`.
+- Important answer: the driver says he helped Mina because `she could not come back`.
+- Hook: Mina now knows the driver is connected to May Lin, but not whether he is protecting her or replacing someone.
+
 ## Next Episode Pointer
 
-Episode 10 should reveal who is at the gate and whether the blue bus driver finally speaks to Mina. The next step can connect `Seat 12` and the tomorrow ticket to May Lin's missing ride.
+Episode 11 should follow Mina's reaction to the driver's answer. The next step can reveal who `she` is, why `Seat 12` matters, and whether Lina can safely see the driver from outside.

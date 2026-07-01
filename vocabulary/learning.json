@@ -2159,6 +2159,36 @@
       "reviewCount": 0,
       "nextReview": "2026-07-01",
       "lastReviewedDate": "2026-06-30"
+    },
+    {
+      "word": "voice",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "聲音；嗓音",
+      "exampleSentence": "The driver had a calm voice.",
+      "dateAdded": "2026-07-01",
+      "reviewCount": 0,
+      "nextReview": "2026-07-02",
+      "lastReviewedDate": "2026-07-01"
+    },
+    {
+      "word": "inside",
+      "partOfSpeech": "adv./prep.",
+      "chineseMeaning": "裡面；在裡面",
+      "exampleSentence": "Mina stayed inside the gate.",
+      "dateAdded": "2026-07-01",
+      "reviewCount": 0,
+      "nextReview": "2026-07-02",
+      "lastReviewedDate": "2026-07-01"
+    },
+    {
+      "word": "outside",
+      "partOfSpeech": "adv./prep.",
+      "chineseMeaning": "外面；在外面",
+      "exampleSentence": "The blue bus was waiting outside.",
+      "dateAdded": "2026-07-01",
+      "reviewCount": 0,
+      "nextReview": "2026-07-02",
+      "lastReviewedDate": "2026-07-01"
     }
   ]
 }
