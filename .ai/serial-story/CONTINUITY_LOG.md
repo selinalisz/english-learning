@@ -7,7 +7,7 @@
 ## Current Status
 
 - Series: `The Blue Receipt`
-- Current episode: Episode 10, `The Blue Receipt · Episode 10`
+- Current episode: Episode 11, `The Blue Receipt · Episode 11`
 - Main mystery: unknown messages appear in everyday English text and warn Mina about the blue bus.
 - Current known facts:
   - Mina found a strange printed line at the bottom of her coffee receipt.
@@ -84,6 +84,17 @@
   - The new note repeated the same strange date: `Tomorrow`.
   - A new warning on the note said: `Seat 12 is not for you.`
   - When Mina asked why he helped her, the driver said: `Because she could not come back.`
+  - Mina asked the driver who `she` was, and he answered: `May Lin.`
+  - Mina demanded the truth.
+  - The driver said Mina had come one day early.
+  - He explained that the `tomorrow` ticket was for May Lin.
+  - Lina, still outside the gate, said she could not see the driver clearly.
+  - Mina asked if Lina could come with her.
+  - The driver refused and said May Lin rode alone.
+  - He warned Mina not to make the same mistake.
+  - Mina looked toward the bus and saw it was empty inside.
+  - Then Lina suddenly said someone was standing behind her.
+  - A second voice warned Mina: `Do not get on.`
 
 ## Open Threads
 
@@ -204,6 +215,17 @@
 - Important answer: the driver says he helped Mina because `she could not come back`.
 - Hook: Mina now knows the driver is connected to May Lin, but not whether he is protecting her or replacing someone.
 
+### 2026-07-02 — Episode 11: One Day Early
+
+- Location: gate area and view toward the empty blue bus.
+- Mina learns the `she` in the driver's answer is `May Lin`.
+- Useful sentence: `Tell me the truth.`
+- New time clue: Mina has arrived `one day early`.
+- New explanation: the `tomorrow` ticket was meant for May Lin, not Mina.
+- New warning: the driver says May Lin rode alone and Mina must not repeat that mistake.
+- New visual clue: the bus looks empty inside even while the driver is nearby.
+- Hook: Lina hears someone behind her, and a second voice warns Mina not to get on.
+
 ## Next Episode Pointer
 
-Episode 11 should follow Mina's reaction to the driver's answer. The next step can reveal who `she` is, why `Seat 12` matters, and whether Lina can safely see the driver from outside.
+Episode 12 should reveal who the second voice belongs to and whether Lina is seeing the same reality as Mina. The next step can also explain why the bus looks empty while the driver keeps speaking.

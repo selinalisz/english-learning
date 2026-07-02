@@ -2189,6 +2189,36 @@
       "reviewCount": 0,
       "nextReview": "2026-07-02",
       "lastReviewedDate": "2026-07-01"
+    },
+    {
+      "word": "truth",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "真相；實情",
+      "exampleSentence": "Mina wanted to hear the truth.",
+      "dateAdded": "2026-07-02",
+      "reviewCount": 0,
+      "nextReview": "2026-07-03",
+      "lastReviewedDate": "2026-07-02"
+    },
+    {
+      "word": "alone",
+      "partOfSpeech": "adj./adv.",
+      "chineseMeaning": "單獨的；獨自地",
+      "exampleSentence": "The driver said Mina should not ride alone.",
+      "dateAdded": "2026-07-02",
+      "reviewCount": 0,
+      "nextReview": "2026-07-03",
+      "lastReviewedDate": "2026-07-02"
+    },
+    {
+      "word": "early",
+      "partOfSpeech": "adj./adv.",
+      "chineseMeaning": "提早的；提早地",
+      "exampleSentence": "Mina came one day early.",
+      "dateAdded": "2026-07-02",
+      "reviewCount": 0,
+      "nextReview": "2026-07-03",
+      "lastReviewedDate": "2026-07-02"
     }
   ]
 }
