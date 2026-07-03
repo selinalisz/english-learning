@@ -1,0 +1,2284 @@
+{
+  "words": [
+    {
+      "word": "stressful",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "令人緊張的、有壓力的",
+      "exampleSentence": "Moving to a new city can be stressful.",
+      "dateAdded": "2026-03-10",
+      "reviewCount": 6,
+      "nextReview": "2026-09-27",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "check-in",
+      "partOfSpeech": "n./v.",
+      "chineseMeaning": "辦理登機手續",
+      "exampleSentence": "The check-in counter opens two hours before the flight.",
+      "dateAdded": "2026-03-10",
+      "reviewCount": 6,
+      "nextReview": "2026-08-30",
+      "lastReviewedDate": "2026-06-01"
+    },
+    {
+      "word": "passport",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "護照",
+      "exampleSentence": "Don't forget your passport when you travel abroad.",
+      "dateAdded": "2026-03-10",
+      "reviewCount": 6,
+      "nextReview": "2026-08-30",
+      "lastReviewedDate": "2026-06-01"
+    },
+    {
+      "word": "luggage",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "行李",
+      "exampleSentence": "I only have one bag of luggage for my trip.",
+      "dateAdded": "2026-03-10",
+      "reviewCount": 6,
+      "nextReview": "2026-08-30",
+      "lastReviewedDate": "2026-06-01"
+    },
+    {
+      "word": "security",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "安全檢查、安檢",
+      "exampleSentence": "Please remove your shoes at security.",
+      "dateAdded": "2026-03-10",
+      "reviewCount": 6,
+      "nextReview": "2026-08-30",
+      "lastReviewedDate": "2026-06-01"
+    },
+    {
+      "word": "gate",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "登機門",
+      "exampleSentence": "Our flight departs from gate 12.",
+      "dateAdded": "2026-03-10",
+      "reviewCount": 6,
+      "nextReview": "2026-08-30",
+      "lastReviewedDate": "2026-06-01"
+    },
+    {
+      "word": "departure",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "出發、離境",
+      "exampleSentence": "Check the departure board for your flight number.",
+      "dateAdded": "2026-03-10",
+      "reviewCount": 6,
+      "nextReview": "2026-08-30",
+      "lastReviewedDate": "2026-06-01"
+    },
+    {
+      "word": "boarding pass",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "登機證",
+      "exampleSentence": "You can download your boarding pass on your phone.",
+      "dateAdded": "2026-03-10",
+      "reviewCount": 6,
+      "nextReview": "2026-08-30",
+      "lastReviewedDate": "2026-06-01"
+    },
+    {
+      "word": "routine",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "日常慣例",
+      "exampleSentence": "I try to keep a healthy morning routine.",
+      "dateAdded": "2026-03-11",
+      "reviewCount": 6,
+      "nextReview": "2026-08-30",
+      "lastReviewedDate": "2026-06-01"
+    },
+    {
+      "word": "commute",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "通勤時間、通勤",
+      "exampleSentence": "My commute to work takes forty minutes.",
+      "dateAdded": "2026-03-11",
+      "reviewCount": 6,
+      "nextReview": "2026-08-30",
+      "lastReviewedDate": "2026-06-01"
+    },
+    {
+      "word": "errand",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "差事、雜事",
+      "exampleSentence": "I need to run a few errands after lunch.",
+      "dateAdded": "2026-03-11",
+      "reviewCount": 3,
+      "nextReview": "2026-07-06",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "grocery",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "食品雜貨",
+      "exampleSentence": "We need to buy some groceries for the week.",
+      "dateAdded": "2026-03-11",
+      "reviewCount": 6,
+      "nextReview": "2026-08-30",
+      "lastReviewedDate": "2026-06-01"
+    },
+    {
+      "word": "budget",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "預算",
+      "exampleSentence": "We have a tight budget this month.",
+      "dateAdded": "2026-03-11",
+      "reviewCount": 6,
+      "nextReview": "2026-08-30",
+      "lastReviewedDate": "2026-06-01"
+    },
+    {
+      "word": "efficient",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "有效率的",
+      "exampleSentence": "She is very efficient and always finishes her work on time.",
+      "dateAdded": "2026-03-11",
+      "reviewCount": 6,
+      "nextReview": "2026-08-30",
+      "lastReviewedDate": "2026-06-01"
+    },
+    {
+      "word": "neighborhood",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "鄰里、社區",
+      "exampleSentence": "I love my neighborhood because everyone is friendly.",
+      "dateAdded": "2026-03-11",
+      "reviewCount": 6,
+      "nextReview": "2026-08-30",
+      "lastReviewedDate": "2026-06-01"
+    },
+    {
+      "word": "leftovers",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "剩菜、剩飯",
+      "exampleSentence": "We can have the leftovers for lunch tomorrow.",
+      "dateAdded": "2026-03-11",
+      "reviewCount": 6,
+      "nextReview": "2026-08-30",
+      "lastReviewedDate": "2026-06-01"
+    },
+    {
+      "word": "receptionist",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "接待員",
+      "exampleSentence": "The receptionist gave us the room keys.",
+      "dateAdded": "2026-03-12",
+      "reviewCount": 5,
+      "nextReview": "2026-08-28",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "reservation",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "訂房、預訂",
+      "exampleSentence": "I made a reservation online yesterday.",
+      "dateAdded": "2026-03-12",
+      "reviewCount": 6,
+      "nextReview": "2026-08-30",
+      "lastReviewedDate": "2026-06-01"
+    },
+    {
+      "word": "rooftop",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "頂樓、屋頂",
+      "exampleSentence": "The hotel has a rooftop pool with a great view.",
+      "dateAdded": "2026-03-12",
+      "reviewCount": 6,
+      "nextReview": "2026-08-30",
+      "lastReviewedDate": "2026-06-01"
+    },
+    {
+      "word": "elevator",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "電梯",
+      "exampleSentence": "Take the elevator to the third floor.",
+      "dateAdded": "2026-03-12",
+      "reviewCount": 6,
+      "nextReview": "2026-08-30",
+      "lastReviewedDate": "2026-06-01"
+    },
+    {
+      "word": "curtain",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "窗簾",
+      "exampleSentence": "Please close the curtains before going to sleep.",
+      "dateAdded": "2026-03-12",
+      "reviewCount": 6,
+      "nextReview": "2026-08-30",
+      "lastReviewedDate": "2026-06-01"
+    },
+    {
+      "word": "exhausted",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "筋疲力盡的",
+      "exampleSentence": "I was exhausted after the long flight.",
+      "dateAdded": "2026-03-12",
+      "reviewCount": 5,
+      "nextReview": "2026-08-28",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "room service",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "客房服務",
+      "exampleSentence": "We ordered room service because we were too tired to go out.",
+      "dateAdded": "2026-03-12",
+      "reviewCount": 6,
+      "nextReview": "2026-08-30",
+      "lastReviewedDate": "2026-06-01"
+    },
+    {
+      "word": "tray",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "托盤",
+      "exampleSentence": "The waiter brought the food on a tray.",
+      "dateAdded": "2026-03-12",
+      "reviewCount": 6,
+      "nextReview": "2026-08-30",
+      "lastReviewedDate": "2026-06-01"
+    },
+    {
+      "word": "sunny",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "晴朗的",
+      "exampleSentence": "Today is a sunny day and the sky is blue.",
+      "dateAdded": "2026-03-30",
+      "reviewCount": 7,
+      "nextReview": "2026-09-27",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "neighbor",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "鄰居",
+      "exampleSentence": "My neighbor helped me carry my bags.",
+      "dateAdded": "2026-03-30",
+      "reviewCount": 7,
+      "nextReview": "2026-09-27",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "trash",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "垃圾",
+      "exampleSentence": "I take out the trash every morning.",
+      "dateAdded": "2026-03-30",
+      "reviewCount": 7,
+      "nextReview": "2026-09-27",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "laundry",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "洗衣、待洗衣物",
+      "exampleSentence": "I need to do the laundry before the weekend.",
+      "dateAdded": "2026-03-13",
+      "reviewCount": 6,
+      "nextReview": "2026-07-27",
+      "lastReviewedDate": "2026-04-28"
+    },
+    {
+      "word": "ingredient",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "食材、原料",
+      "exampleSentence": "Fresh ingredients make the dish taste better.",
+      "dateAdded": "2026-03-13",
+      "reviewCount": 5,
+      "nextReview": "2026-08-07",
+      "lastReviewedDate": "2026-06-08"
+    },
+    {
+      "word": "landlord",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "房東",
+      "exampleSentence": "My landlord fixed the broken window last week.",
+      "dateAdded": "2026-03-13",
+      "reviewCount": 6,
+      "nextReview": "2026-07-27",
+      "lastReviewedDate": "2026-04-28"
+    },
+    {
+      "word": "pack",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "打包、收拾行李",
+      "exampleSentence": "I need to pack my bags before the early morning flight.",
+      "dateAdded": "2026-03-15",
+      "reviewCount": 6,
+      "nextReview": "2026-09-27",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "board",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "登（飛機/船）、搭乘",
+      "exampleSentence": "Passengers, please board the plane from gate 12.",
+      "dateAdded": "2026-03-15",
+      "reviewCount": 6,
+      "nextReview": "2026-09-27",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "explore",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "探索、探查",
+      "exampleSentence": "I love to explore new cities on foot.",
+      "dateAdded": "2026-03-15",
+      "reviewCount": 5,
+      "nextReview": "2026-08-07",
+      "lastReviewedDate": "2026-06-08"
+    },
+    {
+      "word": "organize",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "整理、規劃",
+      "exampleSentence": "I organize my schedule every Sunday evening.",
+      "dateAdded": "2026-03-16",
+      "reviewCount": 5,
+      "nextReview": "2026-08-07",
+      "lastReviewedDate": "2026-06-08"
+    },
+    {
+      "word": "schedule",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "時間表、行程",
+      "exampleSentence": "I keep a schedule to manage my time better.",
+      "dateAdded": "2026-03-16",
+      "reviewCount": 6,
+      "nextReview": "2026-08-10",
+      "lastReviewedDate": "2026-05-12"
+    },
+    {
+      "word": "appointment",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "約定、預約",
+      "exampleSentence": "I have a dentist appointment on Friday.",
+      "dateAdded": "2026-03-16",
+      "reviewCount": 6,
+      "nextReview": "2026-09-27",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "landmark",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "地標、著名景點",
+      "exampleSentence": "The Eiffel Tower is one of the most famous landmarks in the world.",
+      "dateAdded": "2026-03-17",
+      "reviewCount": 6,
+      "nextReview": "2026-09-27",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "souvenir",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "紀念品",
+      "exampleSentence": "I bought a souvenir magnet for my sister.",
+      "dateAdded": "2026-03-17",
+      "reviewCount": 5,
+      "nextReview": "2026-08-07",
+      "lastReviewedDate": "2026-06-08"
+    },
+    {
+      "word": "guide",
+      "partOfSpeech": "n./v.",
+      "chineseMeaning": "嚮導、指南；帶領",
+      "exampleSentence": "A local guide showed us around the old part of the city.",
+      "dateAdded": "2026-03-17",
+      "reviewCount": 6,
+      "nextReview": "2026-09-27",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "alarm",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "鬧鐘",
+      "exampleSentence": "My alarm goes off at seven every morning.",
+      "dateAdded": "2026-03-18",
+      "reviewCount": 6,
+      "nextReview": "2026-08-10",
+      "lastReviewedDate": "2026-05-12"
+    },
+    {
+      "word": "stretch",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "伸展身體",
+      "exampleSentence": "I stretch for ten minutes every morning to wake up my body.",
+      "dateAdded": "2026-03-18",
+      "reviewCount": 5,
+      "nextReview": "2026-08-07",
+      "lastReviewedDate": "2026-06-08"
+    },
+    {
+      "word": "prefer",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "更喜歡、偏好",
+      "exampleSentence": "I prefer to wake up early and enjoy a quiet morning.",
+      "dateAdded": "2026-03-18",
+      "reviewCount": 6,
+      "nextReview": "2026-08-10",
+      "lastReviewedDate": "2026-05-12"
+    },
+    {
+      "word": "itinerary",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "行程表",
+      "exampleSentence": "I always check my itinerary the night before a trip.",
+      "dateAdded": "2026-03-19",
+      "reviewCount": 6,
+      "nextReview": "2026-08-10",
+      "lastReviewedDate": "2026-05-12"
+    },
+    {
+      "word": "currency",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "貨幣、外幣",
+      "exampleSentence": "You can exchange currency at the airport or at a local bank.",
+      "dateAdded": "2026-03-19",
+      "reviewCount": 6,
+      "nextReview": "2026-08-10",
+      "lastReviewedDate": "2026-05-12"
+    },
+    {
+      "word": "customs",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "海關",
+      "exampleSentence": "Please declare any food items when you go through customs.",
+      "dateAdded": "2026-03-19",
+      "reviewCount": 6,
+      "nextReview": "2026-08-10",
+      "lastReviewedDate": "2026-05-12"
+    },
+    {
+      "word": "yawn",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "打哈欠",
+      "exampleSentence": "I always yawn when I wake up.",
+      "dateAdded": "2026-03-20",
+      "reviewCount": 6,
+      "nextReview": "2026-09-29",
+      "lastReviewedDate": "2026-07-01"
+    },
+    {
+      "word": "tidy",
+      "partOfSpeech": "v./adj.",
+      "chineseMeaning": "整理；整齊的",
+      "exampleSentence": "I tidy my room every morning.",
+      "dateAdded": "2026-03-20",
+      "reviewCount": 5,
+      "nextReview": "2026-07-26",
+      "lastReviewedDate": "2026-05-27"
+    },
+    {
+      "word": "snack",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "點心、零食",
+      "exampleSentence": "I have a small snack in the afternoon.",
+      "dateAdded": "2026-03-20",
+      "reviewCount": 6,
+      "nextReview": "2026-09-29",
+      "lastReviewedDate": "2026-07-01"
+    },
+    {
+      "word": "brochure",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "旅遊手冊、宣傳冊",
+      "exampleSentence": "I picked up a travel brochure at the hotel.",
+      "dateAdded": "2026-03-23",
+      "reviewCount": 4,
+      "nextReview": "2026-07-08",
+      "lastReviewedDate": "2026-06-08"
+    },
+    {
+      "word": "delay",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "誤點、延遲",
+      "exampleSentence": "There was a delay, so the train came late.",
+      "dateAdded": "2026-03-23",
+      "reviewCount": 7,
+      "nextReview": "2026-09-27",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "platform",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "月台",
+      "exampleSentence": "Please wait for the train on the platform.",
+      "dateAdded": "2026-03-23",
+      "reviewCount": 7,
+      "nextReview": "2026-09-27",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "meal",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "餐食、一餐",
+      "exampleSentence": "I cook a simple meal for dinner.",
+      "dateAdded": "2026-03-24",
+      "reviewCount": 6,
+      "nextReview": "2026-08-10",
+      "lastReviewedDate": "2026-05-12"
+    },
+    {
+      "word": "shelf",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "架子、書架",
+      "exampleSentence": "I put my books on the shelf.",
+      "dateAdded": "2026-03-24",
+      "reviewCount": 6,
+      "nextReview": "2026-08-10",
+      "lastReviewedDate": "2026-05-12"
+    },
+    {
+      "word": "remind",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "提醒",
+      "exampleSentence": "Please remind me to call my mom.",
+      "dateAdded": "2026-03-24",
+      "reviewCount": 5,
+      "nextReview": "2026-08-11",
+      "lastReviewedDate": "2026-06-12"
+    },
+    {
+      "word": "arrive",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "到達",
+      "exampleSentence": "We arrived at nine in the morning.",
+      "dateAdded": "2026-03-25",
+      "reviewCount": 7,
+      "nextReview": "2026-09-27",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "view",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "景色",
+      "exampleSentence": "The view of the sea was very beautiful.",
+      "dateAdded": "2026-03-25",
+      "reviewCount": 7,
+      "nextReview": "2026-09-27",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "rest",
+      "partOfSpeech": "v./n.",
+      "chineseMeaning": "休息",
+      "exampleSentence": "We rested under a big tree for a while.",
+      "dateAdded": "2026-03-25",
+      "reviewCount": 7,
+      "nextReview": "2026-09-27",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "cozy",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "舒適的、溫馨的",
+      "exampleSentence": "My room feels cozy and warm.",
+      "dateAdded": "2026-03-26",
+      "reviewCount": 7,
+      "nextReview": "2026-09-27",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "pour",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "倒（液體）",
+      "exampleSentence": "I pour a glass of water every morning.",
+      "dateAdded": "2026-03-26",
+      "reviewCount": 7,
+      "nextReview": "2026-09-27",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "notice",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "注意到",
+      "exampleSentence": "I notice the table is a bit messy.",
+      "dateAdded": "2026-03-26",
+      "reviewCount": 2,
+      "nextReview": "2026-07-09",
+      "lastReviewedDate": "2026-07-02"
+    },
+    {
+      "word": "map",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "地圖",
+      "exampleSentence": "I use a map to find my way in a new city.",
+      "dateAdded": "2026-03-27",
+      "reviewCount": 7,
+      "nextReview": "2026-09-27",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "local",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "當地的",
+      "exampleSentence": "A local guide helped us find the best places to eat.",
+      "dateAdded": "2026-03-27",
+      "reviewCount": 7,
+      "nextReview": "2026-09-27",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "path",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "小路、路徑",
+      "exampleSentence": "We walked along a quiet path by the river.",
+      "dateAdded": "2026-03-27",
+      "reviewCount": 7,
+      "nextReview": "2026-09-27",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "ferry",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "渡輪",
+      "exampleSentence": "I took a ferry to the island.",
+      "dateAdded": "2026-03-31",
+      "reviewCount": 5,
+      "nextReview": "2026-07-26",
+      "lastReviewedDate": "2026-05-27"
+    },
+    {
+      "word": "tip",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "小訣竅、建議",
+      "exampleSentence": "She gave me a good tip about the restaurant.",
+      "dateAdded": "2026-03-31",
+      "reviewCount": 5,
+      "nextReview": "2026-07-26",
+      "lastReviewedDate": "2026-05-27"
+    },
+    {
+      "word": "return",
+      "partOfSpeech": "adj./n.",
+      "chineseMeaning": "回程的；回程",
+      "exampleSentence": "I bought a return ticket for the trip.",
+      "dateAdded": "2026-03-31",
+      "reviewCount": 5,
+      "nextReview": "2026-07-26",
+      "lastReviewedDate": "2026-05-27"
+    },
+    {
+      "word": "nap",
+      "partOfSpeech": "n./v.",
+      "chineseMeaning": "小睡",
+      "exampleSentence": "I take a short nap after lunch.",
+      "dateAdded": "2026-04-01",
+      "reviewCount": 5,
+      "nextReview": "2026-07-26",
+      "lastReviewedDate": "2026-05-27"
+    },
+    {
+      "word": "chore",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "家務、家事",
+      "exampleSentence": "Washing dishes is a simple chore.",
+      "dateAdded": "2026-04-01",
+      "reviewCount": 5,
+      "nextReview": "2026-08-11",
+      "lastReviewedDate": "2026-06-12"
+    },
+    {
+      "word": "towel",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "毛巾",
+      "exampleSentence": "I use a fresh towel after my shower.",
+      "dateAdded": "2026-04-01",
+      "reviewCount": 5,
+      "nextReview": "2026-07-26",
+      "lastReviewedDate": "2026-05-27"
+    },
+    {
+      "word": "sightseeing",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "觀光",
+      "exampleSentence": "We did some sightseeing near the old temple.",
+      "dateAdded": "2026-04-02",
+      "reviewCount": 5,
+      "nextReview": "2026-08-04",
+      "lastReviewedDate": "2026-06-05"
+    },
+    {
+      "word": "hostel",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "青年旅館",
+      "exampleSentence": "The hostel is a cheap place to stay when you travel.",
+      "dateAdded": "2026-04-02",
+      "reviewCount": 5,
+      "nextReview": "2026-07-26",
+      "lastReviewedDate": "2026-05-27"
+    },
+    {
+      "word": "transfer",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "轉乘",
+      "exampleSentence": "We need to transfer to bus number 3 at this stop.",
+      "dateAdded": "2026-04-02",
+      "reviewCount": 5,
+      "nextReview": "2026-07-26",
+      "lastReviewedDate": "2026-05-27"
+    },
+    {
+      "word": "sweep",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "掃地",
+      "exampleSentence": "I sweep the floor every afternoon.",
+      "dateAdded": "2026-04-03",
+      "reviewCount": 4,
+      "nextReview": "2026-07-08",
+      "lastReviewedDate": "2026-06-08"
+    },
+    {
+      "word": "pillow",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "枕頭",
+      "exampleSentence": "My pillow is soft and comfortable.",
+      "dateAdded": "2026-04-03",
+      "reviewCount": 5,
+      "nextReview": "2026-07-11",
+      "lastReviewedDate": "2026-05-12"
+    },
+    {
+      "word": "vitamin",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "維他命",
+      "exampleSentence": "I take a vitamin every day to stay healthy.",
+      "dateAdded": "2026-04-03",
+      "reviewCount": 5,
+      "nextReview": "2026-07-11",
+      "lastReviewedDate": "2026-05-12"
+    },
+    {
+      "word": "harbor",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "港口",
+      "exampleSentence": "The harbor is full of small boats.",
+      "dateAdded": "2026-04-09",
+      "reviewCount": 5,
+      "nextReview": "2026-08-11",
+      "lastReviewedDate": "2026-06-12"
+    },
+    {
+      "word": "bench",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "長椅",
+      "exampleSentence": "We sat on a bench near the river.",
+      "dateAdded": "2026-04-09",
+      "reviewCount": 5,
+      "nextReview": "2026-08-11",
+      "lastReviewedDate": "2026-06-12"
+    },
+    {
+      "word": "postcard",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "明信片",
+      "exampleSentence": "I sent a postcard to my friend from Tainan.",
+      "dateAdded": "2026-04-09",
+      "reviewCount": 5,
+      "nextReview": "2026-08-11",
+      "lastReviewedDate": "2026-06-12"
+    },
+    {
+      "word": "blanket",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "毛毯、毯子",
+      "exampleSentence": "I put a blanket on the sofa for movie night.",
+      "dateAdded": "2026-04-10",
+      "reviewCount": 5,
+      "nextReview": "2026-08-11",
+      "lastReviewedDate": "2026-06-12"
+    },
+    {
+      "word": "fold",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "摺疊",
+      "exampleSentence": "Please fold the clean clothes after they dry.",
+      "dateAdded": "2026-04-10",
+      "reviewCount": 5,
+      "nextReview": "2026-08-07",
+      "lastReviewedDate": "2026-06-08"
+    },
+    {
+      "word": "balcony",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "陽台",
+      "exampleSentence": "She grows flowers on her balcony.",
+      "dateAdded": "2026-04-10",
+      "reviewCount": 5,
+      "nextReview": "2026-08-04",
+      "lastReviewedDate": "2026-06-05"
+    },
+    {
+      "word": "bakery",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "麵包店",
+      "exampleSentence": "We bought breakfast at the bakery near the station.",
+      "dateAdded": "2026-04-23",
+      "reviewCount": 5,
+      "nextReview": "2026-08-04",
+      "lastReviewedDate": "2026-06-05"
+    },
+    {
+      "word": "corner",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "街角、轉角",
+      "exampleSentence": "There is a small cafe on the corner.",
+      "dateAdded": "2026-04-23",
+      "reviewCount": 5,
+      "nextReview": "2026-08-04",
+      "lastReviewedDate": "2026-06-05"
+    },
+    {
+      "word": "crosswalk",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "人行道、斑馬線",
+      "exampleSentence": "Please stop before you walk across the crosswalk.",
+      "dateAdded": "2026-04-23",
+      "reviewCount": 5,
+      "nextReview": "2026-08-04",
+      "lastReviewedDate": "2026-06-05"
+    },
+    {
+      "word": "sink",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "水槽、洗手台",
+      "exampleSentence": "Please put the dirty dishes in the sink.",
+      "dateAdded": "2026-04-24",
+      "reviewCount": 5,
+      "nextReview": "2026-08-11",
+      "lastReviewedDate": "2026-06-12"
+    },
+    {
+      "word": "soap",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "肥皂、清潔皂",
+      "exampleSentence": "I use soap and water to wash my hands.",
+      "dateAdded": "2026-04-24",
+      "reviewCount": 5,
+      "nextReview": "2026-08-11",
+      "lastReviewedDate": "2026-06-12"
+    },
+    {
+      "word": "mirror",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "鏡子",
+      "exampleSentence": "She checks her hair in the mirror.",
+      "dateAdded": "2026-04-24",
+      "reviewCount": 5,
+      "nextReview": "2026-08-11",
+      "lastReviewedDate": "2026-06-12"
+    },
+    {
+      "word": "route",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "路線",
+      "exampleSentence": "This bus route goes to the park and the station.",
+      "dateAdded": "2026-04-27",
+      "reviewCount": 5,
+      "nextReview": "2026-08-07",
+      "lastReviewedDate": "2026-06-08"
+    },
+    {
+      "word": "fare",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "車資、票價",
+      "exampleSentence": "The bus fare is cheap, so I ride it often.",
+      "dateAdded": "2026-04-27",
+      "reviewCount": 5,
+      "nextReview": "2026-08-07",
+      "lastReviewedDate": "2026-06-08"
+    },
+    {
+      "word": "entrance",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "入口",
+      "exampleSentence": "Please wait for me at the park entrance.",
+      "dateAdded": "2026-04-27",
+      "reviewCount": 5,
+      "nextReview": "2026-08-07",
+      "lastReviewedDate": "2026-06-08"
+    },
+    {
+      "word": "drawer",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "抽屜",
+      "exampleSentence": "I keep my keys in the top drawer.",
+      "dateAdded": "2026-04-28",
+      "reviewCount": 5,
+      "nextReview": "2026-08-07",
+      "lastReviewedDate": "2026-06-08"
+    },
+    {
+      "word": "charger",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "充電器",
+      "exampleSentence": "My phone charger is next to the bed.",
+      "dateAdded": "2026-04-28",
+      "reviewCount": 5,
+      "nextReview": "2026-08-07",
+      "lastReviewedDate": "2026-06-08"
+    },
+    {
+      "word": "tissue",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "面紙、紙巾",
+      "exampleSentence": "Please give me a tissue for the table.",
+      "dateAdded": "2026-04-28",
+      "reviewCount": 5,
+      "nextReview": "2026-08-07",
+      "lastReviewedDate": "2026-06-08"
+    },
+    {
+      "word": "menu",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "菜單",
+      "exampleSentence": "Please look at the menu before you order.",
+      "dateAdded": "2026-04-29",
+      "reviewCount": 5,
+      "nextReview": "2026-08-21",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "counter",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "櫃檯",
+      "exampleSentence": "You can pay at the front counter.",
+      "dateAdded": "2026-04-29",
+      "reviewCount": 5,
+      "nextReview": "2026-08-21",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "cash",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "現金",
+      "exampleSentence": "I only have a little cash in my bag.",
+      "dateAdded": "2026-04-29",
+      "reviewCount": 5,
+      "nextReview": "2026-08-21",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "detergent",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "洗衣精",
+      "exampleSentence": "Please add detergent before you start the machine.",
+      "dateAdded": "2026-04-30",
+      "reviewCount": 5,
+      "nextReview": "2026-08-21",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "dryer",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "烘衣機",
+      "exampleSentence": "The dryer makes the clothes warm and dry.",
+      "dateAdded": "2026-04-30",
+      "reviewCount": 5,
+      "nextReview": "2026-08-21",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "coin",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "硬幣",
+      "exampleSentence": "I found a coin in my jacket pocket.",
+      "dateAdded": "2026-04-30",
+      "reviewCount": 5,
+      "nextReview": "2026-08-21",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "station",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "車站",
+      "exampleSentence": "The station is busy in the morning.",
+      "dateAdded": "2026-05-01",
+      "reviewCount": 5,
+      "nextReview": "2026-08-24",
+      "lastReviewedDate": "2026-06-25"
+    },
+    {
+      "word": "screen",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "螢幕、顯示看板",
+      "exampleSentence": "Please check the screen for the train time.",
+      "dateAdded": "2026-05-01",
+      "reviewCount": 5,
+      "nextReview": "2026-08-24",
+      "lastReviewedDate": "2026-06-25"
+    },
+    {
+      "word": "line",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "線、路線",
+      "exampleSentence": "Follow the green line to the exit.",
+      "dateAdded": "2026-05-01",
+      "reviewCount": 5,
+      "nextReview": "2026-08-24",
+      "lastReviewedDate": "2026-06-25"
+    },
+    {
+      "word": "pickup",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "取貨、取餐",
+      "exampleSentence": "The pickup time is six thirty.",
+      "dateAdded": "2026-05-04",
+      "reviewCount": 6,
+      "nextReview": "2026-09-27",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "order",
+      "partOfSpeech": "n./v.",
+      "chineseMeaning": "訂單；點餐、下單",
+      "exampleSentence": "I have an order for Leo.",
+      "dateAdded": "2026-05-04",
+      "reviewCount": 6,
+      "nextReview": "2026-09-27",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "receipt",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "收據",
+      "exampleSentence": "Please keep the receipt after you pay.",
+      "dateAdded": "2026-05-04",
+      "reviewCount": 6,
+      "nextReview": "2026-09-27",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "ticket",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "票、車票",
+      "exampleSentence": "I need a ticket to Old Town.",
+      "dateAdded": "2026-05-05",
+      "reviewCount": 5,
+      "nextReview": "2026-08-28",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "machine",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "機器、售票機",
+      "exampleSentence": "The ticket machine is near the counter.",
+      "dateAdded": "2026-05-05",
+      "reviewCount": 5,
+      "nextReview": "2026-08-28",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "one-way",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "單程的",
+      "exampleSentence": "I need a one-way ticket, please.",
+      "dateAdded": "2026-05-05",
+      "reviewCount": 5,
+      "nextReview": "2026-08-28",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "pharmacy",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "藥局",
+      "exampleSentence": "The pharmacy is next to the clinic.",
+      "dateAdded": "2026-05-06",
+      "reviewCount": 5,
+      "nextReview": "2026-08-11",
+      "lastReviewedDate": "2026-06-12"
+    },
+    {
+      "word": "medicine",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "藥、藥品",
+      "exampleSentence": "I need to pick up medicine for my mom.",
+      "dateAdded": "2026-05-06",
+      "reviewCount": 5,
+      "nextReview": "2026-08-11",
+      "lastReviewedDate": "2026-06-12"
+    },
+    {
+      "word": "number",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "號碼",
+      "exampleSentence": "Please take a number and wait.",
+      "dateAdded": "2026-05-06",
+      "reviewCount": 5,
+      "nextReview": "2026-08-11",
+      "lastReviewedDate": "2026-06-12"
+    },
+    {
+      "word": "locker",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "置物櫃",
+      "exampleSentence": "I put my bag in a locker at the station.",
+      "dateAdded": "2026-05-07",
+      "reviewCount": 4,
+      "nextReview": "2026-07-08",
+      "lastReviewedDate": "2026-06-08"
+    },
+    {
+      "word": "fee",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "費用、手續費",
+      "exampleSentence": "The locker fee is three dollars.",
+      "dateAdded": "2026-05-07",
+      "reviewCount": 5,
+      "nextReview": "2026-08-24",
+      "lastReviewedDate": "2026-06-25"
+    },
+    {
+      "word": "available",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "可用的、有空的",
+      "exampleSentence": "Is there an available locker near the entrance?",
+      "dateAdded": "2026-05-07",
+      "reviewCount": 4,
+      "nextReview": "2026-07-22",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "refund",
+      "partOfSpeech": "n./v.",
+      "chineseMeaning": "退款；退款給某人",
+      "exampleSentence": "Can I get a refund for this shirt?",
+      "dateAdded": "2026-05-08",
+      "reviewCount": 5,
+      "nextReview": "2026-08-31",
+      "lastReviewedDate": "2026-07-02"
+    },
+    {
+      "word": "exchange",
+      "partOfSpeech": "v./n.",
+      "chineseMeaning": "交換、換貨",
+      "exampleSentence": "Can I exchange this shirt for a larger size?",
+      "dateAdded": "2026-05-08",
+      "reviewCount": 5,
+      "nextReview": "2026-08-31",
+      "lastReviewedDate": "2026-07-02"
+    },
+    {
+      "word": "policy",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "政策、規定",
+      "exampleSentence": "Please read the return policy before you buy it.",
+      "dateAdded": "2026-05-08",
+      "reviewCount": 4,
+      "nextReview": "2026-07-08",
+      "lastReviewedDate": "2026-06-08"
+    },
+    {
+      "word": "stop",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "車站、停靠站",
+      "exampleSentence": "Bus stop B is near the hotel.",
+      "dateAdded": "2026-05-11",
+      "reviewCount": 4,
+      "nextReview": "2026-07-08",
+      "lastReviewedDate": "2026-06-08"
+    },
+    {
+      "word": "sign",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "標誌、招牌",
+      "exampleSentence": "Look for the blue sign at the station.",
+      "dateAdded": "2026-05-11",
+      "reviewCount": 4,
+      "nextReview": "2026-07-08",
+      "lastReviewedDate": "2026-06-08"
+    },
+    {
+      "word": "driver",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "司機、駕駛",
+      "exampleSentence": "The driver can help you find the right stop.",
+      "dateAdded": "2026-05-11",
+      "reviewCount": 4,
+      "nextReview": "2026-07-08",
+      "lastReviewedDate": "2026-06-08"
+    },
+    {
+      "word": "hours",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "營業時間",
+      "exampleSentence": "The cafe hours are on the website.",
+      "dateAdded": "2026-05-12",
+      "reviewCount": 4,
+      "nextReview": "2026-07-08",
+      "lastReviewedDate": "2026-06-08"
+    },
+    {
+      "word": "seat",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "座位",
+      "exampleSentence": "Is there a seat near the window?",
+      "dateAdded": "2026-05-12",
+      "reviewCount": 4,
+      "nextReview": "2026-07-08",
+      "lastReviewedDate": "2026-06-08"
+    },
+    {
+      "word": "crowded",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "擁擠的、人多的",
+      "exampleSentence": "The cafe is crowded at lunch time.",
+      "dateAdded": "2026-05-12",
+      "reviewCount": 4,
+      "nextReview": "2026-07-08",
+      "lastReviewedDate": "2026-06-08"
+    },
+    {
+      "word": "arrival",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "抵達、到達",
+      "exampleSentence": "After arrival, we looked for the hotel bus.",
+      "dateAdded": "2026-05-13",
+      "reviewCount": 4,
+      "nextReview": "2026-07-08",
+      "lastReviewedDate": "2026-06-08"
+    },
+    {
+      "word": "shuttle",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "接駁車",
+      "exampleSentence": "The hotel shuttle comes every thirty minutes.",
+      "dateAdded": "2026-05-13",
+      "reviewCount": 4,
+      "nextReview": "2026-07-08",
+      "lastReviewedDate": "2026-06-08"
+    },
+    {
+      "word": "lobby",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "大廳",
+      "exampleSentence": "Please wait in the hotel lobby.",
+      "dateAdded": "2026-05-13",
+      "reviewCount": 4,
+      "nextReview": "2026-07-08",
+      "lastReviewedDate": "2026-06-08"
+    },
+    {
+      "word": "app",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "應用程式、app",
+      "exampleSentence": "I check the train app before I leave work.",
+      "dateAdded": "2026-05-14",
+      "reviewCount": 4,
+      "nextReview": "2026-07-08",
+      "lastReviewedDate": "2026-06-08"
+    },
+    {
+      "word": "closed",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "關閉的、沒開的",
+      "exampleSentence": "The west door is closed today.",
+      "dateAdded": "2026-05-14",
+      "reviewCount": 4,
+      "nextReview": "2026-07-08",
+      "lastReviewedDate": "2026-06-08"
+    },
+    {
+      "word": "stairs",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "樓梯",
+      "exampleSentence": "Go down the stairs to the train.",
+      "dateAdded": "2026-05-14",
+      "reviewCount": 4,
+      "nextReview": "2026-07-08",
+      "lastReviewedDate": "2026-06-08"
+    },
+    {
+      "word": "hold",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "暫時保管、留放",
+      "exampleSentence": "Can you hold my bag until this evening?",
+      "dateAdded": "2026-05-15",
+      "reviewCount": 4,
+      "nextReview": "2026-07-12",
+      "lastReviewedDate": "2026-06-12"
+    },
+    {
+      "word": "tag",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "標籤、牌子",
+      "exampleSentence": "Please put this tag on your suitcase.",
+      "dateAdded": "2026-05-15",
+      "reviewCount": 4,
+      "nextReview": "2026-07-12",
+      "lastReviewedDate": "2026-06-12"
+    },
+    {
+      "word": "desk",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "櫃台、桌台",
+      "exampleSentence": "Ask the hotel desk if they can hold your bag.",
+      "dateAdded": "2026-05-15",
+      "reviewCount": 4,
+      "nextReview": "2026-07-12",
+      "lastReviewedDate": "2026-06-12"
+    },
+    {
+      "word": "package",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "包裹",
+      "exampleSentence": "I am here to pick up a package.",
+      "dateAdded": "2026-05-18",
+      "reviewCount": 4,
+      "nextReview": "2026-07-15",
+      "lastReviewedDate": "2026-06-15"
+    },
+    {
+      "word": "code",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "代碼、取貨碼",
+      "exampleSentence": "Please show the pickup code.",
+      "dateAdded": "2026-05-18",
+      "reviewCount": 4,
+      "nextReview": "2026-07-15",
+      "lastReviewedDate": "2026-06-15"
+    },
+    {
+      "word": "scan",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "掃描",
+      "exampleSentence": "Can you scan this code?",
+      "dateAdded": "2026-05-18",
+      "reviewCount": 4,
+      "nextReview": "2026-07-15",
+      "lastReviewedDate": "2026-06-15"
+    },
+    {
+      "word": "aisle",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "走道；走道側座位",
+      "exampleSentence": "I have an aisle seat near the back.",
+      "dateAdded": "2026-05-19",
+      "reviewCount": 4,
+      "nextReview": "2026-07-15",
+      "lastReviewedDate": "2026-06-15"
+    },
+    {
+      "word": "window",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "窗邊；窗戶",
+      "exampleSentence": "Can I change to a window seat?",
+      "dateAdded": "2026-05-19",
+      "reviewCount": 4,
+      "nextReview": "2026-07-15",
+      "lastReviewedDate": "2026-06-15"
+    },
+    {
+      "word": "row",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "排；一排座位",
+      "exampleSentence": "My seat is in row 21.",
+      "dateAdded": "2026-05-19",
+      "reviewCount": 4,
+      "nextReview": "2026-07-15",
+      "lastReviewedDate": "2026-06-15"
+    },
+    {
+      "word": "empty",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "空的；沒人在用的",
+      "exampleSentence": "This machine is empty now.",
+      "dateAdded": "2026-05-20",
+      "reviewCount": 4,
+      "nextReview": "2026-07-15",
+      "lastReviewedDate": "2026-06-15"
+    },
+    {
+      "word": "load",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "一次的洗衣量；一批衣物",
+      "exampleSentence": "I only have one small load today.",
+      "dateAdded": "2026-05-20",
+      "reviewCount": 4,
+      "nextReview": "2026-07-15",
+      "lastReviewedDate": "2026-06-15"
+    },
+    {
+      "word": "card",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "卡片；付款卡",
+      "exampleSentence": "Does this machine take a card?",
+      "dateAdded": "2026-05-20",
+      "reviewCount": 4,
+      "nextReview": "2026-07-15",
+      "lastReviewedDate": "2026-06-15"
+    },
+    {
+      "word": "track",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "月台；軌道",
+      "exampleSentence": "The airport train leaves from Track 4.",
+      "dateAdded": "2026-05-21",
+      "reviewCount": 4,
+      "nextReview": "2026-07-22",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "direct",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "直達的",
+      "exampleSentence": "We took a direct train to the airport.",
+      "dateAdded": "2026-05-21",
+      "reviewCount": 4,
+      "nextReview": "2026-07-22",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "full",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "已滿的；沒有空位的",
+      "exampleSentence": "The lockers are full today.",
+      "dateAdded": "2026-05-21",
+      "reviewCount": 4,
+      "nextReview": "2026-07-22",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "coupon",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "優惠券",
+      "exampleSentence": "Can I use this coupon?",
+      "dateAdded": "2026-05-25",
+      "reviewCount": 4,
+      "nextReview": "2026-07-22",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "cashier",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "收銀員",
+      "exampleSentence": "The cashier smiles and asks, \"Are you ready?\"",
+      "dateAdded": "2026-05-25",
+      "reviewCount": 4,
+      "nextReview": "2026-07-22",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "total",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "總金額、總數",
+      "exampleSentence": "The total is 90 dollars.",
+      "dateAdded": "2026-05-25",
+      "reviewCount": 4,
+      "nextReview": "2026-07-22",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "breakfast",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "早餐",
+      "exampleSentence": "Breakfast is on Floor 2.",
+      "dateAdded": "2026-05-26",
+      "reviewCount": 4,
+      "nextReview": "2026-07-22",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "confirm",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "確認",
+      "exampleSentence": "Could you confirm the breakfast time?",
+      "dateAdded": "2026-05-26",
+      "reviewCount": 4,
+      "nextReview": "2026-07-22",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "floor",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "樓層",
+      "exampleSentence": "The breakfast room is on Floor 2.",
+      "dateAdded": "2026-05-26",
+      "reviewCount": 4,
+      "nextReview": "2026-07-22",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "checkout",
+      "partOfSpeech": "n./v.",
+      "chineseMeaning": "結帳區；結帳",
+      "exampleSentence": "The checkout near the door is fast.",
+      "dateAdded": "2026-05-27",
+      "reviewCount": 4,
+      "nextReview": "2026-07-22",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "price",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "價格",
+      "exampleSentence": "I check the price before I pay.",
+      "dateAdded": "2026-05-27",
+      "reviewCount": 4,
+      "nextReview": "2026-07-22",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "wallet",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "錢包",
+      "exampleSentence": "I keep my card in my wallet.",
+      "dateAdded": "2026-05-27",
+      "reviewCount": 4,
+      "nextReview": "2026-07-22",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "subway",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "地鐵",
+      "exampleSentence": "The subway is fast in this city.",
+      "dateAdded": "2026-05-28",
+      "reviewCount": 4,
+      "nextReview": "2026-07-22",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "exit",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "出口",
+      "exampleSentence": "Exit A is near the bus stop.",
+      "dateAdded": "2026-05-28",
+      "reviewCount": 4,
+      "nextReview": "2026-07-22",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "escalator",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "手扶梯",
+      "exampleSentence": "Take the escalator to the street level.",
+      "dateAdded": "2026-05-28",
+      "reviewCount": 4,
+      "nextReview": "2026-07-22",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "special",
+      "partOfSpeech": "n./adj.",
+      "chineseMeaning": "特餐；特別的",
+      "exampleSentence": "The lunch special is cheap today.",
+      "dateAdded": "2026-05-29",
+      "reviewCount": 5,
+      "nextReview": "2026-08-28",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "spicy",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "辣的",
+      "exampleSentence": "This soup is spicy but very good.",
+      "dateAdded": "2026-05-29",
+      "reviewCount": 5,
+      "nextReview": "2026-08-28",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "mild",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "不辣的；溫和的",
+      "exampleSentence": "I want a mild curry today.",
+      "dateAdded": "2026-05-29",
+      "reviewCount": 5,
+      "nextReview": "2026-08-28",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "change",
+      "partOfSpeech": "n./v.",
+      "chineseMeaning": "變更；改變",
+      "exampleSentence": "The gate change is on the screen.",
+      "dateAdded": "2026-06-01",
+      "reviewCount": 5,
+      "nextReview": "2026-08-28",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "wrong",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "錯的；不對的",
+      "exampleSentence": "This is the wrong line for the airport.",
+      "dateAdded": "2026-06-01",
+      "reviewCount": 5,
+      "nextReview": "2026-08-28",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "late",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "晚的；延誤的",
+      "exampleSentence": "The bus is late this morning.",
+      "dateAdded": "2026-06-01",
+      "reviewCount": 5,
+      "nextReview": "2026-08-28",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "message",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "訊息",
+      "exampleSentence": "I got a message from the store today.",
+      "dateAdded": "2026-06-02",
+      "reviewCount": 4,
+      "nextReview": "2026-07-29",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "busy",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "忙碌的",
+      "exampleSentence": "The cafe is busy at lunch time.",
+      "dateAdded": "2026-06-02",
+      "reviewCount": 4,
+      "nextReview": "2026-07-29",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "minute",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "分鐘",
+      "exampleSentence": "The bus stop is five minutes from here.",
+      "dateAdded": "2026-06-02",
+      "reviewCount": 4,
+      "nextReview": "2026-07-29",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "bay",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "乘車區；月台區",
+      "exampleSentence": "Wait at Bay 12 for the airport bus.",
+      "dateAdded": "2026-06-03",
+      "reviewCount": 3,
+      "nextReview": "2026-07-06",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "express",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "直達的；快速的",
+      "exampleSentence": "This is the express train to the city.",
+      "dateAdded": "2026-06-03",
+      "reviewCount": 4,
+      "nextReview": "2026-07-29",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "staff",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "工作人員",
+      "exampleSentence": "The station staff can help you.",
+      "dateAdded": "2026-06-03",
+      "reviewCount": 4,
+      "nextReview": "2026-07-29",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "ready",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "準備好的；可取的",
+      "exampleSentence": "Your food is ready now.",
+      "dateAdded": "2026-06-04",
+      "reviewCount": 4,
+      "nextReview": "2026-07-29",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "queue",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "排隊隊伍",
+      "exampleSentence": "Please wait in the queue near the window.",
+      "dateAdded": "2026-06-04",
+      "reviewCount": 3,
+      "nextReview": "2026-07-06",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "section",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "區域；區段",
+      "exampleSentence": "Pickup orders are in Section B.",
+      "dateAdded": "2026-06-04",
+      "reviewCount": 3,
+      "nextReview": "2026-07-06",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "claim",
+      "partOfSpeech": "n./v.",
+      "chineseMeaning": "領取；提領處",
+      "exampleSentence": "Go to baggage claim after the flight.",
+      "dateAdded": "2026-06-05",
+      "reviewCount": 3,
+      "nextReview": "2026-07-06",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "belt",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "輸送帶；行李轉盤",
+      "exampleSentence": "Our bags are on Belt 8.",
+      "dateAdded": "2026-06-05",
+      "reviewCount": 3,
+      "nextReview": "2026-07-06",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "hall",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "大廳",
+      "exampleSentence": "Please wait in the arrivals hall.",
+      "dateAdded": "2026-06-05",
+      "reviewCount": 3,
+      "nextReview": "2026-07-06",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "reload",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "儲值；重新加值",
+      "exampleSentence": "I need to reload my bus card.",
+      "dateAdded": "2026-06-08",
+      "reviewCount": 3,
+      "nextReview": "2026-07-06",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "balance",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "餘額",
+      "exampleSentence": "The balance is 30 dollars now.",
+      "dateAdded": "2026-06-08",
+      "reviewCount": 3,
+      "nextReview": "2026-07-06",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "payment",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "付款；付款方式",
+      "exampleSentence": "Select your payment on the screen.",
+      "dateAdded": "2026-06-08",
+      "reviewCount": 3,
+      "nextReview": "2026-07-06",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "terminal",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "航廈；總站",
+      "exampleSentence": "Terminal 2 is for many international flights.",
+      "dateAdded": "2026-06-09",
+      "reviewCount": 3,
+      "nextReview": "2026-07-06",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "zone",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "區域",
+      "exampleSentence": "Please wait in Zone B for the shuttle.",
+      "dateAdded": "2026-06-09",
+      "reviewCount": 3,
+      "nextReview": "2026-07-06",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "direction",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "方向；指示",
+      "exampleSentence": "Check the direction on the sign first.",
+      "dateAdded": "2026-06-09",
+      "reviewCount": 3,
+      "nextReview": "2026-07-06",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "combo",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "套餐組合",
+      "exampleSentence": "This combo comes with a drink.",
+      "dateAdded": "2026-06-10",
+      "reviewCount": 3,
+      "nextReview": "2026-07-06",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "sauce",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "醬料",
+      "exampleSentence": "The sauce is on the table.",
+      "dateAdded": "2026-06-10",
+      "reviewCount": 3,
+      "nextReview": "2026-07-06",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "allergy",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "過敏",
+      "exampleSentence": "Please tell us about any allergy.",
+      "dateAdded": "2026-06-10",
+      "reviewCount": 3,
+      "nextReview": "2026-07-06",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "passport control",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "護照查驗",
+      "exampleSentence": "Passport control is next to baggage claim.",
+      "dateAdded": "2026-06-12",
+      "reviewCount": 3,
+      "nextReview": "2026-07-13",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "visa",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "簽證",
+      "exampleSentence": "Do I need a visa for this trip?",
+      "dateAdded": "2026-06-12",
+      "reviewCount": 3,
+      "nextReview": "2026-07-13",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "stamp",
+      "partOfSpeech": "n./v.",
+      "chineseMeaning": "印章；蓋章",
+      "exampleSentence": "The officer puts a stamp in my passport.",
+      "dateAdded": "2026-06-12",
+      "reviewCount": 3,
+      "nextReview": "2026-07-13",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "Wi-Fi code",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "Wi-Fi 密碼",
+      "exampleSentence": "Please ask the staff for the Wi-Fi code.",
+      "dateAdded": "2026-06-15",
+      "reviewCount": 3,
+      "nextReview": "2026-07-13",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "outlet",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "插座",
+      "exampleSentence": "This outlet is under the table.",
+      "dateAdded": "2026-06-15",
+      "reviewCount": 3,
+      "nextReview": "2026-07-13",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "refill",
+      "partOfSpeech": "n./v.",
+      "chineseMeaning": "續杯；續加",
+      "exampleSentence": "This shop does not offer free refill.",
+      "dateAdded": "2026-06-15",
+      "reviewCount": 3,
+      "nextReview": "2026-07-13",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "bottom",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "底部、最下面",
+      "exampleSentence": "The note is at the bottom of the receipt.",
+      "dateAdded": "2026-06-16",
+      "reviewCount": 3,
+      "nextReview": "2026-07-13",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "printed",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "印出來的、印刷的",
+      "exampleSentence": "A printed message is on the ticket.",
+      "dateAdded": "2026-06-16",
+      "reviewCount": 3,
+      "nextReview": "2026-07-13",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "warning",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "警告、提醒",
+      "exampleSentence": "The sign is a warning for drivers.",
+      "dateAdded": "2026-06-16",
+      "reviewCount": 3,
+      "nextReview": "2026-07-13",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "listed",
+      "partOfSpeech": "adj./v.",
+      "chineseMeaning": "列出的；被標示為",
+      "exampleSentence": "The bus is listed on the app.",
+      "dateAdded": "2026-06-17",
+      "reviewCount": 3,
+      "nextReview": "2026-07-13",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "nearby",
+      "partOfSpeech": "adj./adv.",
+      "chineseMeaning": "附近的；在附近",
+      "exampleSentence": "There is a nearby stop by the bank.",
+      "dateAdded": "2026-06-17",
+      "reviewCount": 3,
+      "nextReview": "2026-07-16",
+      "lastReviewedDate": "2026-07-02"
+    },
+    {
+      "word": "block",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "街區",
+      "exampleSentence": "The cafe is one block from the station.",
+      "dateAdded": "2026-06-17",
+      "reviewCount": 3,
+      "nextReview": "2026-07-16",
+      "lastReviewedDate": "2026-07-02"
+    },
+    {
+      "word": "front",
+      "partOfSpeech": "n./adj.",
+      "chineseMeaning": "前面；前方的",
+      "exampleSentence": "Please get on from the front door.",
+      "dateAdded": "2026-06-22",
+      "reviewCount": 3,
+      "nextReview": "2026-07-13",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "saved",
+      "partOfSpeech": "adj./v.",
+      "chineseMeaning": "保留的；被留著的",
+      "exampleSentence": "This seat is saved for an older passenger.",
+      "dateAdded": "2026-06-22",
+      "reviewCount": 3,
+      "nextReview": "2026-07-13",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "ride",
+      "partOfSpeech": "n./v.",
+      "chineseMeaning": "車程；搭乘",
+      "exampleSentence": "This ride to the station takes ten minutes.",
+      "dateAdded": "2026-06-22",
+      "reviewCount": 3,
+      "nextReview": "2026-07-13",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "search",
+      "partOfSpeech": "v./n.",
+      "chineseMeaning": "搜尋；查找",
+      "exampleSentence": "I search the route name on my phone.",
+      "dateAdded": "2026-06-23",
+      "reviewCount": 2,
+      "nextReview": "2026-07-06",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "post",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "貼文",
+      "exampleSentence": "She found a local post about the bus line.",
+      "dateAdded": "2026-06-23",
+      "reviewCount": 2,
+      "nextReview": "2026-07-06",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "title",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "標題",
+      "exampleSentence": "The title changed while Mina was reading.",
+      "dateAdded": "2026-06-23",
+      "reviewCount": 2,
+      "nextReview": "2026-07-06",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "arrow",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "箭頭",
+      "exampleSentence": "A blue arrow pointed to the side street.",
+      "dateAdded": "2026-06-24",
+      "reviewCount": 2,
+      "nextReview": "2026-07-06",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "poster",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "海報",
+      "exampleSentence": "A wet poster was on the stop sign.",
+      "dateAdded": "2026-06-24",
+      "reviewCount": 2,
+      "nextReview": "2026-07-06",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "photo",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "照片",
+      "exampleSentence": "The old photo showed the same bus stop.",
+      "dateAdded": "2026-06-24",
+      "reviewCount": 2,
+      "nextReview": "2026-07-06",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "locked",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "上鎖的",
+      "exampleSentence": "The old gate was locked.",
+      "dateAdded": "2026-06-25",
+      "reviewCount": 2,
+      "nextReview": "2026-07-06",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "hallway",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "走廊",
+      "exampleSentence": "A dim hallway was behind the gate.",
+      "dateAdded": "2026-06-25",
+      "reviewCount": 2,
+      "nextReview": "2026-07-06",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "basement",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "地下室",
+      "exampleSentence": "The stairs went down to the basement.",
+      "dateAdded": "2026-06-25",
+      "reviewCount": 2,
+      "nextReview": "2026-07-06",
+      "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "storage",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "儲藏室",
+      "exampleSentence": "The old room looked like a storage area.",
+      "dateAdded": "2026-06-26",
+      "reviewCount": 2,
+      "nextReview": "2026-07-09",
+      "lastReviewedDate": "2026-07-02"
+    },
+    {
+      "word": "folder",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "資料夾",
+      "exampleSentence": "A blue folder was on the desk.",
+      "dateAdded": "2026-06-26",
+      "reviewCount": 2,
+      "nextReview": "2026-07-09",
+      "lastReviewedDate": "2026-07-02"
+    },
+    {
+      "word": "record",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "紀錄、檔案",
+      "exampleSentence": "The record showed the last bus time.",
+      "dateAdded": "2026-06-26",
+      "reviewCount": 2,
+      "nextReview": "2026-07-09",
+      "lastReviewedDate": "2026-07-02"
+    },
+    {
+      "word": "result",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "結果；搜尋結果",
+      "exampleSentence": "The first result showed a local bus forum.",
+      "dateAdded": "2026-06-29",
+      "reviewCount": 2,
+      "nextReview": "2026-07-10",
+      "lastReviewedDate": "2026-07-03"
+    },
+    {
+      "word": "history",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "歷史；過往紀錄",
+      "exampleSentence": "Check the route history before you go.",
+      "dateAdded": "2026-06-29",
+      "reviewCount": 2,
+      "nextReview": "2026-07-10",
+      "lastReviewedDate": "2026-07-03"
+    },
+    {
+      "word": "match",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "相符；符合",
+      "exampleSentence": "The number did not match the record.",
+      "dateAdded": "2026-06-29",
+      "reviewCount": 2,
+      "nextReview": "2026-07-10",
+      "lastReviewedDate": "2026-07-03"
+    },
+    {
+      "word": "paper",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "紙；紙張",
+      "exampleSentence": "The ticket was made of thin paper.",
+      "dateAdded": "2026-06-30",
+      "reviewCount": 1,
+      "nextReview": "2026-07-04",
+      "lastReviewedDate": "2026-07-01"
+    },
+    {
+      "word": "date",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "日期",
+      "exampleSentence": "The date on the ticket was tomorrow.",
+      "dateAdded": "2026-06-30",
+      "reviewCount": 1,
+      "nextReview": "2026-07-04",
+      "lastReviewedDate": "2026-07-01"
+    },
+    {
+      "word": "tomorrow",
+      "partOfSpeech": "adv./n.",
+      "chineseMeaning": "明天",
+      "exampleSentence": "The bus ticket was for tomorrow.",
+      "dateAdded": "2026-06-30",
+      "reviewCount": 1,
+      "nextReview": "2026-07-04",
+      "lastReviewedDate": "2026-07-01"
+    },
+    {
+      "word": "voice",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "聲音；嗓音",
+      "exampleSentence": "The driver had a calm voice.",
+      "dateAdded": "2026-07-01",
+      "reviewCount": 1,
+      "nextReview": "2026-07-05",
+      "lastReviewedDate": "2026-07-02"
+    },
+    {
+      "word": "inside",
+      "partOfSpeech": "adv./prep.",
+      "chineseMeaning": "裡面；在裡面",
+      "exampleSentence": "Mina stayed inside the gate.",
+      "dateAdded": "2026-07-01",
+      "reviewCount": 1,
+      "nextReview": "2026-07-05",
+      "lastReviewedDate": "2026-07-02"
+    },
+    {
+      "word": "outside",
+      "partOfSpeech": "adv./prep.",
+      "chineseMeaning": "外面；在外面",
+      "exampleSentence": "The blue bus was waiting outside.",
+      "dateAdded": "2026-07-01",
+      "reviewCount": 1,
+      "nextReview": "2026-07-05",
+      "lastReviewedDate": "2026-07-02"
+    },
+    {
+      "word": "truth",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "真相；實情",
+      "exampleSentence": "Mina wanted to hear the truth.",
+      "dateAdded": "2026-07-02",
+      "reviewCount": 1,
+      "nextReview": "2026-07-06",
+      "lastReviewedDate": "2026-07-03"
+    },
+    {
+      "word": "alone",
+      "partOfSpeech": "adj./adv.",
+      "chineseMeaning": "單獨的；獨自地",
+      "exampleSentence": "The driver said Mina should not ride alone.",
+      "dateAdded": "2026-07-02",
+      "reviewCount": 1,
+      "nextReview": "2026-07-06",
+      "lastReviewedDate": "2026-07-03"
+    },
+    {
+      "word": "early",
+      "partOfSpeech": "adj./adv.",
+      "chineseMeaning": "提早的；提早地",
+      "exampleSentence": "Mina came one day early.",
+      "dateAdded": "2026-07-02",
+      "reviewCount": 1,
+      "nextReview": "2026-07-06",
+      "lastReviewedDate": "2026-07-03"
+    },
+    {
+      "word": "speaker",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "喇叭；揚聲器",
+      "exampleSentence": "The voice came from the phone speaker.",
+      "dateAdded": "2026-07-03",
+      "reviewCount": 0,
+      "nextReview": "2026-07-04",
+      "lastReviewedDate": "2026-07-03"
+    },
+    {
+      "word": "folded",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "摺起來的",
+      "exampleSentence": "A folded map fell from the back pocket.",
+      "dateAdded": "2026-07-03",
+      "reviewCount": 0,
+      "nextReview": "2026-07-04",
+      "lastReviewedDate": "2026-07-03"
+    },
+    {
+      "word": "circle",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "圓圈；圈記",
+      "exampleSentence": "A red circle marked Seat 12.",
+      "dateAdded": "2026-07-03",
+      "reviewCount": 0,
+      "nextReview": "2026-07-04",
+      "lastReviewedDate": "2026-07-03"
+    },
+    {
+      "word": "option",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "選項",
+      "exampleSentence": "The screen gave two options for Route 8:10.",
+      "dateAdded": "2026-07-03",
+      "reviewCount": 0,
+      "nextReview": "2026-07-04",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "compare",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "比較、對照",
+      "exampleSentence": "Mina used the map to compare the stop names.",
+      "dateAdded": "2026-07-03",
+      "reviewCount": 0,
+      "nextReview": "2026-07-04",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "decide",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "決定",
+      "exampleSentence": "She decided to wait and check again.",
+      "dateAdded": "2026-07-03",
+      "reviewCount": 0,
+      "nextReview": "2026-07-04",
+      "lastReviewedDate": null
+    }
+  ]
+}

@@ -33,6 +33,7 @@ cd "$PROJECT_ROOT"
 ### Step 1：讀取現有資料
 - 讀取 `./profile.json`（取得程度、學習天數、上次主題）
 - 讀取 `./vocabulary/learning.json`（取得已學單字，避免重複）
+- 讀取 `./vocabulary/ket_pool.json`（KET 詞庫池，今日新字優先來源）
 - 若正式內容採連載小說模式，另讀取：
   - `.ai/serial-story/SERIES_BIBLE.md`
   - `.ai/serial-story/SEASON_1_OUTLINE.md`
@@ -64,6 +65,7 @@ mkdir -p ./daily/$TODAY
 - **題材選擇**：`daily` 優先外出互動、資訊取得、流程判斷；避免再次落回房間整理、清潔、低回報居家物件。
 - **難度控制**：保持 A2，句子短、字彙高頻、自然口語；寧可更簡單，也不要為了題材或單字變難。
 - **必要產物**：必須產出完整 HTML、`article.mp3`、`s01.mp3` 到 `sNN.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`。
+- **詞庫模式（混合）**：今日 3 個新單字優先從 `vocabulary/ket_pool.json` 選；若 KET 候選不足，再回退到原本高頻生活字策略。
 
 ---
 
@@ -124,6 +126,12 @@ mkdir -p ./daily/$TODAY
 
 #### 3b. 學習單字（3 個）
 - 不能與 learning.json 中已有的重複
+- 採用「混合模式」選詞順序：
+  1. 先從 `vocabulary/ket_pool.json` 挑選 3 個「尚未出現在 learning.json」且適合今日情境的詞
+  2. 若可用 KET 詞不足 3 個，再用原本高頻生活字策略補足
+- 若同時有多個 KET 候選，優先：
+  - 與今日文章任務直接相關（交通、問路、時間、地點、流程、購物、服務互動）
+  - A2 常見且可口說/可辨識的詞
 - 優先選「今天或近期真的用得到」的高頻生活字，不要選過度書面、偏冷門、只適用單一情境的字
 - 單字應能直接支援文章主情境，讓學習者讀完就能拿去開口或辨識
 - 若今天題材偏旅行 / 查資料，單字應優先選對應的高頻辨識詞，例如地點、時間、價格、步驟、票務、指示、畫面文字，而不是低回報居家物件
@@ -519,7 +527,13 @@ mkdir -p ./daily/$TODAY
     -->
     [REVIEW_QUIZ_HTML]
     <div id="rq-result" style="display:none"></div>
-    <button id="rq-submit-btn" onclick="submitReviewQuiz()">提交答案 &amp; 同步 SRS 記錄</button>
+    <button id="rq-submit-btn" onclick="submitReviewQuiz()">提交答案 &amp; 保存 SRS 記錄</button>
+    <div id="repo-target-hint" class="review-msg" style="padding:.7rem 0 .1rem; font-size:.86rem;"></div>
+    <button id="repo-target-edit-btn" class="answers-btn" style="margin-top:.6rem;" onclick="editRepoTarget()">修改同步目標倉庫</button>
+    <button id="local-export-btn" class="answers-btn" style="margin-top:.6rem; display:none;" onclick="exportLocalLearningJson()">匯出本地 learning.json</button>
+    <button id="local-import-btn" class="answers-btn" style="margin-top:.6rem; display:none;" onclick="importLocalLearningJson()">匯入本地 learning.json</button>
+    <input id="local-import-input" type="file" accept="application/json,.json" style="display:none" onchange="handleLocalLearningImport(event)" />
+    <div id="local-store-info" class="review-msg" style="padding:.6rem 0 0; font-size:.84rem; display:none;"></div>
   </div>
 
   <div class="card">
@@ -595,6 +609,7 @@ mkdir -p ./daily/$TODAY
   </div>
 
 </div>
+<script src="https://cdn.jsdelivr.net/npm/opencc-js@1.4.0/dist/umd/full.js"></script>
 <script>
   function getAssetBasePath() {
     const path = window.location.pathname;
@@ -605,6 +620,144 @@ mkdir -p ./daily/$TODAY
 
   function buildAssetUrl(filename) {
     return getAssetBasePath() + filename;
+  }
+
+  const REVIEW_SYNC_MODE = localStorage.getItem('review_sync_mode') || 'local';
+  const LOCAL_LEARNING_KEY = 'learning_json_local';
+  const ZH_SCRIPT_MODE = localStorage.getItem('zh_script_mode') || 'simplified';
+  let zhConverter = null;
+
+  function ensureZhConverter() {
+    if (zhConverter) return zhConverter;
+    if (window.OpenCC && typeof window.OpenCC.Converter === 'function') {
+      zhConverter = window.OpenCC.Converter({ from: 'tw', to: 'cn' });
+    }
+    return zhConverter;
+  }
+
+  function toSimplifiedText(text) {
+    if (typeof text !== 'string' || ZH_SCRIPT_MODE !== 'simplified') return text;
+    const converter = ensureZhConverter();
+    return converter ? converter(text) : text;
+  }
+
+  function convertElementToSimplified(root) {
+    if (ZH_SCRIPT_MODE !== 'simplified') return;
+    const converter = ensureZhConverter();
+    if (!converter || !root) return;
+
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    const nodes = [];
+    let node;
+    while ((node = walker.nextNode())) {
+      const parent = node.parentElement;
+      if (!parent) continue;
+      if (['SCRIPT', 'STYLE'].includes(parent.tagName)) continue;
+      if (/[\u4e00-\u9fff]/.test(node.nodeValue || '')) nodes.push(node);
+    }
+    nodes.forEach(n => {
+      n.nodeValue = converter(n.nodeValue);
+    });
+
+    if (root.querySelectorAll) {
+      root.querySelectorAll('[title], [placeholder], [aria-label]').forEach(el => {
+        ['title', 'placeholder', 'aria-label'].forEach(attr => {
+          const val = el.getAttribute(attr);
+          if (val && /[\u4e00-\u9fff]/.test(val)) {
+            el.setAttribute(attr, converter(val));
+          }
+        });
+      });
+    }
+  }
+
+  function applySimplifiedChinese() {
+    if (ZH_SCRIPT_MODE !== 'simplified') return;
+    convertElementToSimplified(document.body);
+    document.title = toSimplifiedText(document.title);
+  }
+
+  function getLearningJsonUrl() {
+    return new URL('../../vocabulary/learning.json', window.location.href).href;
+  }
+
+  async function loadLocalLearningJson() {
+    const cached = localStorage.getItem(LOCAL_LEARNING_KEY);
+    if (cached) return JSON.parse(cached);
+    const resp = await fetch(getLearningJsonUrl(), { cache: 'no-store' });
+    if (!resp.ok) throw new Error('讀取本地 learning.json 失敗 (' + resp.status + ')');
+    const json = await resp.json();
+    localStorage.setItem(LOCAL_LEARNING_KEY, JSON.stringify(json));
+    return json;
+  }
+
+  function saveLocalLearningJson(vocab) {
+    localStorage.setItem(LOCAL_LEARNING_KEY, JSON.stringify(vocab));
+  }
+
+  async function refreshLocalStoreInfo() {
+    const el = document.getElementById('local-store-info');
+    if (!el) return;
+    if (REVIEW_SYNC_MODE !== 'local') {
+      el.style.display = 'none';
+      return;
+    }
+    try {
+      const vocab = await loadLocalLearningJson();
+      const count = Array.isArray(vocab.words) ? vocab.words.length : 0;
+      el.textContent = '本機 learning.json：' + count + ' 個單字';
+      el.style.display = 'block';
+    } catch (err) {
+      el.textContent = '本機 learning.json 讀取失敗：' + err.message;
+      el.style.display = 'block';
+    }
+  }
+
+  function exportLocalLearningJson() {
+    const raw = localStorage.getItem(LOCAL_LEARNING_KEY);
+    if (!raw) {
+      alert('目前沒有可匯出的本地 learning.json');
+      return;
+    }
+    const blob = new Blob([raw], { type: 'application/json;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'learning.local.json';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
+  }
+
+  function importLocalLearningJson() {
+    const input = document.getElementById('local-import-input');
+    if (!input) return;
+    input.value = '';
+    input.click();
+  }
+
+  function handleLocalLearningImport(event) {
+    const file = event.target.files && event.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = () => {
+      try {
+        const parsed = JSON.parse(String(reader.result || ''));
+        if (!parsed || !Array.isArray(parsed.words)) {
+          throw new Error('格式錯誤：需要包含 words 陣列');
+        }
+        localStorage.setItem(LOCAL_LEARNING_KEY, JSON.stringify(parsed));
+        refreshLocalStoreInfo();
+        alert('已匯入本地 learning.json（' + parsed.words.length + ' 個單字）');
+      } catch (err) {
+        alert('匯入失敗：' + err.message);
+      }
+    };
+    reader.onerror = () => {
+      alert('匯入失敗：檔案讀取錯誤');
+    };
+    reader.readAsText(file, 'utf-8');
   }
 
   // Sentence-by-sentence playback
@@ -682,6 +835,30 @@ mkdir -p ./daily/$TODAY
     btn.classList.add('selected');
   }
 
+  function getRepoTarget() {
+    const owner = localStorage.getItem('github_repo_owner') || 'CarryJone';
+    const repo = localStorage.getItem('github_repo_name') || 'english-learning';
+    return { owner, repo };
+  }
+
+  function refreshRepoTargetHint() {
+    const el = document.getElementById('repo-target-hint');
+    if (!el) return;
+    const target = getRepoTarget();
+    el.textContent = '目前同步目標：' + target.owner + '/' + target.repo;
+  }
+
+  function editRepoTarget() {
+    const current = getRepoTarget();
+    const ownerInput = prompt('GitHub repo owner（你的帳號）', current.owner);
+    if (!ownerInput) return;
+    const repoInput = prompt('GitHub repo name', current.repo);
+    if (!repoInput) return;
+    localStorage.setItem('github_repo_owner', ownerInput.trim());
+    localStorage.setItem('github_repo_name', repoInput.trim());
+    refreshRepoTargetHint();
+  }
+
   async function submitReviewQuiz() {
     const items = document.querySelectorAll('.rq-item');
     if (!items.length) return;
@@ -695,6 +872,12 @@ mkdir -p ./daily/$TODAY
       results.push({ word: item.dataset.word, correct: sel.dataset.val === item.dataset.correct });
     });
     if (!allAnswered) { alert('請先回答所有題目！'); return; }
+
+    const selectedByWord = {};
+    items.forEach(item => {
+      const sel = item.querySelector('.rq-opt.selected');
+      if (sel) selectedByWord[item.dataset.word] = sel.dataset.val;
+    });
 
     // Show correct/wrong on each question
     items.forEach(item => {
@@ -716,31 +899,126 @@ mkdir -p ./daily/$TODAY
     // Extra practice protection: already submitted today
     if (localStorage.getItem(storageKey)) {
       resultEl.innerHTML = '✅ 今天已完成複習（額外練習）：' + score + '/' + results.length + ' 題答對，SRS 未更新';
+      convertElementToSimplified(resultEl);
       resultEl.className = 'success';
       resultEl.style.display = 'block';
       submitBtn.textContent = '已完成'; submitBtn.disabled = true;
       return;
     }
 
-    submitBtn.disabled = true; submitBtn.textContent = '同步中...';
+    submitBtn.disabled = true; submitBtn.textContent = '處理中...';
+
+    if (REVIEW_SYNC_MODE === 'local') {
+      try {
+        const vocab = await loadLocalLearningJson();
+        const SRS = [1, 3, 7, 14, 30, 60, 90];
+        for (const r of results) {
+          const w = vocab.words.find(x => x.word === r.word);
+          if (!w || w.lastReviewedDate === today) continue;
+          w.lastReviewedDate = today;
+          const next = new Date();
+          if (r.correct) {
+            w.reviewCount = (w.reviewCount || 0) + 1;
+            next.setDate(next.getDate() + (SRS[Math.min(w.reviewCount, SRS.length - 1)] || 90));
+          } else {
+            w.reviewCount = 0;
+            next.setDate(next.getDate() + 1);
+          }
+          w.nextReview = next.toISOString().slice(0, 10);
+        }
+        saveLocalLearningJson(vocab);
+        await refreshLocalStoreInfo();
+        localStorage.setItem(storageKey, '1');
+        resultEl.innerHTML = '🎉 複習完成！' + score + '/' + results.length + ' 題答對，已保存到本機（localStorage） ✅';
+        convertElementToSimplified(resultEl);
+        resultEl.className = (score === results.length) ? 'success' : 'partial';
+        resultEl.style.display = 'block';
+        submitBtn.textContent = '✅ 已保存（本機）';
+        return;
+      } catch (err) {
+        items.forEach(item => {
+          const prev = selectedByWord[item.dataset.word];
+          item.querySelectorAll('.rq-opt').forEach(b => {
+            b.removeAttribute('disabled');
+            b.classList.remove('correct', 'wrong', 'selected');
+            if (prev && b.dataset.val === prev) b.classList.add('selected');
+          });
+        });
+        submitBtn.disabled = false;
+        submitBtn.textContent = '提交答案 & 保存 SRS 記錄';
+        alert('本地保存失敗：' + err.message);
+        return;
+      }
+    }
 
     try {
-      // Get GitHub PAT from localStorage (prompt on first use)
-      let token = localStorage.getItem('github_pat');
-      if (!token) {
-        token = prompt('首次使用：請輸入 GitHub Personal Access Token（repo write 權限，儲存在本機）：');
-        if (!token) throw new Error('未提供 Token，無法同步');
-        localStorage.setItem('github_pat', token);
-      }
+      const readGitHubError = async (resp) => {
+        try {
+          const data = await resp.json();
+          if (!data || !data.message) return '';
+          if (!Array.isArray(data.errors) || !data.errors.length) return ' - ' + data.message;
+          const parts = data.errors.map(e => e && (e.message || e.code || JSON.stringify(e))).filter(Boolean);
+          return ' - ' + data.message + (parts.length ? ' | ' + parts.join('; ') : '');
+        } catch (_) {
+          return '';
+        }
+      };
 
-      const owner = 'CarryJone', repo = 'english-learning', filePath = 'vocabulary/learning.json';
-      const apiBase = 'https://api.github.com/repos/' + owner + '/' + repo + '/contents/' + filePath;
+      // Get GitHub PAT from localStorage (reprompt on auth failure)
+      const askToken = () => {
+        const t = prompt('請輸入 GitHub Personal Access Token（repo write 權限，儲存在本機）：');
+        if (!t) throw new Error('未提供 Token，無法同步');
+        const trimmed = t.trim();
+        localStorage.setItem('github_pat', trimmed);
+        return trimmed;
+      };
+
+      let token = localStorage.getItem('github_pat');
+      if (!token) token = askToken();
+
+      const askRepoConfig = () => {
+        const current = getRepoTarget();
+        const ownerInput = prompt('GitHub repo owner（你的帳號）', current.owner);
+        if (!ownerInput) throw new Error('未提供 repo owner，無法同步');
+        const repoInput = prompt('GitHub repo name', current.repo);
+        if (!repoInput) throw new Error('未提供 repo name，無法同步');
+        const owner = ownerInput.trim();
+        const repo = repoInput.trim();
+        localStorage.setItem('github_repo_owner', owner);
+        localStorage.setItem('github_repo_name', repo);
+        refreshRepoTargetHint();
+        return { owner, repo };
+      };
+
+      let owner = localStorage.getItem('github_repo_owner') || 'CarryJone';
+      let repo = localStorage.getItem('github_repo_name') || 'english-learning';
+      const filePath = 'vocabulary/learning.json';
+      let apiBase = 'https://api.github.com/repos/' + owner + '/' + repo + '/contents/' + filePath;
 
       // Read current learning.json
-      const getResp = await fetch(apiBase, {
+      let getResp = await fetch(apiBase, {
         headers: { Authorization: 'token ' + token, Accept: 'application/vnd.github.v3+json' }
       });
-      if (!getResp.ok) throw new Error('讀取 learning.json 失敗 (' + getResp.status + ')');
+      if (getResp.status === 401 || getResp.status === 403) {
+        localStorage.removeItem('github_pat');
+        token = askToken();
+        getResp = await fetch(apiBase, {
+          headers: { Authorization: 'token ' + token, Accept: 'application/vnd.github.v3+json' }
+        });
+      }
+      if (getResp.status === 403 || getResp.status === 404) {
+        const repoCfg = askRepoConfig();
+        owner = repoCfg.owner;
+        repo = repoCfg.repo;
+        apiBase = 'https://api.github.com/repos/' + owner + '/' + repo + '/contents/' + filePath;
+        getResp = await fetch(apiBase, {
+          headers: { Authorization: 'token ' + token, Accept: 'application/vnd.github.v3+json' }
+        });
+      }
+      if (!getResp.ok) {
+        const detail = await readGitHubError(getResp);
+        throw new Error('讀取 learning.json 失敗 (' + getResp.status + ')' + detail);
+      }
       const fileData = await getResp.json();
       const sha = fileData.sha;
 
@@ -775,22 +1053,50 @@ mkdir -p ./daily/$TODAY
       newBytes.forEach(b => binary += String.fromCharCode(b));
       const encoded = btoa(binary);
 
-      const putResp = await fetch(apiBase, {
+      const putWithSha = (currentSha, currentToken) => fetch(apiBase, {
         method: 'PUT',
-        headers: { Authorization: 'token ' + token, 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: 'SRS update: review quiz ' + today, content: encoded, sha })
+        headers: { Authorization: 'token ' + currentToken, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: 'SRS update: review quiz ' + today, content: encoded, sha: currentSha })
       });
-      if (!putResp.ok) throw new Error('更新失敗 (' + putResp.status + ')');
+
+      let putResp = await putWithSha(sha, token);
+      if (putResp.status === 401 || putResp.status === 403) {
+        localStorage.removeItem('github_pat');
+        token = askToken();
+
+        const latestResp = await fetch(apiBase, {
+          headers: { Authorization: 'token ' + token, Accept: 'application/vnd.github.v3+json' }
+        });
+        if (!latestResp.ok) {
+          const detail = await readGitHubError(latestResp);
+          throw new Error('重新取得檔案失敗 (' + latestResp.status + ')' + detail);
+        }
+        const latestData = await latestResp.json();
+        putResp = await putWithSha(latestData.sha, token);
+      }
+      if (!putResp.ok) {
+        const detail = await readGitHubError(putResp);
+        throw new Error('更新失敗 (' + putResp.status + ')' + detail);
+      }
 
       localStorage.setItem(storageKey, '1');
       resultEl.innerHTML = '🎉 複習完成！' + score + '/' + results.length + ' 題答對，SRS 記錄已更新 ✅';
+      convertElementToSimplified(resultEl);
       resultEl.className = (score === results.length) ? 'success' : 'partial';
       resultEl.style.display = 'block';
       submitBtn.textContent = '✅ 已同步';
 
     } catch (err) {
+      items.forEach(item => {
+        const prev = selectedByWord[item.dataset.word];
+        item.querySelectorAll('.rq-opt').forEach(b => {
+          b.removeAttribute('disabled');
+          b.classList.remove('correct', 'wrong', 'selected');
+          if (prev && b.dataset.val === prev) b.classList.add('selected');
+        });
+      });
       submitBtn.disabled = false;
-      submitBtn.textContent = '提交答案 & 同步 SRS 記錄';
+      submitBtn.textContent = '提交答案 & 保存 SRS 記錄';
       alert('同步失敗：' + err.message);
     }
   }
@@ -804,10 +1110,33 @@ mkdir -p ./daily/$TODAY
     articleAudio.load();
 
     syncSentenceModeButtons();
+    refreshRepoTargetHint();
+    const repoHint = document.getElementById('repo-target-hint');
+    const repoEditBtn = document.getElementById('repo-target-edit-btn');
+    const localExportBtn = document.getElementById('local-export-btn');
+    const localImportBtn = document.getElementById('local-import-btn');
+    const localStoreInfo = document.getElementById('local-store-info');
+    if (REVIEW_SYNC_MODE === 'local') {
+      if (repoHint) repoHint.textContent = '当前模式：自动本地保存（无需 GitHub / 无需导入导出）';
+      if (repoEditBtn) repoEditBtn.style.display = 'none';
+      if (localExportBtn) localExportBtn.style.display = 'none';
+      if (localImportBtn) localImportBtn.style.display = 'none';
+      refreshLocalStoreInfo();
+      const submitBtn = document.getElementById('rq-submit-btn');
+      if (submitBtn) submitBtn.textContent = '提交答案 & 保存 SRS 記錄';
+    }
     if (!document.querySelector('.rq-item')) {
       const btn = document.getElementById('rq-submit-btn');
       if (btn) btn.style.display = 'none';
+      const editBtn = document.getElementById('repo-target-edit-btn');
+      if (editBtn) editBtn.style.display = 'none';
+      const exportBtn = document.getElementById('local-export-btn');
+      if (exportBtn) exportBtn.style.display = 'none';
+      const importBtn = document.getElementById('local-import-btn');
+      if (importBtn) importBtn.style.display = 'none';
+      if (localStoreInfo) localStoreInfo.style.display = 'none';
     }
+    applySimplifiedChinese();
   });
 
   // Loop playback toggle
@@ -876,8 +1205,10 @@ mkdir -p ./daily/$TODAY
         <div class="pop-zh" style="display:none">${ph.zh}</div>`;
     } else {
       popContent.innerHTML = `<div class="pop-word">${word}</div><div class="pop-loading">查詢中…</div>`;
-      fetchDef(key).then(html => { popContent.innerHTML = html; positionPopup(anchorEl); });
+      convertElementToSimplified(popContent);
+      fetchDef(key).then(html => { popContent.innerHTML = html; convertElementToSimplified(popContent); positionPopup(anchorEl); });
     }
+    convertElementToSimplified(popContent);
     popup.style.display = 'block';
     positionPopup(anchorEl);
   }

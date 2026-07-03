@@ -60,6 +60,9 @@
 - 正式內容規格：以
   `.ai/daily-english-learning/SKILL.md`
   為準。
+- 新字詞庫池：以
+  `vocabulary/ket_pool.json`
+  為優先來源（混合模式：KET 優先，不足再回退高頻生活字）。
 - 複習資料現況：以
   `vocabulary/learning.json`
   為準。
