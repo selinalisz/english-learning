@@ -7,7 +7,7 @@
 ## Current Status
 
 - Series: `The Blue Receipt`
-- Current episode: Episode 12, `The Blue Receipt · Episode 12`
+- Current episode: Episode 13, `The Blue Receipt · Episode 13`
 - Main mystery: unknown messages appear in everyday English text and warn Mina about the blue bus.
 - Current known facts:
   - Mina found a strange printed line at the bottom of her coffee receipt.
@@ -104,6 +104,20 @@
   - The empty seats did not match the voice Mina kept hearing.
   - The phone screen still showed route history and a saved name: `May Lin.`
   - The driver said: `The truth is on the map.`
+  - At 8:06, Mina stood between the blue bus and a gray bus at the gate.
+  - Mina's real-life mission was to choose the correct Route 8:10 bus.
+  - The phone and map both showed route history clues.
+  - A red warning told Mina to check history before 8:10.
+  - A second line said Seat 12 did not match Mina's name.
+  - Mina asked a worker: `Which bus goes to River Street?`
+  - The worker told Mina to check the screen first.
+  - The screen showed two options for Route 8:10.
+  - Mina compared stop names on the map and the screen.
+  - The names did not match the old result she saw before.
+  - Mina chose to wait for the safe option at 8:10.
+  - The blue bus screen changed to: `Mina, wrong side.`
+  - Lina sent a warning: `Do not trust the first screen.`
+  - Right after that, the two options on the screen switched places.
 
 ## Open Threads
 
@@ -247,6 +261,17 @@
 - Screen clue: the route history remains on the phone screen under the saved name `May Lin`.
 - Hook: the driver says the truth is on the map, so Mina must decide whether the map is warning her or leading her onto the bus.
 
+### 2026-07-03 — Episode 13: The Choice at 8:10
+
+- Location: gate area between the blue bus and a gray bus.
+- Real-life mission: choose the correct Route 8:10 bus.
+- Useful sentence: `Which bus goes to River Street?`
+- New clue on screen: `Check the history before 8:10.`
+- New clue on screen: `Seat 12 does not match your name.`
+- Mina compares map stop names with live screen options.
+- New contradiction: options switch places after Lina warns Mina not to trust the first screen.
+- Hook: Mina now must decide which screen version is real before 8:10.
+
 ## Next Episode Pointer
 
-Episode 13 should push Mina to compare the map, the bus, and Lina's view of the driver. The next step can reveal whether `M.L.` means May Lin, Mina Lin, or both, and why Seat 12 is marked before Mina ever arrived.
+Episode 14 should reveal which option is genuine at 8:10, and whether someone is actively editing the bus screen in real time to move Mina to Seat 12.

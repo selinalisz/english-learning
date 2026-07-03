@@ -2249,6 +2249,36 @@
       "reviewCount": 0,
       "nextReview": "2026-07-04",
       "lastReviewedDate": "2026-07-03"
+    },
+    {
+      "word": "option",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "選項",
+      "exampleSentence": "The screen gave two options for Route 8:10.",
+      "dateAdded": "2026-07-03",
+      "reviewCount": 0,
+      "nextReview": "2026-07-04",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "compare",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "比較、對照",
+      "exampleSentence": "Mina used the map to compare the stop names.",
+      "dateAdded": "2026-07-03",
+      "reviewCount": 0,
+      "nextReview": "2026-07-04",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "decide",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "決定",
+      "exampleSentence": "She decided to wait and check again.",
+      "dateAdded": "2026-07-03",
+      "reviewCount": 0,
+      "nextReview": "2026-07-04",
+      "lastReviewedDate": null
     }
   ]
 }
