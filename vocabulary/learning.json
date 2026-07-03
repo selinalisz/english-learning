@@ -2219,6 +2219,36 @@
       "reviewCount": 0,
       "nextReview": "2026-07-03",
       "lastReviewedDate": "2026-07-02"
+    },
+    {
+      "word": "speaker",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "喇叭；揚聲器",
+      "exampleSentence": "The voice came from the phone speaker.",
+      "dateAdded": "2026-07-03",
+      "reviewCount": 0,
+      "nextReview": "2026-07-04",
+      "lastReviewedDate": "2026-07-03"
+    },
+    {
+      "word": "folded",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "摺起來的",
+      "exampleSentence": "A folded map fell from the back pocket.",
+      "dateAdded": "2026-07-03",
+      "reviewCount": 0,
+      "nextReview": "2026-07-04",
+      "lastReviewedDate": "2026-07-03"
+    },
+    {
+      "word": "circle",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "圓圈；圈記",
+      "exampleSentence": "A red circle marked Seat 12.",
+      "dateAdded": "2026-07-03",
+      "reviewCount": 0,
+      "nextReview": "2026-07-04",
+      "lastReviewedDate": "2026-07-03"
     }
   ]
 }

@@ -7,7 +7,7 @@
 ## Current Status
 
 - Series: `The Blue Receipt`
-- Current episode: Episode 11, `The Blue Receipt · Episode 11`
+- Current episode: Episode 12, `The Blue Receipt · Episode 12`
 - Main mystery: unknown messages appear in everyday English text and warn Mina about the blue bus.
 - Current known facts:
   - Mina found a strange printed line at the bottom of her coffee receipt.
@@ -95,6 +95,15 @@
   - Mina looked toward the bus and saw it was empty inside.
   - Then Lina suddenly said someone was standing behind her.
   - A second voice warned Mina: `Do not get on.`
+  - The old phone in the drawer rang by itself after the warning.
+  - The second voice came from the phone speaker, not from behind Lina.
+  - Mina found a folded old map in the blue folder.
+  - A red circle marked Seat 12 on the map.
+  - The map showed the letters `M.L.` and also Mina's full name near the gate.
+  - Lina said the driver was inside the bus while the bus still looked empty to Mina.
+  - The empty seats did not match the voice Mina kept hearing.
+  - The phone screen still showed route history and a saved name: `May Lin.`
+  - The driver said: `The truth is on the map.`
 
 ## Open Threads
 
@@ -226,6 +235,18 @@
 - New visual clue: the bus looks empty inside even while the driver is nearby.
 - Hook: Lina hears someone behind her, and a second voice warns Mina not to get on.
 
+### 2026-07-03 — Episode 12: The Name on the Map
+
+- Location: gate area, blue folder, old phone, and the view toward the bus.
+- Small answer: the second warning voice comes from the old phone speaker.
+- Useful sentence: `Can I check the map first?`
+- New object clue: a folded old map falls from the folder.
+- Strong visual clue: a red circle marks Seat 12.
+- Identity clue: the map shows `M.L.` and also `Mina Lin`.
+- New contradiction: Lina says the driver is inside the bus, but Mina still sees empty seats.
+- Screen clue: the route history remains on the phone screen under the saved name `May Lin`.
+- Hook: the driver says the truth is on the map, so Mina must decide whether the map is warning her or leading her onto the bus.
+
 ## Next Episode Pointer
 
-Episode 12 should reveal who the second voice belongs to and whether Lina is seeing the same reality as Mina. The next step can also explain why the bus looks empty while the driver keeps speaking.
+Episode 13 should push Mina to compare the map, the bus, and Lina's view of the driver. The next step can reveal whether `M.L.` means May Lin, Mina Lin, or both, and why Seat 12 is marked before Mina ever arrived.

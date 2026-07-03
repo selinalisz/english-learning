@@ -308,3 +308,13 @@
 - Speaking Bridge 使用 `arrow`、`photo`、`poster`、`post`。
 - 補齊 `article.mp3` 與 `s01.mp3` 到 `s22.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
 - 驗證：句子編號連續、22 個單句音檔存在、本機 HTTP 200。
+
+## 2026-07-03 — Day 70 正式教材產出
+
+- 先 `git fetch origin`，發現遠端有新的 SRS 提交 `601d261`，再 `git pull --rebase origin main` 同步最新 `vocabulary/learning.json`。
+- 延續 serial story continuity，新增 `daily/2026-07-03/`，標題為 `The Blue Receipt · Episode 12`。
+- 今日新字：`speaker`、`folded`、`circle`；文章融入複習字：`match`、`history`、`truth`。
+- Review Quiz / Review Words 依最新 `learning.json` 生成，共納入 6 個到期複習字。
+- Speaking Bridge 使用 `history`、`match`、`result`、`date`。
+- 補齊 `article.mp3` 與 `s01.mp3` 到 `s25.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
+- 驗證：HTML 完整區塊存在、句子編號連續、25 個單句音檔存在、本機 HTTP 200。
