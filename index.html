@@ -35,6 +35,33 @@
     .today-btn:hover { opacity: .9; }
     .today-btn .sub { font-size: .8rem; font-weight: 400; opacity: .85; margin-top: .2rem; }
 
+    .generate-btn {
+      display: block; width: 100%;
+      padding: .85rem 1rem;
+      background: #fff;
+      color: var(--accent);
+      border: 1.5px solid var(--accent);
+      border-radius: 12px;
+      font-family: sans-serif; font-size: .92rem; font-weight: 700;
+      cursor: pointer; text-align: center;
+      transition: all .15s;
+    }
+    .generate-btn:hover { background: var(--tag-bg); }
+    .generate-btn:disabled {
+      color: var(--muted);
+      border-color: var(--border);
+      cursor: default;
+      background: #f9fafb;
+    }
+    .generate-note {
+      font-family: sans-serif;
+      font-size: .8rem;
+      color: var(--muted);
+      text-align: center;
+      line-height: 1.5;
+      margin-top: -.8rem;
+    }
+
     /* Day list */
     .card { background: var(--card); border-radius: 20px; padding: 1.6rem 1.8rem; box-shadow: 0 2px 12px rgba(0,0,0,.07); }
     .card-title { font-family: sans-serif; font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.1rem; display: flex; align-items: center; gap: .5rem; }
@@ -65,15 +92,17 @@
 <div class="header">
 <div class="emoji">📖</div>
 <h1>Daily <span>English</span></h1>
-<p>A2 → B1 · 每天一篇，持續進步</p>
+<p>RAZ Reading Level G · 每天一篇，持续进步</p>
 </div>
 <a class="today-btn" href="#" id="today-link">
     前往今天的學習內容
     <div class="sub" id="today-date-label"></div>
 </a>
+<button class="generate-btn" id="generate-today-btn" type="button">⚙️ 生成今日页面+音频</button>
+<div class="generate-note" id="generate-note">将调用本地生成服务，一键生成今日页面和音频。</div>
 <div class="card">
 <div class="card-title">📅 學習記錄</div>
-<div class="day-list" id="day-list"><a class="day-item" href="daily/2026-07-03/"><div class="day-left"><div class="day-date">2026-07-03</div><div class="day-title">The Blue Receipt · Episode 13</div></div><div class="day-num">Day 71</div></a><a class="day-item" href="daily/2026-07-02/"><div class="day-left"><div class="day-date">2026-07-02</div><div class="day-title">The Blue Receipt · Episode 11</div></div><div class="day-num">Day 69</div></a><a class="day-item" href="daily/2026-07-01/"><div class="day-left"><div class="day-date">2026-07-01</div><div class="day-title">The Blue Receipt · Episode 10</div></div><div class="day-num">Day 68</div></a><a class="day-item" href="daily/2026-06-30/"><div class="day-left"><div class="day-date">2026-06-30</div><div class="day-title">The Blue Receipt · Episode 9</div></div><div class="day-num">Day 67</div></a><a class="day-item" href="daily/2026-06-29/"><div class="day-left"><div class="day-date">2026-06-29</div><div class="day-title">The Blue Receipt · Episode 8</div></div><div class="day-num">Day 66</div></a>
+<div class="day-list" id="day-list"><a class="day-item" href="daily/2026-07-06/"><div class="day-left"><div class="day-date">2026-07-06</div><div class="day-title">The Blue Receipt · Episode 14</div></div><div class="day-num">Day 72</div></a><a class="day-item" href="daily/2026-07-03/"><div class="day-left"><div class="day-date">2026-07-03</div><div class="day-title">The Blue Receipt · Episode 13</div></div><div class="day-num">Day 71</div></a><a class="day-item" href="daily/2026-07-02/"><div class="day-left"><div class="day-date">2026-07-02</div><div class="day-title">The Blue Receipt · Episode 11</div></div><div class="day-num">Day 69</div></a><a class="day-item" href="daily/2026-07-01/"><div class="day-left"><div class="day-date">2026-07-01</div><div class="day-title">The Blue Receipt · Episode 10</div></div><div class="day-num">Day 68</div></a><a class="day-item" href="daily/2026-06-30/"><div class="day-left"><div class="day-date">2026-06-30</div><div class="day-title">The Blue Receipt · Episode 9</div></div><div class="day-num">Day 67</div></a><a class="day-item" href="daily/2026-06-29/"><div class="day-left"><div class="day-date">2026-06-29</div><div class="day-title">The Blue Receipt · Episode 8</div></div><div class="day-num">Day 66</div></a>
 <!-- DAYS_START -->
 <a class="day-item" href="daily/2026-06-26/">
 <div class="day-left">
@@ -530,6 +559,58 @@
 </div>
 </div>
 <script>
+  function getLaunchScriptHint() {
+    const ua = navigator.userAgent || '';
+    const isMac = /Macintosh|Mac OS X/i.test(ua);
+    return isMac ? 'open-today.command' : 'open-today.ps1';
+  }
+
+  async function generateTodayPage() {
+    const note = document.getElementById('generate-note');
+    const btn = document.getElementById('generate-today-btn');
+    const launchHint = getLaunchScriptHint();
+
+    btn.disabled = true;
+    const oldLabel = btn.textContent;
+    btn.textContent = '正在生成页面和音频...';
+
+    try {
+      const resp = await fetch('/__generate_today', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ mode: 'full' })
+      });
+
+      let payload = null;
+      try {
+        payload = await resp.json();
+      } catch (_) {
+        throw new Error('生成服务返回了无效响应。请确认使用 ' + launchHint + ' 启动。');
+      }
+
+      if (!resp.ok || !payload || !payload.ok) {
+        const msg = (payload && payload.error) ? payload.error : ('HTTP ' + resp.status);
+        throw new Error(msg);
+      }
+
+      const result = payload.result || {};
+      const copied = result.copiedFrom ? ('，页面来源：' + result.copiedFrom) : '';
+      note.textContent = '已生成：' + (result.indexPath || 'daily/今日/index.html') + '，并生成 ' + (result.sentenceCount || 0) + ' 句音频' + copied;
+      alert('生成完成：\n' + (result.indexPath || '') + '\n' + (result.audioPath || '') + '\n可直接刷新进入今日页面。');
+      location.reload();
+    } catch (err) {
+      if (err && err.name === 'AbortError') {
+        note.textContent = '已取消生成。';
+      } else {
+        note.textContent = '生成失败：' + err.message + '（请用 ' + launchHint + ' 启动）';
+        alert('生成失败：' + err.message + '\n\n请先用 ' + launchHint + ' 启动本地服务，再点击按钮。');
+      }
+    } finally {
+      btn.disabled = false;
+      btn.textContent = oldLabel;
+    }
+  }
+
   // 設定「今天」按鈕
   const today = new Date().toLocaleDateString('zh-TW', {
     year: 'numeric', month: '2-digit', day: '2-digit'
@@ -547,6 +628,8 @@
       el.classList.remove('today');
     }
   });
+
+  document.getElementById('generate-today-btn').addEventListener('click', generateTodayPage);
 </script>
 </body>
 </html>

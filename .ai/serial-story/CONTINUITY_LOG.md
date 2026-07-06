@@ -7,7 +7,7 @@
 ## Current Status
 
 - Series: `The Blue Receipt`
-- Current episode: Episode 13, `The Blue Receipt · Episode 13`
+- Current episode: Episode 14, `The Blue Receipt · Episode 14`
 - Main mystery: unknown messages appear in everyday English text and warn Mina about the blue bus.
 - Current known facts:
   - Mina found a strange printed line at the bottom of her coffee receipt.
@@ -118,6 +118,19 @@
   - The blue bus screen changed to: `Mina, wrong side.`
   - Lina sent a warning: `Do not trust the first screen.`
   - Right after that, the two options on the screen switched places.
+  - At 8:09, Mina compared two different Route 8:10 screens.
+  - One screen pointed to River Street, and one pointed to Old Tunnel.
+  - Mina checked route history on the old phone.
+  - The latest search result changed again in one second.
+  - Mina asked the gate worker which screen was correct.
+  - The worker told Mina to trust the printed board, not the app screen.
+  - Mina found the printed board and it matched the gray bus number.
+  - Lina warned that someone was editing the station system in real time.
+  - Lina confirmed Seat 12 was only on the blue bus route.
+  - Mina asked the driver: `Does this bus stop at River Street?`
+  - The gray bus driver confirmed and told Mina to get on.
+  - Mina boarded the gray bus, while the blue bus left first.
+  - A new line appeared on Mina's old phone: `Good. You chose the correct side.`
 
 ## Open Threads
 
@@ -272,6 +285,17 @@
 - New contradiction: options switch places after Lina warns Mina not to trust the first screen.
 - Hook: Mina now must decide which screen version is real before 8:10.
 
+### 2026-07-06 — Episode 14: The Correct Side
+
+- Location: gate area with live station screens, printed board, and two buses.
+- Real-life mission: confirm the correct Route 8:10 bus before boarding.
+- Useful sentence: `Does this bus stop at River Street?`
+- New online clue: the latest result changes again in real time.
+- Practical clue: the printed board is more reliable than the app screen.
+- Threat model update: someone may be editing station screens to push Mina toward Seat 12.
+- Decision result: Mina boards the gray bus after checking with the driver.
+- Hook: the old phone confirms her choice with `You chose the correct side.`
+
 ## Next Episode Pointer
 
-Episode 14 should reveal which option is genuine at 8:10, and whether someone is actively editing the bus screen in real time to move Mina to Seat 12.
+Episode 15 should explain who can change the station screens in real time, and why the system keeps steering Mina toward Seat 12 even after she chose the correct side.

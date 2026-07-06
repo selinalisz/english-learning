@@ -172,10 +172,14 @@
 <body>
 <div class="container">
 
-  <div class="header">
+    <div class="home-btn-wrap">
+    <a class="home-btn" href="../../index.html" aria-label="返回首页">🏠 返回首页</a>
+  </div>
+
+<div class="header">
     <div class="date-badge">July 3, 2026 · Day 71</div>
     <h1>The <span>Blue Receipt</span> · Episode 14</h1>
-    <p class="subtitle">Oxford Reading G · Primary English</p>
+    <p class="subtitle">RAZ Reading Level G · Primary English</p>
   </div>
 
   <div class="player-card">
@@ -223,7 +227,7 @@
         <span class="sent" data-idx="8" data-text="A red line said, Check before 8:10."><button class="sent-btn" onclick="playSent(this)" title="播放这句">🔊</button>A red line said, "Check before 8:10."</span>
         <span class="sent" data-idx="9" data-text="Another line said Seat 12 did not match."><button class="sent-btn" onclick="playSent(this)" title="播放这句">🔊</button>Another line said Seat 12 did not <span class="review-word" data-word="match">match</span>.</span>
         <span class="sent" data-idx="10" data-text="Mina asked a worker for help."><button class="sent-btn" onclick="playSent(this)" title="播放这句">🔊</button>Mina asked a worker for help.</span>
-        <span class="sent" data-idx="11" data-text="She said, Which bus goes to River Street."><button class="sent-btn" onclick="playSent(this)" title="播放这句">🔊</button>She said, "Which bus goes to River Street?"</span>
+        <span class="sent" data-idx="11" data-text="She said, Which bus goes to River Street?"><button class="sent-btn" onclick="playSent(this)" title="播放这句">🔊</button>She said, "Which bus goes to River Street?"</span>
         <span class="sent" data-idx="12" data-text="The worker said, Look at the screen first."><button class="sent-btn" onclick="playSent(this)" title="播放这句">🔊</button>The worker said, "<span class="phrase-chunk" data-phrase="look at">Look at</span> the screen first."</span>
       </p>
       <p>
@@ -334,7 +338,7 @@
 
   <div class="card">
     <div class="card-title">🧠 Active Recall Quiz</div>
-    <p class="rq-subtitle">看中文意思，選出正確的英文單字</p>
+    <p class="rq-subtitle">看中文意思，选出正确的英文单词</p>
 
     <div class="rq-item" data-word="result" data-correct="result">
       <div class="rq-zh">結果；搜尋結果 <span class="rq-pos">n.</span></div>
@@ -348,7 +352,7 @@
     </div>
 
     <div class="rq-item" data-word="history" data-correct="history">
-      <div class="rq-zh">歷史；過往紀錄 <span class="rq-pos">n.</span></div>
+      <div class="rq-zh">历史；过往记录 <span class="rq-pos">n.</span></div>
       <div class="rq-hint">Check the route ____ before you go.</div>
       <div class="rq-opts">
         <button class="rq-opt" data-val="history" onclick="rqSelect(this)">history</button>
@@ -381,7 +385,7 @@
     </div>
 
     <div class="rq-item" data-word="alone" data-correct="alone">
-      <div class="rq-zh">單獨的；獨自地 <span class="rq-pos">adj./adv.</span></div>
+      <div class="rq-zh">单独的；独自地 <span class="rq-pos">adj./adv.</span></div>
       <div class="rq-hint">The driver said Mina should not ride ____.</div>
       <div class="rq-opts">
         <button class="rq-opt" data-val="outside" onclick="rqSelect(this)">outside</button>
@@ -403,16 +407,16 @@
     </div>
 
     <div id="rq-result" style="display:none"></div>
-    <button id="rq-submit-btn" onclick="submitReviewQuiz()">提交答案 &amp; 保存 SRS 記錄</button>
+    <button id="rq-submit-btn" onclick="submitReviewQuiz()">提交答案 &amp; 保存 SRS 记录</button>
     <div id="repo-target-hint" class="review-msg" style="padding:.7rem 0 .1rem; font-size:.86rem;"></div>
-    <button id="repo-target-edit-btn" class="answers-btn" style="margin-top:.6rem;" onclick="editRepoTarget()">修改同步目標倉庫</button>
-    <button id="local-file-bind-btn" class="answers-btn" style="margin-top:.6rem; display:none;" onclick="bindLocalLearningFile()">綁定本地 learning.json（自動寫入）</button>
+    <button id="repo-target-edit-btn" class="answers-btn" style="margin-top:.6rem;" onclick="editRepoTarget()">修改同步目标仓库</button>
+    <button id="local-file-bind-btn" class="answers-btn" style="margin-top:.6rem; display:none;" onclick="bindLocalLearningFile()">绑定本地 learning.json（自动写入）</button>
     <div id="local-store-info" class="review-msg" style="padding:.6rem 0 0; font-size:.84rem; display:none;"></div>
   </div>
 
   <div class="card">
     <div class="card-title">🌉 Speaking Bridge</div>
-    <p class="bridge-subtitle">用 2–7 天前學的單字練習開口<br>短期記憶已淡，這才是真正的記憶測試 💪</p>
+    <p class="bridge-subtitle">用 2–7 天前学的单词练习开口<br>短期记忆已淡，这才是真正的记忆测试 💪</p>
 
     <div class="bridge-item">
       <div class="bridge-word-header">
@@ -423,15 +427,15 @@
       </div>
       <div class="bridge-level">
         <div class="bridge-level-label">Lv.1 重組＋填空</div>
-        <div class="bridge-zh-prompt">「第一個搜尋結果顯示一個在地公車論壇。」</div>
+        <div class="bridge-zh-prompt">「第一个搜索结果显示一个本地公交论坛。」</div>
         <div class="bridge-scramble">The / first / <span class="bridge-blank">____</span> / showed / a / local / bus / forum</div>
-        <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示答案</button>
+        <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">显示答案</button>
         <div class="bridge-answer" style="display:none">The first result showed a local bus forum.</div>
       </div>
       <div class="bridge-level">
         <div class="bridge-level-label">Lv.2 中翻英（新情境）</div>
-        <div class="bridge-zh-prompt">「你的第一個搜尋結果是什麼？」先試著說出英文，再點顯示。</div>
-        <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示參考答案</button>
+        <div class="bridge-zh-prompt">「你的第一个搜索结果是什么？」先试着说出英文，再点显示。</div>
+        <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">显示参考答案</button>
         <div class="bridge-answer" style="display:none">What is your first search result?</div>
       </div>
     </div>
@@ -439,21 +443,21 @@
     <div class="bridge-item">
       <div class="bridge-word-header">
         <span class="bridge-word">history</span>
-        <span class="bridge-word-zh">歷史；過往紀錄</span>
+        <span class="bridge-word-zh">历史；过往记录</span>
         <span class="pos-badge">n.</span>
         <span class="bridge-day-badge">4 天前</span>
       </div>
       <div class="bridge-level">
         <div class="bridge-level-label">Lv.1 重組＋填空</div>
-        <div class="bridge-zh-prompt">「出發前先查看路線紀錄。」</div>
+        <div class="bridge-zh-prompt">「出发前先查看路线记录。」</div>
         <div class="bridge-scramble">Check / the / route / <span class="bridge-blank">____</span> / before / you / go</div>
-        <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示答案</button>
+        <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">显示答案</button>
         <div class="bridge-answer" style="display:none">Check the route history before you go.</div>
       </div>
       <div class="bridge-level">
         <div class="bridge-level-label">Lv.2 中翻英（新情境）</div>
-        <div class="bridge-zh-prompt">「我可以看一下搭車紀錄嗎？」先試著說出英文，再點顯示。</div>
-        <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示參考答案</button>
+        <div class="bridge-zh-prompt">「我可以看一下乘车记录吗？」先试着说出英文，再点显示。</div>
+        <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">显示参考答案</button>
         <div class="bridge-answer" style="display:none">Can I check the ride history?</div>
       </div>
     </div>
@@ -467,15 +471,15 @@
       </div>
       <div class="bridge-level">
         <div class="bridge-level-label">Lv.1 重組＋填空</div>
-        <div class="bridge-zh-prompt">「那張票是薄紙做的。」</div>
+        <div class="bridge-zh-prompt">「那张票是薄纸做的。」</div>
         <div class="bridge-scramble">The / ticket / was / made / of / thin / <span class="bridge-blank">____</span></div>
-        <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示答案</button>
+        <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">显示答案</button>
         <div class="bridge-answer" style="display:none">The ticket was made of thin paper.</div>
       </div>
       <div class="bridge-level">
         <div class="bridge-level-label">Lv.2 中翻英（新情境）</div>
-        <div class="bridge-zh-prompt">「請把資訊寫在這張紙上。」先試著說出英文，再點顯示。</div>
-        <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示參考答案</button>
+        <div class="bridge-zh-prompt">「请把信息写在这张纸上。」先试着说出英文，再点显示。</div>
+        <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">显示参考答案</button>
         <div class="bridge-answer" style="display:none">Please write the information on this paper.</div>
       </div>
     </div>
@@ -489,15 +493,15 @@
       </div>
       <div class="bridge-level">
         <div class="bridge-level-label">Lv.1 重組＋填空</div>
-        <div class="bridge-zh-prompt">「那位司機有冷靜的聲音。」</div>
+        <div class="bridge-zh-prompt">「那位司机有冷静的声音。」</div>
         <div class="bridge-scramble">The / driver / had / a / calm / <span class="bridge-blank">____</span></div>
-        <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示答案</button>
+        <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">显示答案</button>
         <div class="bridge-answer" style="display:none">The driver had a calm voice.</div>
       </div>
       <div class="bridge-level">
         <div class="bridge-level-label">Lv.2 中翻英（新情境）</div>
-        <div class="bridge-zh-prompt">「我在電話裡聽到你的聲音。」先試著說出英文，再點顯示。</div>
-        <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示參考答案</button>
+        <div class="bridge-zh-prompt">「我在电话里听到你的声音。」先试着说出英文，再点显示。</div>
+        <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">显示参考答案</button>
         <div class="bridge-answer" style="display:none">I heard your voice on the phone.</div>
       </div>
     </div>
@@ -511,43 +515,43 @@
   <div class="card">
     <div class="card-title">🔁 Review Words</div>
     <table class="vocab-table">
-      <thead><tr><th>Word</th><th>詞性</th><th>中文 / Example</th><th>狀態</th></tr></thead>
+      <thead><tr><th>Word</th><th>词性</th><th>中文 / Example</th><th>状态</th></tr></thead>
       <tbody>
         <tr>
           <td><strong>result</strong></td>
           <td><span class="pos-badge">n.</span></td>
           <td><div class="zh-meaning">結果；搜尋結果</div><div class="example-sent">The first result showed a local bus forum.</div></td>
-          <td><span class="review-tag today">今天複習 🔔</span></td>
+          <td><span class="review-tag today">今天复习 🔔</span></td>
         </tr>
         <tr>
           <td><strong>history</strong></td>
           <td><span class="pos-badge">n.</span></td>
-          <td><div class="zh-meaning">歷史；過往紀錄</div><div class="example-sent">Check the route history before you go.</div></td>
-          <td><span class="review-tag today">今天複習 🔔</span></td>
+          <td><div class="zh-meaning">历史；过往记录</div><div class="example-sent">Check the route history before you go.</div></td>
+          <td><span class="review-tag today">今天复习 🔔</span></td>
         </tr>
         <tr>
           <td><strong>match</strong></td>
           <td><span class="pos-badge">v.</span></td>
           <td><div class="zh-meaning">相符；符合</div><div class="example-sent">The number did not match the record.</div></td>
-          <td><span class="review-tag today">今天複習 🔔</span></td>
+          <td><span class="review-tag today">今天复习 🔔</span></td>
         </tr>
         <tr>
           <td><strong>truth</strong></td>
           <td><span class="pos-badge">n.</span></td>
           <td><div class="zh-meaning">真相；實情</div><div class="example-sent">Mina wanted to hear the truth.</div></td>
-          <td><span class="review-tag today">今天複習 🔔</span></td>
+          <td><span class="review-tag today">今天复习 🔔</span></td>
         </tr>
         <tr>
           <td><strong>alone</strong></td>
           <td><span class="pos-badge">adj./adv.</span></td>
-          <td><div class="zh-meaning">單獨的；獨自地</div><div class="example-sent">The driver said Mina should not ride alone.</div></td>
-          <td><span class="review-tag today">今天複習 🔔</span></td>
+          <td><div class="zh-meaning">单独的；独自地</div><div class="example-sent">The driver said Mina should not ride alone.</div></td>
+          <td><span class="review-tag today">今天复习 🔔</span></td>
         </tr>
         <tr>
           <td><strong>early</strong></td>
           <td><span class="pos-badge">adj./adv.</span></td>
           <td><div class="zh-meaning">提早的；提早地</div><div class="example-sent">Mina came one day early.</div></td>
-          <td><span class="review-tag today">今天複習 🔔</span></td>
+          <td><span class="review-tag today">今天复习 🔔</span></td>
         </tr>
       </tbody>
     </table>
@@ -686,7 +690,7 @@
     const cached = localStorage.getItem(LOCAL_LEARNING_KEY);
     if (cached) return JSON.parse(cached);
     const resp = await fetch(getLearningJsonUrl(), { cache: 'no-store' });
-    if (!resp.ok) throw new Error('讀取本地 learning.json 失敗 (' + resp.status + ')');
+    if (!resp.ok) throw new Error('读取本地 learning.json 失败 (' + resp.status + ')');
     const json = await resp.json();
     localStorage.setItem(LOCAL_LEARNING_KEY, JSON.stringify(json));
     return json;
@@ -698,7 +702,7 @@
 
   async function bindLocalLearningFile() {
     if (!supportsLocalFileWrite()) {
-      alert('目前瀏覽器不支援直接寫入本地檔案，請改用 Chrome/Edge 最新版。');
+      alert('当前浏览器不支持直接写入本地文件，请改用 Chrome/Edge 最新版。');
       return;
     }
     try {
@@ -721,7 +725,7 @@
         try {
           parsed = JSON.parse(text);
         } catch (_) {
-          throw new Error('檔案不是有效 JSON（可用 {} 或 {"words": []}）');
+          throw new Error('文件不是有效 JSON（可用 {} 或 {"words": []}）');
         }
       }
 
@@ -737,10 +741,10 @@
       saveLocalLearningJson(parsed);
       await saveLearningJsonToLocalFile(parsed);
       await refreshLocalStoreInfo();
-      alert('已綁定本地 learning.json，且已初始化為可寫入格式。之後提交會自動寫入此檔案。');
+      alert('已绑定本地 learning.json，且已初始化为可写入格式。之后提交会自动写入此文件。');
     } catch (err) {
       if (err && err.name === 'AbortError') return;
-      alert('綁定失敗：' + err.message);
+      alert('绑定失败：' + err.message);
     }
   }
 
@@ -751,7 +755,7 @@
       permission = await localLearningFileHandle.requestPermission({ mode: 'readwrite' });
     }
     if (permission !== 'granted') {
-      throw new Error('本地檔案寫入權限未授權');
+      throw new Error('本地文件写入权限未授权');
     }
     const writable = await localLearningFileHandle.createWritable();
     await writable.write(JSON.stringify(vocab, null, 2));
@@ -769,11 +773,11 @@
     try {
       const vocab = await loadLocalLearningJson();
       const count = Array.isArray(vocab.words) ? vocab.words.length : 0;
-      const writeMode = localLearningFileHandle ? '已綁定本地檔案自動寫入' : '尚未綁定檔案（目前僅瀏覽器本地）';
-      el.textContent = '本機 learning.json：' + count + ' 個單字｜' + writeMode;
+      const writeMode = localLearningFileHandle ? '已绑定本地文件自动写入' : '尚未绑定文件（当前仅浏览器本地）';
+      el.textContent = '本机 learning.json：' + count + ' 个单词｜' + writeMode;
       el.style.display = 'block';
     } catch (err) {
-      el.textContent = '本機 learning.json 讀取失敗：' + err.message;
+      el.textContent = '本机 learning.json 读取失败：' + err.message;
       el.style.display = 'block';
     }
   }
@@ -841,8 +845,8 @@
   function toggleAnswers() {
     const el = document.getElementById('answers-reveal');
     const btn = document.querySelector('.answers-btn');
-    if (el.style.display === 'block') { el.style.display='none'; btn.textContent='顯示答案'; }
-    else { el.style.display='block'; btn.textContent='隱藏答案'; }
+    if (el.style.display === 'block') { el.style.display='none'; btn.textContent='显示答案'; }
+    else { el.style.display='block'; btn.textContent='隐藏答案'; }
   }
 
   function rqSelect(btn) {
@@ -866,7 +870,7 @@
 
   function editRepoTarget() {
     const current = getRepoTarget();
-    const ownerInput = prompt('GitHub repo owner（你的帳號）', current.owner);
+    const ownerInput = prompt('GitHub repo owner（你的账号）', current.owner);
     if (!ownerInput) return;
     const repoInput = prompt('GitHub repo name', current.repo);
     if (!repoInput) return;
@@ -911,7 +915,7 @@
     const resultEl = document.getElementById('rq-result');
 
     if (localStorage.getItem(storageKey)) {
-      resultEl.innerHTML = '✅ 今天已完成複習（額外練習）：' + score + '/' + results.length + ' 題答對，SRS 未更新';
+      resultEl.innerHTML = '✅ 今天已完成复习（额外练习）：' + score + '/' + results.length + ' 题答对，SRS 未更新';
       convertElementToSimplified(resultEl);
       resultEl.className = 'success';
       resultEl.style.display = 'block';
@@ -921,7 +925,7 @@
     }
 
     submitBtn.disabled = true;
-    submitBtn.textContent = '處理中...';
+    submitBtn.textContent = '处理中...';
 
     if (REVIEW_SYNC_MODE === 'local') {
       try {
@@ -946,8 +950,8 @@
         await refreshLocalStoreInfo();
         localStorage.setItem(storageKey, '1');
         resultEl.innerHTML = wroteFile
-          ? '🎉 複習完成！' + score + '/' + results.length + ' 題答對，已直接寫入本地 learning.json ✅'
-          : '🎉 複習完成！' + score + '/' + results.length + ' 題答對，已保存到瀏覽器本地（尚未綁定檔案）✅';
+          ? '🎉 复习完成！' + score + '/' + results.length + ' 题答对，已直接写入本地 learning.json ✅'
+          : '🎉 复习完成！' + score + '/' + results.length + ' 题答对，已保存到浏览器本地（尚未绑定文件）✅';
         convertElementToSimplified(resultEl);
         resultEl.className = (score === results.length) ? 'success' : 'partial';
         resultEl.style.display = 'block';
@@ -963,8 +967,8 @@
           });
         });
         submitBtn.disabled = false;
-        submitBtn.textContent = '提交答案 & 保存 SRS 記錄';
-        alert('本地保存失敗：' + err.message);
+        submitBtn.textContent = '提交答案 & 保存 SRS 记录';
+        alert('本地保存失败：' + err.message);
         return;
       }
     }
@@ -983,7 +987,7 @@
       };
 
       const askToken = () => {
-        const t = prompt('請輸入 GitHub Personal Access Token（repo write 權限，儲存在本機）：');
+        const t = prompt('请输入 GitHub Personal Access Token（repo write 权限，保存在本机）：');
         if (!t) throw new Error('未提供 Token，無法同步');
         const trimmed = t.trim();
         localStorage.setItem('github_pat', trimmed);
@@ -995,7 +999,7 @@
 
       const askRepoConfig = () => {
         const current = getRepoTarget();
-        const ownerInput = prompt('GitHub repo owner（你的帳號）', current.owner);
+        const ownerInput = prompt('GitHub repo owner（你的账号）', current.owner);
         if (!ownerInput) throw new Error('未提供 repo owner，無法同步');
         const repoInput = prompt('GitHub repo name', current.repo);
         if (!repoInput) throw new Error('未提供 repo name，無法同步');
@@ -1033,7 +1037,7 @@
       }
       if (!getResp.ok) {
         const detail = await readGitHubError(getResp);
-        throw new Error('讀取 learning.json 失敗 (' + getResp.status + ')' + detail);
+        throw new Error('读取 learning.json 失败 (' + getResp.status + ')' + detail);
       }
       const fileData = await getResp.json();
       const sha = fileData.sha;
@@ -1082,18 +1086,18 @@
         });
         if (!latestResp.ok) {
           const detail = await readGitHubError(latestResp);
-          throw new Error('重新取得檔案失敗 (' + latestResp.status + ')' + detail);
+          throw new Error('重新获取文件失败 (' + latestResp.status + ')' + detail);
         }
         const latestData = await latestResp.json();
         putResp = await putWithSha(latestData.sha, token);
       }
       if (!putResp.ok) {
         const detail = await readGitHubError(putResp);
-        throw new Error('更新失敗 (' + putResp.status + ')' + detail);
+        throw new Error('更新失败 (' + putResp.status + ')' + detail);
       }
 
       localStorage.setItem(storageKey, '1');
-      resultEl.innerHTML = '🎉 複習完成！' + score + '/' + results.length + ' 題答對，SRS 記錄已更新 ✅';
+      resultEl.innerHTML = '🎉 复习完成！' + score + '/' + results.length + ' 题答对，SRS 记录已更新 ✅';
       convertElementToSimplified(resultEl);
       resultEl.className = (score === results.length) ? 'success' : 'partial';
       resultEl.style.display = 'block';
@@ -1109,8 +1113,8 @@
         });
       });
       submitBtn.disabled = false;
-      submitBtn.textContent = '提交答案 & 保存 SRS 記錄';
-      alert('同步失敗：' + err.message);
+      submitBtn.textContent = '提交答案 & 保存 SRS 记录';
+      alert('同步失败：' + err.message);
     }
   }
 
@@ -1135,7 +1139,7 @@
       if (localFileBindBtn) localFileBindBtn.style.display = supportsLocalFileWrite() ? 'block' : 'none';
       refreshLocalStoreInfo();
       const submitBtn = document.getElementById('rq-submit-btn');
-      if (submitBtn) submitBtn.textContent = '提交答案 & 保存 SRS 記錄';
+      if (submitBtn) submitBtn.textContent = '提交答案 & 保存 SRS 记录';
     }
     if (!document.querySelector('.rq-item')) {
       const btn = document.getElementById('rq-submit-btn');
@@ -1159,10 +1163,10 @@
     const ans = btn.nextElementSibling;
     if (ans.style.display === 'block') {
       ans.style.display = 'none';
-      btn.textContent = btn.textContent.replace('隱藏', '顯示');
+      btn.textContent = btn.textContent.replace('隐藏', '显示');
     } else {
       ans.style.display = 'block';
-      btn.textContent = btn.textContent.replace('顯示', '隱藏');
+      btn.textContent = btn.textContent.replace('显示', '隐藏');
     }
   }
 
@@ -1196,17 +1200,17 @@
     const key = word.toLowerCase();
     if (type === 'vocab' && VOCAB[key]) {
       const v = VOCAB[key];
-      popContent.innerHTML = `<div class="pop-word">${word} <span class="pop-badge vocab">今日單字</span></div>
+      popContent.innerHTML = `<div class="pop-word">${word} <span class="pop-badge vocab">今日单词</span></div>
         <span class="pop-badge" style="margin:.2rem 0 .3rem;display:inline-block">${v.pos}</span>
         <div class="pop-example">"${v.example}"</div>
-        <button class="pop-zh-btn" onclick="revealZh(this)">👁 看中文翻譯</button>
+        <button class="pop-zh-btn" onclick="revealZh(this)">👁 看中文翻译</button>
         <div class="pop-zh" style="display:none">${v.zh}</div>`;
     } else if (type === 'review' && REVIEW[key]) {
       const rv = REVIEW[key];
-      popContent.innerHTML = `<div class="pop-word">${word} <span class="pop-badge review">複習單字</span></div>
+      popContent.innerHTML = `<div class="pop-word">${word} <span class="pop-badge review">复习单词</span></div>
         <span class="pop-badge" style="margin:.2rem 0 .3rem;display:inline-block">${rv.pos}</span>
         <div class="pop-example">"${rv.example}"</div>
-        <button class="pop-zh-btn" onclick="revealZh(this)">👁 看中文翻譯</button>
+        <button class="pop-zh-btn" onclick="revealZh(this)">👁 看中文翻译</button>
         <div class="pop-zh" style="display:none">${rv.zh}</div>`;
     } else if (type === 'phrase' && PHRASES[key]) {
       const ph = PHRASES[key];
@@ -1216,7 +1220,7 @@
         <button class="pop-zh-btn" onclick="revealZh(this)">👁 看中文</button>
         <div class="pop-zh" style="display:none">${ph.zh}</div>`;
     } else {
-      popContent.innerHTML = `<div class="pop-word">${word}</div><div class="pop-loading">查詢中…</div>`;
+      popContent.innerHTML = `<div class="pop-word">${word}</div><div class="pop-loading">查询中…</div>`;
       convertElementToSimplified(popContent);
       fetchDef(key).then(html => { popContent.innerHTML = html; convertElementToSimplified(popContent); positionPopup(anchorEl); });
     }
@@ -1249,7 +1253,7 @@
   async function fetchDef(word) {
     if (defCache[word]) return defCache[word];
     try {
-      const res = await fetch(`https://api.dictionarapi.dev/api/v2/entries/en/${word}`);
+      const res = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`);
       if (!res.ok) throw new Error();
       const data = await res.json();
       const entry = data[0];
@@ -1261,7 +1265,7 @@
       const html = `<div class="pop-word">${entry.word}</div>${meanings}`;
       return defCache[word] = html;
     } catch {
-      return defCache[word] = `<div class="pop-word">${word}</div><div class="pop-def" style="margin-top:.3rem">查無結果</div>`;
+      return defCache[word] = `<div class="pop-word">${word}</div><div class="pop-def" style="margin-top:.3rem">查无结果</div>`;
     }
   }
 

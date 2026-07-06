@@ -2279,6 +2279,516 @@
       "reviewCount": 0,
       "nextReview": "2026-07-04",
       "lastReviewedDate": null
+    },
+    {
+      "word": "correct",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "正確的",
+      "exampleSentence": "Which screen is correct?",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "latest",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "最新的",
+      "exampleSentence": "The latest result changed again in one second.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "reason",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "原因",
+      "exampleSentence": "What is the reason for this trick?",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "possible",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "可能的",
+      "exampleSentence": "Is it possible to change seats?",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "answer",
+      "partOfSpeech": "n./v.",
+      "chineseMeaning": "答案；回答",
+      "exampleSentence": "Please answer this question.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "fact",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "事實",
+      "exampleSentence": "This is an important fact.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "general",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "一般的",
+      "exampleSentence": "This is general information.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "difference",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "差異",
+      "exampleSentence": "What is the difference between these two lines?",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "idea",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "想法",
+      "exampleSentence": "That is a good idea.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "public",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "公共的",
+      "exampleSentence": "Use public transport in this area.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "address",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "地址",
+      "exampleSentence": "Please write your address here.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "adult",
+      "partOfSpeech": "n./adj.",
+      "chineseMeaning": "成人；成年的",
+      "exampleSentence": "One adult ticket, please.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "beautiful",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "漂亮的",
+      "exampleSentence": "This city is beautiful at night.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "advice",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "建議",
+      "exampleSentence": "Can you give me some advice?",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "afternoon",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "下午",
+      "exampleSentence": "We will meet this afternoon.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "careful",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "小心的",
+      "exampleSentence": "Be careful when you cross the road.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "airport",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "機場",
+      "exampleSentence": "The airport is very busy today.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "backpack",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "後背包",
+      "exampleSentence": "My passport is in my backpack.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "cheap",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "便宜的",
+      "exampleSentence": "This ticket is cheap.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "bank",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "銀行",
+      "exampleSentence": "The bank opens at nine.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "bathroom",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "浴室；洗手間",
+      "exampleSentence": "Excuse me, where is the bathroom?",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "clean",
+      "partOfSpeech": "adj./v.",
+      "chineseMeaning": "乾淨的；清理",
+      "exampleSentence": "The room is clean and quiet.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "bicycle",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "腳踏車",
+      "exampleSentence": "He goes to work by bicycle.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "bridge",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "橋",
+      "exampleSentence": "Walk across the bridge and turn left.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "close",
+      "partOfSpeech": "v./adj.",
+      "chineseMeaning": "關閉；靠近的",
+      "exampleSentence": "The shop will close at ten.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "building",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "建築物",
+      "exampleSentence": "Our office is in that building.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "business",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "生意；商務",
+      "exampleSentence": "This is a business trip.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "delicious",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "好吃的",
+      "exampleSentence": "The soup is delicious.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "camera",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "相機",
+      "exampleSentence": "I forgot my camera at the hotel.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "center",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "中心",
+      "exampleSentence": "The information center is over there.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "difficult",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "困難的",
+      "exampleSentence": "This question is difficult.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "clothes",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "衣服",
+      "exampleSentence": "I need clean clothes for tomorrow.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "club",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "社團；俱樂部",
+      "exampleSentence": "She joined a book club.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "downstairs",
+      "partOfSpeech": "adv./adj.",
+      "chineseMeaning": "樓下",
+      "exampleSentence": "The lobby is downstairs.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "coach",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "長途巴士；教練",
+      "exampleSentence": "The coach leaves at 7:30.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "company",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "公司",
+      "exampleSentence": "I work for a small company.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "easy",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "容易的",
+      "exampleSentence": "This app is easy to use.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "concert",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "音樂會",
+      "exampleSentence": "We have tickets for the concert.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "cost",
+      "partOfSpeech": "n./v.",
+      "chineseMeaning": "花費；費用",
+      "exampleSentence": "How much does it cost?",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "expensive",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "昂貴的",
+      "exampleSentence": "That hotel is too expensive.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "countryside",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "鄉下",
+      "exampleSentence": "They live in the countryside.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "culture",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "文化",
+      "exampleSentence": "I want to learn local culture.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "famous",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "有名的",
+      "exampleSentence": "This city is famous for food.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "danger",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "危險",
+      "exampleSentence": "This sign means danger.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "department",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "部門",
+      "exampleSentence": "Call the service department.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "far",
+      "partOfSpeech": "adj./adv.",
+      "chineseMeaning": "遠的；遠地",
+      "exampleSentence": "Is it far from here?",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "diary",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "日記",
+      "exampleSentence": "She writes in her diary every night.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "dollar",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "美元；元",
+      "exampleSentence": "It is twenty dollars.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "glad",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "高興的",
+      "exampleSentence": "I am glad to see you.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "door",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "門",
+      "exampleSentence": "Please use the front door.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "dream",
+      "partOfSpeech": "n./v.",
+      "chineseMeaning": "夢想；作夢",
+      "exampleSentence": "I dream of visiting London.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": null
     }
   ]
 }

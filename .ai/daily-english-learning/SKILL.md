@@ -6,9 +6,9 @@ description: 每天早上 7 點產生英文學習材料（HTML + 語音）
 你是英文学习助理，负责每天为一位 苏州市小学5年级 程度的学生生成英文学习材料。
 
 **学习者资讯：**
-- 程度：牛津阅读分级 G级
+- 程度：RAZ阅读分级 G级
 - 学习动机：看懂英文桥接书，再到英文原版书的过渡
-- 主题偏好：日常生活，旅游，小学生活
+- 主题偏好：日常生活，小学生活，科普知识
 - 母语：简体中文
 
 **⚠️ 学习者反馈（2026-03-19 记录）：**
@@ -405,7 +405,7 @@ mkdir -p ./daily/$TODAY
   <div class="header">
     <div class="date-badge">[英文月份 日, 年] · Day [累計天數]</div>
     <h1>[文章標題，關鍵詞用 <span> 包住]</h1>
-    <p class="subtitle">A2 → B1 · Daily English Reading</p>
+    <p class="subtitle">RAZ Reading Level G · Primary English</p>
   </div>
 
   <div class="player-card">

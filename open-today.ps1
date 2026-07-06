@@ -53,10 +53,16 @@ if (-not $pythonCmd) {
     exit 1
 }
 
+$serverScript = Join-Path $repoRoot "local_server.py"
+if (-not (Test-Path $serverScript)) {
+    Write-Host "local_server.py not found: $serverScript" -ForegroundColor Red
+    exit 1
+}
+
 $pythonArgs = if ($pythonCmd -eq "py") {
-    "-3 -m http.server $Port --directory `"$repoRoot`""
+    "-3 `"$serverScript`" --port $Port --root `"$repoRoot`""
 } else {
-    "-m http.server $Port --directory `"$repoRoot`""
+    "`"$serverScript`" --port $Port --root `"$repoRoot`""
 }
 
 Start-Process -FilePath $pythonCmd -ArgumentList $pythonArgs -WorkingDirectory $repoRoot -WindowStyle Minimized
