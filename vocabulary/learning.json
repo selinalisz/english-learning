@@ -2849,6 +2849,36 @@
       "reviewCount": 0,
       "nextReview": "2026-07-09",
       "lastReviewedDate": null
+    },
+    {
+      "word": "important",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "重要的",
+      "exampleSentence": "This message is important.",
+      "dateAdded": "2026-07-08",
+      "reviewCount": 0,
+      "nextReview": "2026-07-09",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "environment",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "環境",
+      "exampleSentence": "Keep the environment clean.",
+      "dateAdded": "2026-07-08",
+      "reviewCount": 0,
+      "nextReview": "2026-07-09",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "event",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "活動",
+      "exampleSentence": "There is an event this evening.",
+      "dateAdded": "2026-07-08",
+      "reviewCount": 0,
+      "nextReview": "2026-07-09",
+      "lastReviewedDate": null
     }
   ]
 }

@@ -237,14 +237,14 @@
         <span class="sent" data-idx="2" data-text="Two menu boards showed different prices for noodles."><button class="sent-btn" onclick="playSent(this)" title="播放这句">🔊</button>Two menu boards showed different prices for noodles.</span>
         <span class="sent" data-idx="3" data-text="Mina needed to pick up dinner for Lina."><button class="sent-btn" onclick="playSent(this)" title="播放这句">🔊</button>Mina needed to <span class="phrase-chunk" data-phrase="pick up">pick up</span> dinner for Lina.</span>
         <span class="sent" data-idx="4" data-text="She checked her old history photo on the phone."><button class="sent-btn" onclick="playSent(this)" title="播放这句">🔊</button>She checked her old history photo on the phone.</span>
-        <span class="sent" data-idx="5" data-text="Mina saw the word helpful on one red ticket in one second."><button class="sent-btn" onclick="playSent(this)" title="播放这句">🔊</button>Mina saw the word helpful on one red ticket in one second.</span>
+        <span class="sent" data-idx="5" data-text="Mina saw the word important on one red ticket in one second."><button class="sent-btn" onclick="playSent(this)" title="播放这句">🔊</button>Mina saw the word important on one red ticket in one second.</span>
         <span class="sent" data-idx="6" data-text="Mina asked a stall worker for help."><button class="sent-btn" onclick="playSent(this)" title="播放这句">🔊</button>Mina asked a stall worker for help.</span>
       </p>
       <p>
         <span class="sent" data-idx="7" data-text="She asked which line is for ticket pickup."><button class="sent-btn" onclick="playSent(this)" title="播放这句">🔊</button>She asked which line is for ticket pickup.</span>
         <span class="sent" data-idx="8" data-text="The worker said to check the printed board by the pot."><button class="sent-btn" onclick="playSent(this)" title="播放这句">🔊</button>The worker said to check the <span class="phrase-chunk" data-phrase="printed board">printed board</span> by the pot.</span>
         <span class="sent" data-idx="9" data-text="The printed board did not show combo B at all."><button class="sent-btn" onclick="playSent(this)" title="播放这句">🔊</button>The <span class="phrase-chunk" data-phrase="printed board">printed board</span> did not show combo B <span class="phrase-chunk" data-phrase="at all">at all</span>.</span>
-        <span class="sent" data-idx="10" data-text="Mina wrote the word email in her notebook."><button class="sent-btn" onclick="playSent(this)" title="播放这句">🔊</button>Mina wrote the word email in her notebook.</span>
+        <span class="sent" data-idx="10" data-text="Mina wrote the word environment in her notebook."><button class="sent-btn" onclick="playSent(this)" title="播放这句">🔊</button>Mina wrote the word environment in her notebook.</span>
         <span class="sent" data-idx="11" data-text="Lina texted that one menu photo was old."><button class="sent-btn" onclick="playSent(this)" title="播放这句">🔊</button>Lina texted that one menu photo was old.</span>
         <span class="sent" data-idx="12" data-text="Mina asked for the reason behind two prices."><button class="sent-btn" onclick="playSent(this)" title="播放这句">🔊</button>Mina asked for the reason behind two prices.</span>
       </p>
@@ -265,19 +265,19 @@
       <thead><tr><th>Word</th><th>词性</th><th>中文 / Example</th></tr></thead>
       <tbody>
         <tr>
-          <td><strong>helpful</strong></td>
+          <td><strong>important</strong></td>
           <td><span class="pos-badge">adj.</span></td>
-          <td><div class="zh-meaning">有幫助的</div><div class="example-sent">The map is very helpful.</div></td>
+          <td><div class="zh-meaning">重要的</div><div class="example-sent">This message is important.</div></td>
         </tr>
         <tr>
-          <td><strong>email</strong></td>
-          <td><span class="pos-badge">n./v.</span></td>
-          <td><div class="zh-meaning">電子郵件；寄信</div><div class="example-sent">Please email me the details.</div></td>
-        </tr>
-        <tr>
-          <td><strong>engineer</strong></td>
+          <td><strong>environment</strong></td>
           <td><span class="pos-badge">n.</span></td>
-          <td><div class="zh-meaning">工程師</div><div class="example-sent">My brother is an engineer.</div></td>
+          <td><div class="zh-meaning">環境</div><div class="example-sent">Keep the environment clean.</div></td>
+        </tr>
+        <tr>
+          <td><strong>event</strong></td>
+          <td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">活動</div><div class="example-sent">There is an event this evening.</div></td>
         </tr>
       </tbody>
     </table>
@@ -331,9 +331,9 @@
       </div>
     </div>
     <div class="quiz-q">
-      <div class="quiz-question">2. Which word means "有幫助的"?</div>
+      <div class="quiz-question">2. Which word means "重要的"?</div>
       <div class="quiz-options">
-        <div class="quiz-option" onclick="answer(this,'correct')"><span class="opt-key">A</span>helpful</div>
+        <div class="quiz-option" onclick="answer(this,'correct')"><span class="opt-key">A</span>important</div>
         <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">B</span>history</div>
         <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">C</span>ticket</div>
         <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">D</span>driver</div>
@@ -1222,9 +1222,9 @@
   }
 
   const VOCAB = {
-    'helpful': { pos:'adj.', zh:'有幫助的', example:'The map is very helpful.' },
-    'email': { pos:'n./v.', zh:'電子郵件；寄信', example:'Please email me the details.' },
-    'engineer': { pos:'n.', zh:'工程師', example:'My brother is an engineer.' },
+    'important': { pos:'adj.', zh:'重要的', example:'This message is important.' },
+    'environment': { pos:'n.', zh:'環境', example:'Keep the environment clean.' },
+    'event': { pos:'n.', zh:'活動', example:'There is an event this evening.' },
   };
   const REVIEW = {
     'alone': { pos:'adj./adv.', zh:'單獨的；獨自地', example:'The driver said Mina should not ride alone.' },
