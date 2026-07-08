@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily English · 2026-07-08</title>
+  <style>
+    :root {
+      --bg: #f5f4ef; --card: #ffffff; --accent: #4f7cff; --accent2: #f0a500;
+      --text: #1e1e2e; --muted: #6b7280; --border: #e5e7eb;
+      --green: #22c55e; --red: #ef4444;
+      --tag-bg: #eef2ff; --tag-text: #4f7cff; --highlight: #fffbeb;
+      --phrase-bg: #f0fdf4; --phrase-border: #22c55e;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Georgia', serif; background: var(--bg); color: var(--text); min-height: 100vh; padding: 2rem 1rem 4rem; }
+    .container { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 1.5rem; }
+
+    .header { text-align: center; padding: 2rem 1.5rem 1.5rem; background: var(--card); border-radius: 20px; box-shadow: 0 2px 12px rgba(0,0,0,.07); }
+    .date-badge { display: inline-block; background: var(--tag-bg); color: var(--tag-text); font-family: sans-serif; font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: .3rem .9rem; border-radius: 99px; margin-bottom: .9rem; }
+    .header h1 { font-size: 1.6rem; font-weight: 700; line-height: 1.3; }
+    .header h1 span { color: var(--accent); }
+    .header .subtitle { margin-top: .4rem; font-size: .9rem; color: var(--muted); font-family: sans-serif; }
+
+    .card { background: var(--card); border-radius: 20px; padding: 1.8rem 2rem; box-shadow: 0 2px 12px rgba(0,0,0,.07); }
+    .card-title { font-family: sans-serif; font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.2rem; display: flex; align-items: center; gap: .5rem; }
+    .card-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+    .player-card { background: linear-gradient(135deg, #4f7cff 0%, #7c5cfc 100%); color: white; border-radius: 20px; padding: 1.6rem 2rem; box-shadow: 0 4px 20px rgba(79,124,255,.3); }
+    .player-label { font-family: sans-serif; font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; opacity: .75; margin-bottom: .6rem; }
+    .player-title { font-size: 1.05rem; font-weight: 600; margin-bottom: 1.2rem; }
+    audio { width: 100%; height: 40px; border-radius: 99px; }
+    .player-controls { display: flex; align-items: center; gap: .6rem; margin-top: .7rem; }
+    .loop-btn { display: inline-flex; align-items: center; gap: .35rem; padding: .35rem .85rem; border: 1.5px solid rgba(255,255,255,.45); background: rgba(255,255,255,.15); color: white; border-radius: 99px; font-family: sans-serif; font-size: .78rem; font-weight: 600; cursor: pointer; transition: all .2s; }
+    .loop-btn:hover { background: rgba(255,255,255,.25); }
+    .loop-btn.active { background: rgba(255,255,255,.92); color: #4f7cff; border-color: transparent; }
+    .speed-mode { display: inline-flex; align-items: center; gap: .4rem; margin-left: .35rem; }
+    .speed-mode-label { font-family: sans-serif; font-size: .78rem; font-weight: 700; opacity: .85; }
+    .speed-mode-group { display: inline-flex; align-items: center; gap: .2rem; padding: .2rem; background: rgba(255,255,255,.18); border-radius: 99px; }
+    .audio-speed-btn { border: none; background: transparent; color: white; border-radius: 99px; padding: .26rem .68rem; font-family: sans-serif; font-size: .74rem; font-weight: 700; cursor: pointer; transition: all .15s; }
+    .audio-speed-btn:hover { background: rgba(255,255,255,.2); }
+    .audio-speed-btn.active { background: rgba(255,255,255,.92); color: #4f7cff; }
+    .home-btn-wrap { display: flex; justify-content: center; margin-bottom: .8rem; }
+    .home-btn { display: inline-flex; align-items: center; gap: .45rem; padding: .55rem 1.1rem; border-radius: 999px; border: 1.5px solid var(--accent); background: white; color: var(--accent); font-family: sans-serif; font-size: .86rem; font-weight: 700; text-decoration: none; transition: all .15s; }
+    .home-btn:hover { background: var(--accent); color: white; }
+
+    .article-body { font-size: 1.05rem; line-height: 1.9; }
+    .article-body p { margin-bottom: 1.1rem; }
+    .article-body p:last-child { margin-bottom: 0; }
+    .vocab-word { background: var(--highlight); border-bottom: 2px solid var(--accent2); padding: 0 2px; border-radius: 2px; font-weight: 700; cursor: pointer; transition: background .15s; }
+    .vocab-word:hover { background: #fef3c7; }
+    .phrase-chunk { background: var(--phrase-bg); border-bottom: 2px solid var(--phrase-border); padding: 0 2px; border-radius: 2px; cursor: pointer; transition: background .15s; }
+    .phrase-chunk:hover { background: #dcfce7; }
+    .review-word { background: #f3e8ff; border-bottom: 2px solid #a855f7; padding: 0 2px; border-radius: 2px; font-weight: 700; cursor: pointer; transition: background .15s; }
+    .review-word:hover { background: #ede9fe; }
+
+    .sent { display: inline; }
+    .sent-btn { display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; border-radius: 50%; background: none; border: 1.5px solid #c7d2fe; color: var(--accent); cursor: pointer; font-size: .55rem; vertical-align: middle; margin: 0 3px 0 0; flex-shrink: 0; transition: all .15s; padding: 0; line-height: 1; }
+    .sent-btn:hover { border-color: var(--accent); background: var(--tag-bg); }
+    .sent-btn.playing { background: var(--accent); border-color: var(--accent); color: white; }
+
+    #word-popup { position: fixed; z-index: 9999; max-width: 300px; min-width: 220px; background: white; border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,.18); padding: 1.1rem 1.2rem 1rem; display: none; font-family: sans-serif; animation: popIn .15s ease; border: 1px solid var(--border); }
+    @keyframes popIn { from { opacity:0; transform:translateY(6px) scale(.97); } to { opacity:1; transform:translateY(0) scale(1); } }
+    #word-popup .pop-word { font-size: 1.1rem; font-weight: 700; margin-bottom: .25rem; display: flex; align-items: center; gap: .5rem; flex-wrap: wrap; }
+    #word-popup .pop-badge { font-size: .7rem; font-weight: 700; padding: .15rem .5rem; border-radius: 4px; background: var(--tag-bg); color: var(--tag-text); white-space: nowrap; }
+    #word-popup .pop-badge.vocab { background: #fffbeb; color: #92400e; }
+    #word-popup .pop-badge.phrase { background: #f0fdf4; color: #166534; }
+    #word-popup .pop-badge.review { background: #f3e8ff; color: #7e22ce; }
+    #word-popup .pop-note { font-size: .82rem; color: var(--muted); line-height: 1.5; margin-top: .2rem; }
+    #word-popup .pop-def { font-size: .85rem; color: var(--muted); line-height: 1.5; margin-top: .2rem; }
+    #word-popup .pop-example { font-size: .82rem; color: var(--muted); font-style: italic; margin-top: .4rem; padding-top: .4rem; border-top: 1px solid var(--border); line-height: 1.5; }
+    #word-popup .pop-loading { font-size: .85rem; color: var(--muted); display: flex; align-items: center; gap: .4rem; margin-top: .3rem; }
+    #word-popup .pop-loading::before { content:''; width:12px; height:12px; border:2px solid var(--border); border-top-color:var(--accent); border-radius:50%; animation:spin .6s linear infinite; flex-shrink:0; }
+    @keyframes spin { to { transform:rotate(360deg); } }
+    #word-popup .pop-close { position:absolute; top:.5rem; right:.6rem; width:20px; height:20px; background:#f3f4f6; border:none; border-radius:50%; cursor:pointer; font-size:.7rem; color:var(--muted); display:flex; align-items:center; justify-content:center; }
+    #word-popup .pop-close:hover { background:var(--border); }
+    #word-popup .pop-type-badge { display:inline-block; font-size:.7rem; font-weight:700; padding:.15rem .5rem; border-radius:4px; background:#eff6ff; color:#1d4ed8; margin:.2rem 0 .35rem; }
+    #word-popup .pop-zh-btn { margin-top:.6rem; padding:.35rem .85rem; background:var(--tag-bg); color:var(--accent); border:1.5px solid var(--accent); border-radius:8px; font-size:.82rem; font-weight:600; cursor:pointer; font-family:sans-serif; transition:all .15s; display:block; width:100%; text-align:center; }
+    #word-popup .pop-zh-btn:hover { background:var(--accent); color:white; }
+    #word-popup .pop-zh { font-size:.95rem; font-weight:700; margin-top:.5rem; color:#166534; padding:.4rem .6rem; background:#f0fdf4; border-radius:6px; }
+
+    .review-tag { display:inline-block; font-size:.7rem; font-weight:700; padding:.15rem .5rem; border-radius:99px; white-space:nowrap; }
+    .review-tag.today { background:#fef3c7; color:#92400e; }
+    .review-tag.overdue { background:#fef2f2; color:#991b1b; }
+    .review-tag.upcoming { background:#f0fdf4; color:#166534; }
+
+    .vocab-table { width: 100%; border-collapse: collapse; font-family: sans-serif; font-size: .88rem; }
+    .vocab-table thead tr { background: var(--tag-bg); }
+    .vocab-table th { text-align: left; padding: .6rem .9rem; font-weight: 700; color: var(--tag-text); font-size: .75rem; letter-spacing: .05em; text-transform: uppercase; }
+    .vocab-table td { padding: .7rem .9rem; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.5; }
+    .vocab-table tr:last-child td { border-bottom: none; }
+    .vocab-table tr:hover td { background: #fafafa; }
+    .pos-badge { display:inline-block; background:#f3f4f6; color:var(--muted); font-size:.72rem; padding:.15rem .5rem; border-radius:4px; font-weight:600; }
+    .zh-meaning { font-weight: 600; }
+    .example-sent { color: var(--muted); font-style: italic; margin-top: .15rem; font-size: .83rem; }
+
+    .phrase-list { display: flex; flex-direction: column; gap: .85rem; }
+    .phrase-item { padding: .8rem 1rem; background: var(--phrase-bg); border-left: 3px solid var(--phrase-border); border-radius: 0 10px 10px 0; }
+    .phrase-item .ph-text { font-weight: 700; font-size: .95rem; font-family: sans-serif; }
+    .phrase-item .ph-zh { font-size: .88rem; color: #166534; margin-top: .2rem; }
+    .phrase-item .ph-note { font-size: .82rem; color: var(--muted); margin-top: .25rem; font-style: italic; }
+
+    .quiz-q { margin-bottom: 1.6rem; }
+    .quiz-q:last-child { margin-bottom: 0; }
+    .quiz-question { font-size: 1rem; font-weight: 600; margin-bottom: .75rem; line-height: 1.5; }
+    .quiz-options { display: flex; flex-direction: column; gap: .45rem; }
+    .quiz-option { display: flex; align-items: center; gap: .7rem; padding: .65rem 1rem; border: 1.5px solid var(--border); border-radius: 10px; cursor: pointer; font-family: sans-serif; font-size: .9rem; transition: all .15s; background: white; }
+    .quiz-option:hover { border-color: var(--accent); background: var(--tag-bg); }
+    .quiz-option.correct { border-color: var(--green); background: #f0fdf4; color: #166534; font-weight: 600; }
+    .quiz-option.wrong { border-color: var(--red); background: #fef2f2; color: #991b1b; }
+    .opt-key { width:24px; height:24px; border-radius:6px; background:var(--tag-bg); color:var(--accent); font-weight:700; font-size:.8rem; display:flex; align-items:center; justify-content:center; flex-shrink:0; transition:all .15s; }
+    .quiz-option.correct .opt-key { background: var(--green); color: white; }
+    .quiz-option.wrong .opt-key { background: var(--red); color: white; }
+    .answers-btn { margin-top: 1.2rem; padding: .65rem 1.4rem; background: var(--accent); color: white; border: none; border-radius: 10px; font-family: sans-serif; font-size: .88rem; font-weight: 600; cursor: pointer; }
+    .answers-btn:hover { background: #3a66e0; }
+    .answers-reveal { display: none; margin-top: 1rem; padding: .9rem 1.1rem; background: #f0fdf4; border: 1.5px solid #bbf7d0; border-radius: 10px; font-family: sans-serif; font-size: .9rem; color: #166534; font-weight: 600; }
+
+    .tips-box { background: var(--highlight); border-left: 4px solid var(--accent2); border-radius: 0 12px 12px 0; padding: 1rem 1.2rem; font-family: sans-serif; font-size: .92rem; line-height: 1.7; color: #78350f; }
+
+    .review-msg { font-family: sans-serif; font-size: .95rem; color: var(--muted); text-align: center; padding: 1rem 0; }
+
+    .legend { display: flex; gap: 1rem; font-family: sans-serif; font-size: .8rem; color: var(--muted); margin-bottom: 1rem; flex-wrap: wrap; }
+    .legend-item { display: flex; align-items: center; gap: .35rem; }
+    .legend-dot { width: 10px; height: 10px; border-radius: 2px; }
+    .legend-dot.vocab { background: #fef3c7; border-bottom: 2px solid var(--accent2); }
+    .legend-dot.review { background: #f3e8ff; border-bottom: 2px solid #a855f7; }
+    .legend-dot.phrase { background: var(--phrase-bg); border-bottom: 2px solid var(--phrase-border); }
+    .sentence-mode { display: inline-flex; align-items: center; gap: .45rem; }
+    .sentence-mode-label { color: var(--accent); font-weight: 700; }
+    .sentence-mode-group { display: inline-flex; align-items: center; gap: .2rem; padding: .2rem; background: var(--tag-bg); border-radius: 99px; }
+    .sentence-mode-btn { border: none; background: transparent; color: var(--accent); border-radius: 99px; padding: .28rem .72rem; font-family: sans-serif; font-size: .76rem; font-weight: 700; cursor: pointer; transition: all .15s; }
+    .sentence-mode-btn:hover { background: rgba(79,124,255,.12); }
+    .sentence-mode-btn.active { background: var(--accent); color: white; }
+
+    .rq-subtitle { font-family: sans-serif; font-size: .88rem; color: var(--muted); margin-bottom: 1.3rem; }
+    .rq-item { margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+    .rq-item:last-of-type { border-bottom: none; padding-bottom: 0; margin-bottom: 0; }
+    .rq-zh { font-size: 1rem; font-weight: 700; margin-bottom: .6rem; }
+    .rq-pos { font-size: .75rem; font-weight: 400; color: var(--muted); font-family: sans-serif; margin-left: .3rem; }
+    .rq-hint { font-size: .85rem; color: var(--muted); font-style: italic; margin-bottom: .6rem; line-height: 1.5; }
+    .rq-opts { display: grid; grid-template-columns: 1fr 1fr; gap: .45rem; }
+    .rq-opt { padding: .6rem .8rem; border: 1.5px solid var(--border); border-radius: 10px; background: white; cursor: pointer; font-family: 'Georgia', serif; font-size: .88rem; transition: all .15s; text-align: left; }
+    .rq-opt:hover:not([disabled]) { border-color: var(--accent); background: var(--tag-bg); }
+    .rq-opt.selected { border-color: var(--accent); background: var(--tag-bg); font-weight: 700; }
+    .rq-opt.correct { border-color: var(--green); background: #f0fdf4; color: #166534; font-weight: 700; }
+    .rq-opt.wrong { border-color: var(--red); background: #fef2f2; color: #991b1b; font-weight: 700; }
+    #rq-submit-btn { margin-top: 1.4rem; padding: .75rem 1.4rem; background: var(--accent); color: white; border: none; border-radius: 10px; font-family: sans-serif; font-size: .92rem; font-weight: 700; cursor: pointer; width: 100%; transition: background .15s; }
+    #rq-submit-btn:hover:not([disabled]) { background: #3a66e0; }
+    #rq-submit-btn:disabled { background: var(--muted); cursor: default; }
+    #rq-result { margin-top: 1rem; padding: 1rem 1.2rem; border-radius: 10px; font-family: sans-serif; font-size: .9rem; line-height: 1.7; }
+    #rq-result.success { background: #f0fdf4; border: 1.5px solid #bbf7d0; color: #166534; }
+    #rq-result.partial { background: #fffbeb; border: 1.5px solid #fde68a; color: #92400e; }
+
+    .bridge-subtitle { font-family: sans-serif; font-size: .88rem; color: var(--muted); margin-bottom: 1.3rem; line-height: 1.6; }
+    .bridge-item { border: 1.5px solid var(--border); border-radius: 14px; padding: 1.2rem 1.3rem; margin-bottom: 1.1rem; }
+    .bridge-item:last-child { margin-bottom: 0; }
+    .bridge-word-header { display: flex; align-items: center; gap: .5rem; margin-bottom: 1rem; flex-wrap: wrap; }
+    .bridge-word { font-size: 1.05rem; font-weight: 700; font-family: 'Georgia', serif; }
+    .bridge-word-zh { font-size: 1.05rem; font-weight: 700; font-family: sans-serif; color: #166534; }
+    .bridge-day-badge { margin-left: auto; font-family: sans-serif; font-size: .72rem; font-weight: 700; padding: .15rem .55rem; border-radius: 99px; background: #fef3c7; color: #92400e; }
+    .bridge-level { margin-bottom: .85rem; padding-bottom: .85rem; border-bottom: 1px dashed var(--border); }
+    .bridge-level:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+    .bridge-level-label { font-family: sans-serif; font-size: .7rem; font-weight: 700; color: var(--accent); letter-spacing: .06em; text-transform: uppercase; margin-bottom: .45rem; }
+    .bridge-sentence { font-size: .95rem; line-height: 1.75; margin-bottom: .5rem; }
+    .bridge-blank { font-weight: 700; color: #9ca3af; letter-spacing: .12em; }
+    .bridge-zh-prompt { font-family: sans-serif; font-size: .9rem; color: #166534; background: #f0fdf4; padding: .4rem .75rem; border-radius: 8px; margin-bottom: .5rem; line-height: 1.65; }
+    .bridge-scramble { font-family: sans-serif; font-size: .86rem; color: var(--muted); background: #f3f4f6; padding: .45rem .8rem; border-radius: 8px; margin-bottom: .5rem; line-height: 1.85; word-break: break-word; }
+    .bridge-reveal-btn { padding: .38rem 1rem; border: 1.5px solid var(--accent); color: var(--accent); background: white; border-radius: 8px; font-family: sans-serif; font-size: .82rem; font-weight: 600; cursor: pointer; transition: all .15s; }
+    .bridge-reveal-btn:hover { background: var(--accent); color: white; }
+    .bridge-answer { margin-top: .5rem; padding: .5rem .85rem; background: var(--tag-bg); border-radius: 8px; font-size: .9rem; font-weight: 600; color: var(--accent); font-family: sans-serif; line-height: 1.6; }
+    .bridge-none { font-family: sans-serif; font-size: .92rem; color: var(--muted); text-align: center; padding: .8rem 0; }
+
+    @media (max-width: 500px) {
+      .card { padding: 1.4rem 1.2rem; }
+      .player-card { padding: 1.3rem 1.2rem; }
+      .header h1 { font-size: 1.3rem; }
+      .rq-opts { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+    <div class="home-btn-wrap">
+    <a class="home-btn" href="../../index.html" aria-label="返回首页">🏠 返回首页</a>
+  </div>
+
+<div class="header">
+    <div class="date-badge">July 8, 2026 · Day 73</div>
+    <h1><span>The Market Ticket</span> · Episode 15</h1>
+    <p class="subtitle">RAZ Reading Level G · Primary English</p>
+  </div>
+
+  <div class="player-card">
+    <div class="player-label">🎧 Listen to the Article</div>
+    <div class="player-title">The Market Ticket · Episode 15</div>
+    <audio id="article-audio" controls>
+      <source src="article.mp3" type="audio/mpeg" />
+    </audio>
+    <div class="player-controls">
+      <button class="loop-btn" onclick="toggleLoop(this)">🔁 循環播放</button>
+      <span class="speed-mode" role="group" aria-label="播放速度">
+        <span class="speed-mode-label">速度</span>
+        <span class="speed-mode-group">
+          <button type="button" class="audio-speed-btn" data-speed="0.7" onclick="setAudioSpeed(0.7, this)">超慢速</button>
+          <button type="button" class="audio-speed-btn active" data-speed="0.85" onclick="setAudioSpeed(0.85, this)">慢速</button>
+          <button type="button" class="audio-speed-btn" data-speed="1" onclick="setAudioSpeed(1, this)">中速</button>
+          <button type="button" class="audio-speed-btn" data-speed="1.2" onclick="setAudioSpeed(1.2, this)">快速</button>
+        </span>
+      </span>
+    </div>
+  </div>
+
+  <div id="word-popup">
+    <button class="pop-close" onclick="closePopup()">✕</button>
+    <div id="pop-content"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📖 Today's Article</div>
+    <div class="legend">
+      <div class="legend-item"><div class="legend-dot vocab"></div>今日单词</div>
+      <div class="legend-item"><div class="legend-dot review"></div>复习单词</div>
+      <div class="legend-item"><div class="legend-dot phrase"></div>重点短语</div>
+      <div class="legend-item" style="color:var(--accent);font-size:.8rem;">🔊 点击播放单句</div>
+      <div class="legend-item sentence-mode">
+        <span class="sentence-mode-label">单句模式</span>
+        <span class="sentence-mode-group" role="group" aria-label="单句播放模式">
+          <button type="button" class="sentence-mode-btn active" data-mode="once" onclick="setSentenceMode('once', this)">单次</button>
+          <button type="button" class="sentence-mode-btn" data-mode="loop" onclick="setSentenceMode('loop', this)">循环</button>
+        </span>
+      </div>
+    </div>
+    <div class="article-body" id="article-body">
+      <p>
+        <span class="sent" data-idx="1" data-text="At 7:15, Mina walked into Pine Night Market."><button class="sent-btn" onclick="playSent(this)" title="播放这句">🔊</button>At 7:15, Mina walked into Pine Night Market.</span>
+        <span class="sent" data-idx="2" data-text="Two menu boards showed different prices for noodles."><button class="sent-btn" onclick="playSent(this)" title="播放这句">🔊</button>Two menu boards showed different prices for noodles.</span>
+        <span class="sent" data-idx="3" data-text="Mina needed to pick up dinner for Lina."><button class="sent-btn" onclick="playSent(this)" title="播放这句">🔊</button>Mina needed to <span class="phrase-chunk" data-phrase="pick up">pick up</span> dinner for Lina.</span>
+        <span class="sent" data-idx="4" data-text="She checked her old history photo on the phone."><button class="sent-btn" onclick="playSent(this)" title="播放这句">🔊</button>She checked her old history photo on the phone.</span>
+        <span class="sent" data-idx="5" data-text="Mina saw the word helpful on one red ticket in one second."><button class="sent-btn" onclick="playSent(this)" title="播放这句">🔊</button>Mina saw the word helpful on one red ticket in one second.</span>
+        <span class="sent" data-idx="6" data-text="Mina asked a stall worker for help."><button class="sent-btn" onclick="playSent(this)" title="播放这句">🔊</button>Mina asked a stall worker for help.</span>
+      </p>
+      <p>
+        <span class="sent" data-idx="7" data-text="She asked which line is for ticket pickup."><button class="sent-btn" onclick="playSent(this)" title="播放这句">🔊</button>She asked which line is for ticket pickup.</span>
+        <span class="sent" data-idx="8" data-text="The worker said to check the printed board by the pot."><button class="sent-btn" onclick="playSent(this)" title="播放这句">🔊</button>The worker said to check the <span class="phrase-chunk" data-phrase="printed board">printed board</span> by the pot.</span>
+        <span class="sent" data-idx="9" data-text="The printed board did not show combo B at all."><button class="sent-btn" onclick="playSent(this)" title="播放这句">🔊</button>The <span class="phrase-chunk" data-phrase="printed board">printed board</span> did not show combo B <span class="phrase-chunk" data-phrase="at all">at all</span>.</span>
+        <span class="sent" data-idx="10" data-text="Mina wrote the word email in her notebook."><button class="sent-btn" onclick="playSent(this)" title="播放这句">🔊</button>Mina wrote the word email in her notebook.</span>
+        <span class="sent" data-idx="11" data-text="Lina texted that one menu photo was old."><button class="sent-btn" onclick="playSent(this)" title="播放这句">🔊</button>Lina texted that one menu photo was old.</span>
+        <span class="sent" data-idx="12" data-text="Mina asked for the reason behind two prices."><button class="sent-btn" onclick="playSent(this)" title="播放这句">🔊</button>Mina asked for the reason behind two prices.</span>
+      </p>
+      <p>
+        <span class="sent" data-idx="13" data-text="The worker pointed to Window 12 near the exit."><button class="sent-btn" onclick="playSent(this)" title="播放这句">🔊</button>The worker pointed to Window 12 near the exit.</span>
+        <span class="sent" data-idx="14" data-text="Mina used the price list to compare item names."><button class="sent-btn" onclick="playSent(this)" title="播放这句">🔊</button>Mina used the <span class="phrase-chunk" data-phrase="price list">price list</span> to compare item names.</span>
+        <span class="sent" data-idx="15" data-text="One item did not match her old result."><button class="sent-btn" onclick="playSent(this)" title="播放这句">🔊</button>One item did not match her old result.</span>
+        <span class="sent" data-idx="16" data-text="Mina decided to get in line at Window 12."><button class="sent-btn" onclick="playSent(this)" title="播放这句">🔊</button>Mina decided to <span class="phrase-chunk" data-phrase="get in line">get in line</span> at Window 12.</span>
+        <span class="sent" data-idx="17" data-text="A new ticket printed and dropped on the counter."><button class="sent-btn" onclick="playSent(this)" title="播放这句">🔊</button>A new ticket printed and dropped on the counter.</span>
+        <span class="sent" data-idx="18" data-text="The ticket showed a message: You are on the safe side."><button class="sent-btn" onclick="playSent(this)" title="播放这句">🔊</button>The ticket showed a message: You are on the <span class="phrase-chunk" data-phrase="safe side">safe side</span>.</span>
+      </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📚 New Words Today</div>
+    <table class="vocab-table">
+      <thead><tr><th>Word</th><th>词性</th><th>中文 / Example</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>helpful</strong></td>
+          <td><span class="pos-badge">adj.</span></td>
+          <td><div class="zh-meaning">有幫助的</div><div class="example-sent">The map is very helpful.</div></td>
+        </tr>
+        <tr>
+          <td><strong>email</strong></td>
+          <td><span class="pos-badge">n./v.</span></td>
+          <td><div class="zh-meaning">電子郵件；寄信</div><div class="example-sent">Please email me the details.</div></td>
+        </tr>
+        <tr>
+          <td><strong>engineer</strong></td>
+          <td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">工程師</div><div class="example-sent">My brother is an engineer.</div></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="card-title">🔗 Key Phrases</div>
+    <div class="phrase-list">
+      <div class="phrase-item">
+        <div class="ph-text">pick up</div>
+        <div class="ph-zh">领取；取餐</div>
+        <div class="ph-note">类型：Phrasal Verb｜文章用法：Mina needed to pick up dinner for Lina.</div>
+      </div>
+      <div class="phrase-item">
+        <div class="ph-text">get in line</div>
+        <div class="ph-zh">排队</div>
+        <div class="ph-note">类型：Phrasal Verb｜文章用法：Mina decided to get in line at Window 12.</div>
+      </div>
+      <div class="phrase-item">
+        <div class="ph-text">price list</div>
+        <div class="ph-zh">价格表</div>
+        <div class="ph-note">类型：Collocation｜文章用法：Mina used the price list to compare item names.</div>
+      </div>
+      <div class="phrase-item">
+        <div class="ph-text">printed board</div>
+        <div class="ph-zh">纸质告示牌</div>
+        <div class="ph-note">类型：Collocation｜文章用法：The worker said to check the printed board by the pot.</div>
+      </div>
+      <div class="phrase-item">
+        <div class="ph-text">at all</div>
+        <div class="ph-zh">根本；完全</div>
+        <div class="ph-note">类型：Fixed Expression｜文章用法：The printed board did not show combo B at all.</div>
+      </div>
+      <div class="phrase-item">
+        <div class="ph-text">safe side</div>
+        <div class="ph-zh">安全的一侧</div>
+        <div class="ph-note">类型：Fixed Expression｜文章用法：You are on the safe side.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">✏️ Quiz</div>
+    <div class="quiz-q">
+      <div class="quiz-question">1. What did Mina use to compare item names?</div>
+      <div class="quiz-options">
+        <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">A</span>A toy map</div>
+        <div class="quiz-option" onclick="answer(this,'correct')"><span class="opt-key">B</span>The price list</div>
+        <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">C</span>A train ticket</div>
+        <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">D</span>A music app</div>
+      </div>
+    </div>
+    <div class="quiz-q">
+      <div class="quiz-question">2. Which word means "有幫助的"?</div>
+      <div class="quiz-options">
+        <div class="quiz-option" onclick="answer(this,'correct')"><span class="opt-key">A</span>helpful</div>
+        <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">B</span>history</div>
+        <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">C</span>ticket</div>
+        <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">D</span>driver</div>
+      </div>
+    </div>
+    <div class="quiz-q">
+      <div class="quiz-question">3. Which sentence can you use at a food stall?</div>
+      <div class="quiz-options">
+        <div class="quiz-option" onclick="answer(this,'correct')"><span class="opt-key">A</span>Which line is for ticket pickup?</div>
+        <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">B</span>I forgot my math homework.</div>
+        <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">C</span>This chair is blue.</div>
+        <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">D</span>Can fish fly?</div>
+      </div>
+    </div>
+    <button class="answers-btn" onclick="toggleAnswers()">显示答案</button>
+    <div class="answers-reveal" id="answers-reveal">
+      ✅ &nbsp;Q1: <strong>B</strong> &nbsp;｜&nbsp; Q2: <strong>A</strong> &nbsp;｜&nbsp; Q3: <strong>B</strong>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">🧠 Active Recall Quiz</div>
+    <p class="rq-subtitle">看中文意思，选出正确的英文单词</p>
+
+    <div class="rq-item" data-word="result" data-correct="result">
+      <div class="rq-zh">結果；搜尋結果 <span class="rq-pos">n.</span></div>
+      <div class="rq-hint">The first ____ showed a local bus forum.</div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="result" onclick="rqSelect(this)">result</button>
+        <button class="rq-opt" data-val="folder" onclick="rqSelect(this)">folder</button>
+        <button class="rq-opt" data-val="option" onclick="rqSelect(this)">option</button>
+        <button class="rq-opt" data-val="voice" onclick="rqSelect(this)">voice</button>
+      </div>
+    </div>
+
+    <div class="rq-item" data-word="history" data-correct="history">
+      <div class="rq-zh">历史；过往记录 <span class="rq-pos">n.</span></div>
+      <div class="rq-hint">Check the route ____ before you go.</div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="history" onclick="rqSelect(this)">history</button>
+        <button class="rq-opt" data-val="route" onclick="rqSelect(this)">route</button>
+        <button class="rq-opt" data-val="desk" onclick="rqSelect(this)">desk</button>
+        <button class="rq-opt" data-val="ticket" onclick="rqSelect(this)">ticket</button>
+      </div>
+    </div>
+
+    <div class="rq-item" data-word="match" data-correct="match">
+      <div class="rq-zh">相符；符合 <span class="rq-pos">v.</span></div>
+      <div class="rq-hint">The number did not ____ the record.</div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="check" onclick="rqSelect(this)">check</button>
+        <button class="rq-opt" data-val="match" onclick="rqSelect(this)">match</button>
+        <button class="rq-opt" data-val="search" onclick="rqSelect(this)">search</button>
+        <button class="rq-opt" data-val="decide" onclick="rqSelect(this)">decide</button>
+      </div>
+    </div>
+
+    <div class="rq-item" data-word="truth" data-correct="truth">
+      <div class="rq-zh">真相；實情 <span class="rq-pos">n.</span></div>
+      <div class="rq-hint">Mina wanted to hear the ____.</div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="truth" onclick="rqSelect(this)">truth</button>
+        <button class="rq-opt" data-val="paper" onclick="rqSelect(this)">paper</button>
+        <button class="rq-opt" data-val="history" onclick="rqSelect(this)">history</button>
+        <button class="rq-opt" data-val="line" onclick="rqSelect(this)">line</button>
+      </div>
+    </div>
+
+    <div class="rq-item" data-word="alone" data-correct="alone">
+      <div class="rq-zh">单独的；独自地 <span class="rq-pos">adj./adv.</span></div>
+      <div class="rq-hint">The driver said Mina should not ride ____.</div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="outside" onclick="rqSelect(this)">outside</button>
+        <button class="rq-opt" data-val="alone" onclick="rqSelect(this)">alone</button>
+        <button class="rq-opt" data-val="ready" onclick="rqSelect(this)">ready</button>
+        <button class="rq-opt" data-val="crowded" onclick="rqSelect(this)">crowded</button>
+      </div>
+    </div>
+
+    <div class="rq-item" data-word="early" data-correct="early">
+      <div class="rq-zh">提早的；提早地 <span class="rq-pos">adj./adv.</span></div>
+      <div class="rq-hint">Mina came one day ____.</div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="early" onclick="rqSelect(this)">early</button>
+        <button class="rq-opt" data-val="late" onclick="rqSelect(this)">late</button>
+        <button class="rq-opt" data-val="busy" onclick="rqSelect(this)">busy</button>
+        <button class="rq-opt" data-val="safe" onclick="rqSelect(this)">safe</button>
+      </div>
+    </div>
+
+    <div id="rq-result" style="display:none"></div>
+    <button id="rq-submit-btn" onclick="submitReviewQuiz()">提交答案 &amp; 保存 SRS 记录</button>
+    <div id="repo-target-hint" class="review-msg" style="padding:.7rem 0 .1rem; font-size:.86rem;"></div>
+    <button id="repo-target-edit-btn" class="answers-btn" style="margin-top:.6rem;" onclick="editRepoTarget()">修改同步目标仓库</button>
+    <button id="local-file-bind-btn" class="answers-btn" style="margin-top:.6rem; display:none;" onclick="bindLocalLearningFile()">绑定本地 learning.json（自动写入）</button>
+    <div id="local-store-info" class="review-msg" style="padding:.6rem 0 0; font-size:.84rem; display:none;"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">🌉 Speaking Bridge</div>
+    <p class="bridge-subtitle">用 2–7 天前学的单词练习开口<br>短期记忆已淡，这才是真正的记忆测试 💪</p>
+
+    <div class="bridge-item">
+      <div class="bridge-word-header">
+        <span class="bridge-word">result</span>
+        <span class="bridge-word-zh">結果；搜尋結果</span>
+        <span class="pos-badge">n.</span>
+        <span class="bridge-day-badge">4 天前</span>
+      </div>
+      <div class="bridge-level">
+        <div class="bridge-level-label">Lv.1 重組＋填空</div>
+        <div class="bridge-zh-prompt">「第一个搜索结果显示一个本地公交论坛。」</div>
+        <div class="bridge-scramble">The / first / <span class="bridge-blank">____</span> / showed / a / local / bus / forum</div>
+        <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">显示答案</button>
+        <div class="bridge-answer" style="display:none">The first result showed a local bus forum.</div>
+      </div>
+      <div class="bridge-level">
+        <div class="bridge-level-label">Lv.2 中翻英（新情境）</div>
+        <div class="bridge-zh-prompt">「你的第一个搜索结果是什么？」先试着说出英文，再点显示。</div>
+        <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">显示参考答案</button>
+        <div class="bridge-answer" style="display:none">What is your first search result?</div>
+      </div>
+    </div>
+
+    <div class="bridge-item">
+      <div class="bridge-word-header">
+        <span class="bridge-word">history</span>
+        <span class="bridge-word-zh">历史；过往记录</span>
+        <span class="pos-badge">n.</span>
+        <span class="bridge-day-badge">4 天前</span>
+      </div>
+      <div class="bridge-level">
+        <div class="bridge-level-label">Lv.1 重組＋填空</div>
+        <div class="bridge-zh-prompt">「出发前先查看路线记录。」</div>
+        <div class="bridge-scramble">Check / the / route / <span class="bridge-blank">____</span> / before / you / go</div>
+        <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">显示答案</button>
+        <div class="bridge-answer" style="display:none">Check the route history before you go.</div>
+      </div>
+      <div class="bridge-level">
+        <div class="bridge-level-label">Lv.2 中翻英（新情境）</div>
+        <div class="bridge-zh-prompt">「我可以看一下乘车记录吗？」先试着说出英文，再点显示。</div>
+        <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">显示参考答案</button>
+        <div class="bridge-answer" style="display:none">Can I check the ride history?</div>
+      </div>
+    </div>
+
+    <div class="bridge-item">
+      <div class="bridge-word-header">
+        <span class="bridge-word">paper</span>
+        <span class="bridge-word-zh">紙；紙張</span>
+        <span class="pos-badge">n.</span>
+        <span class="bridge-day-badge">3 天前</span>
+      </div>
+      <div class="bridge-level">
+        <div class="bridge-level-label">Lv.1 重組＋填空</div>
+        <div class="bridge-zh-prompt">「那张票是薄纸做的。」</div>
+        <div class="bridge-scramble">The / ticket / was / made / of / thin / <span class="bridge-blank">____</span></div>
+        <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">显示答案</button>
+        <div class="bridge-answer" style="display:none">The ticket was made of thin paper.</div>
+      </div>
+      <div class="bridge-level">
+        <div class="bridge-level-label">Lv.2 中翻英（新情境）</div>
+        <div class="bridge-zh-prompt">「请把信息写在这张纸上。」先试着说出英文，再点显示。</div>
+        <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">显示参考答案</button>
+        <div class="bridge-answer" style="display:none">Please write the information on this paper.</div>
+      </div>
+    </div>
+
+    <div class="bridge-item">
+      <div class="bridge-word-header">
+        <span class="bridge-word">voice</span>
+        <span class="bridge-word-zh">聲音；嗓音</span>
+        <span class="pos-badge">n.</span>
+        <span class="bridge-day-badge">2 天前</span>
+      </div>
+      <div class="bridge-level">
+        <div class="bridge-level-label">Lv.1 重組＋填空</div>
+        <div class="bridge-zh-prompt">「那位司机有冷静的声音。」</div>
+        <div class="bridge-scramble">The / driver / had / a / calm / <span class="bridge-blank">____</span></div>
+        <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">显示答案</button>
+        <div class="bridge-answer" style="display:none">The driver had a calm voice.</div>
+      </div>
+      <div class="bridge-level">
+        <div class="bridge-level-label">Lv.2 中翻英（新情境）</div>
+        <div class="bridge-zh-prompt">「我在电话里听到你的声音。」先试着说出英文，再点显示。</div>
+        <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">显示参考答案</button>
+        <div class="bridge-answer" style="display:none">I heard your voice on the phone.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">💡 Learning Tips</div>
+    <div class="tips-box">今天最值得直接背起来的是 <strong>Which line is for ticket pickup?</strong>，遇到真实场景先开口问。 今天也要记住 <strong>price list</strong> 这个信息词，查现场英文提示会更稳。</div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">🔁 Review Words</div>
+    <table class="vocab-table">
+      <thead><tr><th>Word</th><th>词性</th><th>中文 / Example</th><th>状态</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>result</strong></td>
+          <td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">結果；搜尋結果</div><div class="example-sent">The first result showed a local bus forum.</div></td>
+          <td><span class="review-tag today">今天复习 🔔</span></td>
+        </tr>
+        <tr>
+          <td><strong>history</strong></td>
+          <td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">历史；过往记录</div><div class="example-sent">Check the route history before you go.</div></td>
+          <td><span class="review-tag today">今天复习 🔔</span></td>
+        </tr>
+        <tr>
+          <td><strong>match</strong></td>
+          <td><span class="pos-badge">v.</span></td>
+          <td><div class="zh-meaning">相符；符合</div><div class="example-sent">The number did not match the record.</div></td>
+          <td><span class="review-tag today">今天复习 🔔</span></td>
+        </tr>
+        <tr>
+          <td><strong>truth</strong></td>
+          <td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">真相；實情</div><div class="example-sent">Mina wanted to hear the truth.</div></td>
+          <td><span class="review-tag today">今天复习 🔔</span></td>
+        </tr>
+        <tr>
+          <td><strong>alone</strong></td>
+          <td><span class="pos-badge">adj./adv.</span></td>
+          <td><div class="zh-meaning">单独的；独自地</div><div class="example-sent">The driver said Mina should not ride alone.</div></td>
+          <td><span class="review-tag today">今天复习 🔔</span></td>
+        </tr>
+        <tr>
+          <td><strong>early</strong></td>
+          <td><span class="pos-badge">adj./adv.</span></td>
+          <td><div class="zh-meaning">提早的；提早地</div><div class="example-sent">Mina came one day early.</div></td>
+          <td><span class="review-tag today">今天复习 🔔</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/opencc-js@1.4.0/dist/umd/full.js"></script>
+<script>
+  function getAssetBasePath() {
+    const path = window.location.pathname;
+    if (path.endsWith('/')) return path;
+    if (/\.[^/]+$/.test(path)) return path.replace(/[^/]+$/, '');
+    return path + '/';
+  }
+
+  function buildAssetUrl(filename) {
+    return getAssetBasePath() + filename;
+  }
+
+  const REVIEW_SYNC_MODE = localStorage.getItem('review_sync_mode') || 'local';
+  const LOCAL_LEARNING_KEY = 'learning_json_local';
+  const LOCAL_FILE_HANDLE_DB = 'learning-file-handle-db';
+  const LOCAL_FILE_HANDLE_STORE = 'handles';
+  const LOCAL_FILE_HANDLE_KEY = 'learning_json_file';
+  const ZH_SCRIPT_MODE = localStorage.getItem('zh_script_mode') || 'simplified';
+  let zhConverter = null;
+  let localLearningFileHandle = null;
+
+  function supportsLocalFileWrite() {
+    return typeof window.showOpenFilePicker === 'function' && typeof window.indexedDB !== 'undefined';
+  }
+
+  function openHandleDb() {
+    return new Promise((resolve, reject) => {
+      const req = indexedDB.open(LOCAL_FILE_HANDLE_DB, 1);
+      req.onupgradeneeded = () => {
+        const db = req.result;
+        if (!db.objectStoreNames.contains(LOCAL_FILE_HANDLE_STORE)) {
+          db.createObjectStore(LOCAL_FILE_HANDLE_STORE);
+        }
+      };
+      req.onsuccess = () => resolve(req.result);
+      req.onerror = () => reject(req.error);
+    });
+  }
+
+  async function idbSetHandle(handle) {
+    const db = await openHandleDb();
+    await new Promise((resolve, reject) => {
+      const tx = db.transaction(LOCAL_FILE_HANDLE_STORE, 'readwrite');
+      tx.objectStore(LOCAL_FILE_HANDLE_STORE).put(handle, LOCAL_FILE_HANDLE_KEY);
+      tx.oncomplete = resolve;
+      tx.onerror = () => reject(tx.error);
+    });
+    db.close();
+  }
+
+  async function idbGetHandle() {
+    const db = await openHandleDb();
+    const handle = await new Promise((resolve, reject) => {
+      const tx = db.transaction(LOCAL_FILE_HANDLE_STORE, 'readonly');
+      const req = tx.objectStore(LOCAL_FILE_HANDLE_STORE).get(LOCAL_FILE_HANDLE_KEY);
+      req.onsuccess = () => resolve(req.result || null);
+      req.onerror = () => reject(req.error);
+    });
+    db.close();
+    return handle;
+  }
+
+  async function restoreLocalLearningFileHandle() {
+    if (!supportsLocalFileWrite()) return;
+    try {
+      const handle = await idbGetHandle();
+      if (!handle) return;
+      localLearningFileHandle = handle;
+    } catch (_) {
+      localLearningFileHandle = null;
+    }
+  }
+
+  function ensureZhConverter() {
+    if (zhConverter) return zhConverter;
+    if (window.OpenCC && typeof window.OpenCC.Converter === 'function') {
+      zhConverter = window.OpenCC.Converter({ from: 'tw', to: 'cn' });
+    }
+    return zhConverter;
+  }
+
+  function toSimplifiedText(text) {
+    if (typeof text !== 'string' || ZH_SCRIPT_MODE !== 'simplified') return text;
+    const converter = ensureZhConverter();
+    return converter ? converter(text) : text;
+  }
+
+  function convertElementToSimplified(root) {
+    if (ZH_SCRIPT_MODE !== 'simplified') return;
+    const converter = ensureZhConverter();
+    if (!converter || !root) return;
+
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    const nodes = [];
+    let node;
+    while ((node = walker.nextNode())) {
+      const parent = node.parentElement;
+      if (!parent) continue;
+      if (['SCRIPT', 'STYLE'].includes(parent.tagName)) continue;
+      if (/[\u4e00-\u9fff]/.test(node.nodeValue || '')) nodes.push(node);
+    }
+    nodes.forEach(n => {
+      n.nodeValue = converter(n.nodeValue);
+    });
+
+    if (root.querySelectorAll) {
+      root.querySelectorAll('[title], [placeholder], [aria-label]').forEach(el => {
+        ['title', 'placeholder', 'aria-label'].forEach(attr => {
+          const val = el.getAttribute(attr);
+          if (val && /[\u4e00-\u9fff]/.test(val)) {
+            el.setAttribute(attr, converter(val));
+          }
+        });
+      });
+    }
+  }
+
+  function applySimplifiedChinese() {
+    if (ZH_SCRIPT_MODE !== 'simplified') return;
+    convertElementToSimplified(document.body);
+    document.title = toSimplifiedText(document.title);
+  }
+
+  function getLearningJsonUrl() {
+    return new URL('../../vocabulary/learning.json', window.location.href).href;
+  }
+
+  async function loadLocalLearningJson() {
+    const cached = localStorage.getItem(LOCAL_LEARNING_KEY);
+    if (cached) return JSON.parse(cached);
+    const resp = await fetch(getLearningJsonUrl(), { cache: 'no-store' });
+    if (!resp.ok) throw new Error('读取本地 learning.json 失败 (' + resp.status + ')');
+    const json = await resp.json();
+    localStorage.setItem(LOCAL_LEARNING_KEY, JSON.stringify(json));
+    return json;
+  }
+
+  function saveLocalLearningJson(vocab) {
+    localStorage.setItem(LOCAL_LEARNING_KEY, JSON.stringify(vocab));
+  }
+
+  async function bindLocalLearningFile() {
+    if (!supportsLocalFileWrite()) {
+      alert('当前浏览器不支持直接写入本地文件，请改用 Chrome/Edge 最新版。');
+      return;
+    }
+    try {
+      const picker = await window.showOpenFilePicker({
+        types: [{
+          description: 'JSON',
+          accept: { 'application/json': ['.json'] }
+        }],
+        multiple: false
+      });
+      if (!picker || !picker[0]) return;
+      const handle = picker[0];
+      const file = await handle.getFile();
+      const text = await file.text();
+      let parsed;
+      if (!text.trim()) {
+        const cached = localStorage.getItem(LOCAL_LEARNING_KEY);
+        parsed = cached ? JSON.parse(cached) : { words: [] };
+      } else {
+        try {
+          parsed = JSON.parse(text);
+        } catch (_) {
+          throw new Error('文件不是有效 JSON（可用 {} 或 {"words": []}）');
+        }
+      }
+
+      if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) {
+        throw new Error('JSON 根層必須是物件');
+      }
+      if (!Array.isArray(parsed.words)) {
+        parsed.words = [];
+      }
+
+      localLearningFileHandle = handle;
+      await idbSetHandle(handle);
+      saveLocalLearningJson(parsed);
+      await saveLearningJsonToLocalFile(parsed);
+      await refreshLocalStoreInfo();
+      alert('已绑定本地 learning.json，且已初始化为可写入格式。之后提交会自动写入此文件。');
+    } catch (err) {
+      if (err && err.name === 'AbortError') return;
+      alert('绑定失败：' + err.message);
+    }
+  }
+
+  async function saveLearningJsonToLocalFile(vocab) {
+    if (!supportsLocalFileWrite() || !localLearningFileHandle) return false;
+    let permission = await localLearningFileHandle.queryPermission({ mode: 'readwrite' });
+    if (permission !== 'granted') {
+      permission = await localLearningFileHandle.requestPermission({ mode: 'readwrite' });
+    }
+    if (permission !== 'granted') {
+      throw new Error('本地文件写入权限未授权');
+    }
+    const writable = await localLearningFileHandle.createWritable();
+    await writable.write(JSON.stringify(vocab, null, 2));
+    await writable.close();
+    return true;
+  }
+
+  async function refreshLocalStoreInfo() {
+    const el = document.getElementById('local-store-info');
+    if (!el) return;
+    if (REVIEW_SYNC_MODE !== 'local') {
+      el.style.display = 'none';
+      return;
+    }
+    try {
+      const vocab = await loadLocalLearningJson();
+      const count = Array.isArray(vocab.words) ? vocab.words.length : 0;
+      const writeMode = localLearningFileHandle ? '已绑定本地文件自动写入' : '尚未绑定文件（当前仅浏览器本地）';
+      el.textContent = '本机 learning.json：' + count + ' 个单词｜' + writeMode;
+      el.style.display = 'block';
+    } catch (err) {
+      el.textContent = '本机 learning.json 读取失败：' + err.message;
+      el.style.display = 'block';
+    }
+  }
+
+  const sentAudio = new Audio();
+  const AUDIO_SPEED_STORAGE_KEY = 'audio_speed_pref';
+  const AUDIO_SPEED_OPTIONS = [0.7, 0.85, 1, 1.2];
+  let activeSentBtn = null;
+  let sentencePlaybackMode = 'once';
+  let currentAudioSpeed = 0.85;
+
+  function resetSentBtn(btn) {
+    if (!btn) return;
+    btn.classList.remove('playing');
+    btn.textContent = '🔊';
+  }
+
+  function stopSentencePlayback() {
+    sentAudio.pause();
+    sentAudio.currentTime = 0;
+    sentAudio.loop = false;
+    resetSentBtn(activeSentBtn);
+    activeSentBtn = null;
+  }
+
+  function syncSentenceModeButtons() {
+    document.querySelectorAll('.sentence-mode-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.mode === sentencePlaybackMode);
+    });
+  }
+
+  function syncAudioSpeedButtons() {
+    document.querySelectorAll('.audio-speed-btn').forEach(btn => {
+      btn.classList.toggle('active', Number(btn.dataset.speed) === currentAudioSpeed);
+    });
+  }
+
+  function setAudioSpeed(speed, clickedBtn) {
+    currentAudioSpeed = Number(speed) || 1;
+    localStorage.setItem(AUDIO_SPEED_STORAGE_KEY, String(currentAudioSpeed));
+    const articleAudio = document.getElementById('article-audio');
+    if (articleAudio) articleAudio.playbackRate = currentAudioSpeed;
+    sentAudio.playbackRate = currentAudioSpeed;
+
+    if (clickedBtn) {
+      document.querySelectorAll('.audio-speed-btn').forEach(btn => btn.classList.remove('active'));
+      clickedBtn.classList.add('active');
+    } else {
+      syncAudioSpeedButtons();
+    }
+  }
+
+  function setSentenceMode(mode) {
+    sentencePlaybackMode = mode;
+    syncSentenceModeButtons();
+    if (activeSentBtn && !sentAudio.paused) {
+      sentAudio.loop = sentencePlaybackMode === 'loop';
+    }
+  }
+
+  function playSent(btn) {
+    const idx = btn.closest('.sent').dataset.idx;
+    const src = buildAssetUrl(`s${String(idx).padStart(2,'0')}.mp3`);
+    if (activeSentBtn === btn && !sentAudio.paused) {
+      stopSentencePlayback();
+      return;
+    }
+    stopSentencePlayback();
+    sentAudio.src = src;
+    sentAudio.loop = sentencePlaybackMode === 'loop';
+    sentAudio.playbackRate = currentAudioSpeed;
+    activeSentBtn = btn; btn.classList.add('playing'); btn.textContent = '⏸';
+    sentAudio.onended = () => {
+      if (sentAudio.loop) return;
+      resetSentBtn(btn);
+      activeSentBtn = null;
+    };
+    sentAudio.onerror = () => {
+      stopSentencePlayback();
+    };
+    sentAudio.play();
+  }
+
+  function answer(el, type) {
+    const group = el.closest('.quiz-options');
+    if (group.querySelector('.correct, .wrong')) return;
+    el.classList.add(type);
+  }
+
+  function toggleAnswers() {
+    const el = document.getElementById('answers-reveal');
+    const btn = document.querySelector('.answers-btn');
+    if (el.style.display === 'block') { el.style.display='none'; btn.textContent='显示答案'; }
+    else { el.style.display='block'; btn.textContent='隐藏答案'; }
+  }
+
+  function rqSelect(btn) {
+    const opts = btn.closest('.rq-opts').querySelectorAll('.rq-opt');
+    opts.forEach(b => b.classList.remove('selected'));
+    btn.classList.add('selected');
+  }
+
+  function getRepoTarget() {
+    const owner = localStorage.getItem('github_repo_owner') || 'CarryJone';
+    const repo = localStorage.getItem('github_repo_name') || 'english-learning';
+    return { owner, repo };
+  }
+
+  function refreshRepoTargetHint() {
+    const el = document.getElementById('repo-target-hint');
+    if (!el) return;
+    const target = getRepoTarget();
+    el.textContent = '目前同步目標：' + target.owner + '/' + target.repo;
+  }
+
+  function editRepoTarget() {
+    const current = getRepoTarget();
+    const ownerInput = prompt('GitHub repo owner（你的账号）', current.owner);
+    if (!ownerInput) return;
+    const repoInput = prompt('GitHub repo name', current.repo);
+    if (!repoInput) return;
+    localStorage.setItem('github_repo_owner', ownerInput.trim());
+    localStorage.setItem('github_repo_name', repoInput.trim());
+    refreshRepoTargetHint();
+  }
+
+  async function submitReviewQuiz() {
+    const items = document.querySelectorAll('.rq-item');
+    if (!items.length) return;
+
+    const results = [];
+    let allAnswered = true;
+    items.forEach(item => {
+      const sel = item.querySelector('.rq-opt.selected');
+      if (!sel) { allAnswered = false; return; }
+      results.push({ word: item.dataset.word, correct: sel.dataset.val === item.dataset.correct });
+    });
+    if (!allAnswered) { alert('請先回答所有題目！'); return; }
+
+    const selectedByWord = {};
+    items.forEach(item => {
+      const sel = item.querySelector('.rq-opt.selected');
+      if (sel) selectedByWord[item.dataset.word] = sel.dataset.val;
+    });
+
+    items.forEach(item => {
+      const correct = item.dataset.correct;
+      item.querySelectorAll('.rq-opt').forEach(b => {
+        b.setAttribute('disabled', '');
+        if (b.dataset.val === correct) b.classList.add('correct');
+        else if (b.classList.contains('selected')) b.classList.add('wrong');
+        b.classList.remove('selected');
+      });
+    });
+
+    const today = new Date().toISOString().slice(0, 10);
+    const storageKey = 'rq_done_' + today;
+    const score = results.filter(r => r.correct).length;
+    const submitBtn = document.getElementById('rq-submit-btn');
+    const resultEl = document.getElementById('rq-result');
+
+    if (localStorage.getItem(storageKey)) {
+      resultEl.innerHTML = '✅ 今天已完成复习（额外练习）：' + score + '/' + results.length + ' 题答对，SRS 未更新';
+      convertElementToSimplified(resultEl);
+      resultEl.className = 'success';
+      resultEl.style.display = 'block';
+      submitBtn.textContent = '已完成';
+      submitBtn.disabled = true;
+      return;
+    }
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = '处理中...';
+
+    if (REVIEW_SYNC_MODE === 'local') {
+      try {
+        const vocab = await loadLocalLearningJson();
+        const SRS = [1, 3, 7, 14, 30, 60, 90];
+        for (const r of results) {
+          const w = vocab.words.find(x => x.word === r.word);
+          if (!w || w.lastReviewedDate === today) continue;
+          w.lastReviewedDate = today;
+          const next = new Date();
+          if (r.correct) {
+            w.reviewCount = (w.reviewCount || 0) + 1;
+            next.setDate(next.getDate() + (SRS[Math.min(w.reviewCount, SRS.length - 1)] || 90));
+          } else {
+            w.reviewCount = 0;
+            next.setDate(next.getDate() + 1);
+          }
+          w.nextReview = next.toISOString().slice(0, 10);
+        }
+        saveLocalLearningJson(vocab);
+        const wroteFile = await saveLearningJsonToLocalFile(vocab);
+        await refreshLocalStoreInfo();
+        localStorage.setItem(storageKey, '1');
+        resultEl.innerHTML = wroteFile
+          ? '🎉 复习完成！' + score + '/' + results.length + ' 题答对，已直接写入本地 learning.json ✅'
+          : '🎉 复习完成！' + score + '/' + results.length + ' 题答对，已保存到浏览器本地（尚未绑定文件）✅';
+        convertElementToSimplified(resultEl);
+        resultEl.className = (score === results.length) ? 'success' : 'partial';
+        resultEl.style.display = 'block';
+        submitBtn.textContent = '✅ 已保存（本機）';
+        return;
+      } catch (err) {
+        items.forEach(item => {
+          const prev = selectedByWord[item.dataset.word];
+          item.querySelectorAll('.rq-opt').forEach(b => {
+            b.removeAttribute('disabled');
+            b.classList.remove('correct', 'wrong', 'selected');
+            if (prev && b.dataset.val === prev) b.classList.add('selected');
+          });
+        });
+        submitBtn.disabled = false;
+        submitBtn.textContent = '提交答案 & 保存 SRS 记录';
+        alert('本地保存失败：' + err.message);
+        return;
+      }
+    }
+
+    try {
+      const readGitHubError = async (resp) => {
+        try {
+          const data = await resp.json();
+          if (!data || !data.message) return '';
+          if (!Array.isArray(data.errors) || !data.errors.length) return ' - ' + data.message;
+          const parts = data.errors.map(e => e && (e.message || e.code || JSON.stringify(e))).filter(Boolean);
+          return ' - ' + data.message + (parts.length ? ' | ' + parts.join('; ') : '');
+        } catch (_) {
+          return '';
+        }
+      };
+
+      const askToken = () => {
+        const t = prompt('请输入 GitHub Personal Access Token（repo write 权限，保存在本机）：');
+        if (!t) throw new Error('未提供 Token，無法同步');
+        const trimmed = t.trim();
+        localStorage.setItem('github_pat', trimmed);
+        return trimmed;
+      };
+
+      let token = localStorage.getItem('github_pat');
+      if (!token) token = askToken();
+
+      const askRepoConfig = () => {
+        const current = getRepoTarget();
+        const ownerInput = prompt('GitHub repo owner（你的账号）', current.owner);
+        if (!ownerInput) throw new Error('未提供 repo owner，無法同步');
+        const repoInput = prompt('GitHub repo name', current.repo);
+        if (!repoInput) throw new Error('未提供 repo name，無法同步');
+        const owner = ownerInput.trim();
+        const repo = repoInput.trim();
+        localStorage.setItem('github_repo_owner', owner);
+        localStorage.setItem('github_repo_name', repo);
+        refreshRepoTargetHint();
+        return { owner, repo };
+      };
+
+      let owner = localStorage.getItem('github_repo_owner') || 'CarryJone';
+      let repo = localStorage.getItem('github_repo_name') || 'english-learning';
+      const filePath = 'vocabulary/learning.json';
+      let apiBase = 'https://api.github.com/repos/' + owner + '/' + repo + '/contents/' + filePath;
+
+      let getResp = await fetch(apiBase, {
+        headers: { Authorization: 'token ' + token, Accept: 'application/vnd.github.v3+json' }
+      });
+      if (getResp.status === 401 || getResp.status === 403) {
+        localStorage.removeItem('github_pat');
+        token = askToken();
+        getResp = await fetch(apiBase, {
+          headers: { Authorization: 'token ' + token, Accept: 'application/vnd.github.v3+json' }
+        });
+      }
+      if (getResp.status === 403 || getResp.status === 404) {
+        const repoCfg = askRepoConfig();
+        owner = repoCfg.owner;
+        repo = repoCfg.repo;
+        apiBase = 'https://api.github.com/repos/' + owner + '/' + repo + '/contents/' + filePath;
+        getResp = await fetch(apiBase, {
+          headers: { Authorization: 'token ' + token, Accept: 'application/vnd.github.v3+json' }
+        });
+      }
+      if (!getResp.ok) {
+        const detail = await readGitHubError(getResp);
+        throw new Error('读取 learning.json 失败 (' + getResp.status + ')' + detail);
+      }
+      const fileData = await getResp.json();
+      const sha = fileData.sha;
+
+      const raw = atob(fileData.content.replace(/\n/g, ''));
+      const rawBytes = new Uint8Array(raw.length);
+      for (let i = 0; i < raw.length; i++) rawBytes[i] = raw.charCodeAt(i);
+      const vocab = JSON.parse(new TextDecoder('utf-8').decode(rawBytes));
+
+      const SRS = [1, 3, 7, 14, 30, 60, 90];
+
+      for (const r of results) {
+        const w = vocab.words.find(x => x.word === r.word);
+        if (!w || w.lastReviewedDate === today) continue;
+        w.lastReviewedDate = today;
+        const next = new Date();
+        if (r.correct) {
+          w.reviewCount = (w.reviewCount || 0) + 1;
+          next.setDate(next.getDate() + (SRS[Math.min(w.reviewCount, SRS.length - 1)] || 90));
+        } else {
+          w.reviewCount = 0;
+          next.setDate(next.getDate() + 1);
+        }
+        w.nextReview = next.toISOString().slice(0, 10);
+      }
+
+      const newJson = JSON.stringify(vocab, null, 2);
+      const newBytes = new TextEncoder().encode(newJson);
+      let binary = '';
+      newBytes.forEach(b => binary += String.fromCharCode(b));
+      const encoded = btoa(binary);
+
+      const putWithSha = (currentSha, currentToken) => fetch(apiBase, {
+        method: 'PUT',
+        headers: { Authorization: 'token ' + currentToken, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: 'SRS update: review quiz ' + today, content: encoded, sha: currentSha })
+      });
+
+      let putResp = await putWithSha(sha, token);
+      if (putResp.status === 401 || putResp.status === 403) {
+        localStorage.removeItem('github_pat');
+        token = askToken();
+
+        const latestResp = await fetch(apiBase, {
+          headers: { Authorization: 'token ' + token, Accept: 'application/vnd.github.v3+json' }
+        });
+        if (!latestResp.ok) {
+          const detail = await readGitHubError(latestResp);
+          throw new Error('重新获取文件失败 (' + latestResp.status + ')' + detail);
+        }
+        const latestData = await latestResp.json();
+        putResp = await putWithSha(latestData.sha, token);
+      }
+      if (!putResp.ok) {
+        const detail = await readGitHubError(putResp);
+        throw new Error('更新失败 (' + putResp.status + ')' + detail);
+      }
+
+      localStorage.setItem(storageKey, '1');
+      resultEl.innerHTML = '🎉 复习完成！' + score + '/' + results.length + ' 题答对，SRS 记录已更新 ✅';
+      convertElementToSimplified(resultEl);
+      resultEl.className = (score === results.length) ? 'success' : 'partial';
+      resultEl.style.display = 'block';
+      submitBtn.textContent = '✅ 已同步';
+
+    } catch (err) {
+      items.forEach(item => {
+        const prev = selectedByWord[item.dataset.word];
+        item.querySelectorAll('.rq-opt').forEach(b => {
+          b.removeAttribute('disabled');
+          b.classList.remove('correct', 'wrong', 'selected');
+          if (prev && b.dataset.val === prev) b.classList.add('selected');
+        });
+      });
+      submitBtn.disabled = false;
+      submitBtn.textContent = '提交答案 & 保存 SRS 记录';
+      alert('同步失败：' + err.message);
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', async () => {
+    const savedSpeed = Number(localStorage.getItem(AUDIO_SPEED_STORAGE_KEY));
+    if (AUDIO_SPEED_OPTIONS.includes(savedSpeed)) {
+      currentAudioSpeed = savedSpeed;
+    }
+
+    const articleAudio = document.getElementById('article-audio');
+    const articleSrc = buildAssetUrl('article.mp3');
+    articleAudio.src = articleSrc;
+    articleAudio.playbackRate = currentAudioSpeed;
+    articleAudio.preload = 'metadata';
+    articleAudio.load();
+    articleAudio.playbackRate = currentAudioSpeed;
+
+    await restoreLocalLearningFileHandle();
+
+    syncSentenceModeButtons();
+    syncAudioSpeedButtons();
+    refreshRepoTargetHint();
+    const repoHint = document.getElementById('repo-target-hint');
+    const repoEditBtn = document.getElementById('repo-target-edit-btn');
+    const localFileBindBtn = document.getElementById('local-file-bind-btn');
+    const localStoreInfo = document.getElementById('local-store-info');
+    if (REVIEW_SYNC_MODE === 'local') {
+      if (repoHint) repoHint.textContent = '当前模式：自动本地保存（可绑定本地 learning.json 直接写入）';
+      if (repoEditBtn) repoEditBtn.style.display = 'none';
+      if (localFileBindBtn) localFileBindBtn.style.display = supportsLocalFileWrite() ? 'block' : 'none';
+      refreshLocalStoreInfo();
+      const submitBtn = document.getElementById('rq-submit-btn');
+      if (submitBtn) submitBtn.textContent = '提交答案 & 保存 SRS 记录';
+    }
+    if (!document.querySelector('.rq-item')) {
+      const btn = document.getElementById('rq-submit-btn');
+      if (btn) btn.style.display = 'none';
+      const editBtn = document.getElementById('repo-target-edit-btn');
+      if (editBtn) editBtn.style.display = 'none';
+      const bindBtn = document.getElementById('local-file-bind-btn');
+      if (bindBtn) bindBtn.style.display = 'none';
+      if (localStoreInfo) localStoreInfo.style.display = 'none';
+    }
+    applySimplifiedChinese();
+  });
+
+  function toggleLoop(btn) {
+    const audio = document.getElementById('article-audio');
+    audio.loop = !audio.loop;
+    btn.classList.toggle('active', audio.loop);
+  }
+
+  function bridgeReveal(btn) {
+    const ans = btn.nextElementSibling;
+    if (ans.style.display === 'block') {
+      ans.style.display = 'none';
+      btn.textContent = btn.textContent.replace('隐藏', '显示');
+    } else {
+      ans.style.display = 'block';
+      btn.textContent = btn.textContent.replace('显示', '隐藏');
+    }
+  }
+
+  const VOCAB = {
+    'helpful': { pos:'adj.', zh:'有幫助的', example:'The map is very helpful.' },
+    'email': { pos:'n./v.', zh:'電子郵件；寄信', example:'Please email me the details.' },
+    'engineer': { pos:'n.', zh:'工程師', example:'My brother is an engineer.' },
+  };
+  const REVIEW = {
+    'alone': { pos:'adj./adv.', zh:'單獨的；獨自地', example:'The driver said Mina should not ride alone.' },
+    'early': { pos:'adj./adv.', zh:'提早的；提早地', example:'Mina came one day early.' },
+    'history': { pos:'n.', zh:'歷史；過往紀錄', example:'Check the route history before you go.' },
+  };
+  const PHRASES = {
+    'pick up': { zh:'领取；取餐', note:'文章用法：Mina needed to pick up dinner for Lina.', type:'Phrasal Verb' },
+    'get in line': { zh:'排队', note:'文章用法：Mina decided to get in line at Window 12.', type:'Phrasal Verb' },
+    'price list': { zh:'价格表', note:'文章用法：Mina used the price list to compare item names.', type:'Collocation' },
+    'printed board': { zh:'纸质告示牌', note:'文章用法：The worker said to check the printed board by the pot.', type:'Collocation' },
+    'at all': { zh:'根本；完全', note:'文章用法：The printed board did not show combo B at all.', type:'Fixed Expression' },
+    'safe side': { zh:'安全的一侧', note:'文章用法：You are on the safe side.', type:'Fixed Expression' },
+  };
+
+  const popup = document.getElementById('word-popup');
+  const popContent = document.getElementById('pop-content');
+  const defCache = {};
+  let _anchor = null;
+
+  function showPopup(word, anchorEl, type) {
+    _anchor = anchorEl;
+    popContent.innerHTML = '';
+    const key = word.toLowerCase();
+    if (type === 'vocab' && VOCAB[key]) {
+      const v = VOCAB[key];
+      popContent.innerHTML = `<div class="pop-word">${word} <span class="pop-badge vocab">今日单词</span></div>
+        <span class="pop-badge" style="margin:.2rem 0 .3rem;display:inline-block">${v.pos}</span>
+        <div class="pop-example">"${v.example}"</div>
+        <button class="pop-zh-btn" onclick="revealZh(this)">👁 看中文翻译</button>
+        <div class="pop-zh" style="display:none">${v.zh}</div>`;
+    } else if (type === 'review' && REVIEW[key]) {
+      const rv = REVIEW[key];
+      popContent.innerHTML = `<div class="pop-word">${word} <span class="pop-badge review">复习单词</span></div>
+        <span class="pop-badge" style="margin:.2rem 0 .3rem;display:inline-block">${rv.pos}</span>
+        <div class="pop-example">"${rv.example}"</div>
+        <button class="pop-zh-btn" onclick="revealZh(this)">👁 看中文翻译</button>
+        <div class="pop-zh" style="display:none">${rv.zh}</div>`;
+    } else if (type === 'phrase' && PHRASES[key]) {
+      const ph = PHRASES[key];
+      popContent.innerHTML = `<div class="pop-word">${word} <span class="pop-badge phrase">片語</span></div>
+        <span class="pop-type-badge">${ph.type}</span>
+        <div class="pop-note">${ph.note}</div>
+        <button class="pop-zh-btn" onclick="revealZh(this)">👁 看中文</button>
+        <div class="pop-zh" style="display:none">${ph.zh}</div>`;
+    } else {
+      popContent.innerHTML = `<div class="pop-word">${word}</div><div class="pop-loading">查询中…</div>`;
+      convertElementToSimplified(popContent);
+      fetchDef(key).then(html => { popContent.innerHTML = html; convertElementToSimplified(popContent); positionPopup(anchorEl); });
+    }
+    convertElementToSimplified(popContent);
+    popup.style.display = 'block';
+    positionPopup(anchorEl);
+  }
+
+  function revealZh(btn) {
+    btn.nextElementSibling.style.display = 'block';
+    btn.style.display = 'none';
+    if (_anchor) positionPopup(_anchor);
+  }
+
+  function positionPopup(el) {
+    const r = el.getBoundingClientRect();
+    const pw = popup.offsetWidth || 260, ph = popup.offsetHeight || 120;
+    let left = r.left;
+    let top = r.bottom + 8;
+    if (left + pw > window.innerWidth - 12) left = window.innerWidth - pw - 12;
+    if (left < 12) left = 12;
+    if (r.bottom + ph + 8 > window.innerHeight) top = r.top - ph - 8;
+    if (top < 8) top = 8;
+    popup.style.left = left + 'px';
+    popup.style.top = top + 'px';
+  }
+
+  function closePopup() { popup.style.display = 'none'; }
+
+  async function fetchDef(word) {
+    if (defCache[word]) return defCache[word];
+    try {
+      const res = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`);
+      if (!res.ok) throw new Error();
+      const data = await res.json();
+      const entry = data[0];
+      const meanings = entry.meanings.slice(0,2).map(m => {
+        const def = m.definitions[0];
+        const ex = def.example ? `<div class="pop-example">"${def.example}"</div>` : '';
+        return `<div style="margin-top:.4rem"><span class="pop-badge">${m.partOfSpeech}</span><div class="pop-def">${def.definition}</div>${ex}</div>`;
+      }).join('');
+      const html = `<div class="pop-word">${entry.word}</div>${meanings}`;
+      return defCache[word] = html;
+    } catch {
+      return defCache[word] = `<div class="pop-word">${word}</div><div class="pop-def" style="margin-top:.3rem">查无结果</div>`;
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('article-body').addEventListener('click', e => {
+      const v  = e.target.closest('.vocab-word');
+      const rv = e.target.closest('.review-word');
+      const ph = e.target.closest('.phrase-chunk');
+      if (v)       showPopup(v.dataset.word,    v,  'vocab');
+      else if (rv) showPopup(rv.dataset.word,   rv, 'review');
+      else if (ph) showPopup(ph.dataset.phrase, ph, 'phrase');
+    });
+    document.addEventListener('click', e => {
+      if (!popup.contains(e.target) && !e.target.closest('.vocab-word,.review-word,.phrase-chunk')) closePopup();
+    });
+  });
+</script>
+</body>
+</html>

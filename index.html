@@ -61,6 +61,51 @@
       line-height: 1.5;
       margin-top: -.8rem;
     }
+    .status-panel {
+      background: var(--card);
+      border: 1.5px solid var(--border);
+      border-radius: 14px;
+      padding: .9rem 1rem;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      gap: .45rem;
+    }
+    .status-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      font-size: .86rem;
+    }
+    .status-label { color: var(--muted); font-weight: 600; }
+    .status-value {
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      text-align: right;
+    }
+    .status-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: currentColor;
+      box-shadow: 0 0 0 3px rgba(0,0,0,.05);
+      flex-shrink: 0;
+    }
+    .status-value.ok { color: #166534; }
+    .status-value.warn { color: #92400e; }
+    .status-value.bad { color: #991b1b; }
+    .status-tip {
+      font-family: sans-serif;
+      font-size: .76rem;
+      color: var(--muted);
+      line-height: 1.5;
+      padding-top: .15rem;
+      border-top: 1px dashed var(--border);
+      margin-top: .15rem;
+    }
 
     /* Day list */
     .card { background: var(--card); border-radius: 20px; padding: 1.6rem 1.8rem; box-shadow: 0 2px 12px rgba(0,0,0,.07); }
@@ -100,6 +145,17 @@
 </a>
 <button class="generate-btn" id="generate-today-btn" type="button">⚙️ 生成今日页面+音频</button>
 <div class="generate-note" id="generate-note">将调用本地生成服务，一键生成今日页面和音频。</div>
+<div class="status-panel" id="status-panel">
+  <div class="status-row">
+    <span class="status-label">生成服务</span>
+    <span class="status-value" id="service-status">检查中...</span>
+  </div>
+  <div class="status-row">
+    <span class="status-label">今日页面</span>
+    <span class="status-value" id="today-page-status">检查中...</span>
+  </div>
+  <div class="status-tip" id="status-tip">先确认生成服务在线，再点击「生成今日页面+音频」。</div>
+</div>
 <div class="card">
 <div class="card-title">📅 學習記錄</div>
 <div class="day-list" id="day-list"><a class="day-item" href="daily/2026-07-06/"><div class="day-left"><div class="day-date">2026-07-06</div><div class="day-title">The Blue Receipt · Episode 14</div></div><div class="day-num">Day 72</div></a><a class="day-item" href="daily/2026-07-03/"><div class="day-left"><div class="day-date">2026-07-03</div><div class="day-title">The Blue Receipt · Episode 13</div></div><div class="day-num">Day 71</div></a><a class="day-item" href="daily/2026-07-02/"><div class="day-left"><div class="day-date">2026-07-02</div><div class="day-title">The Blue Receipt · Episode 11</div></div><div class="day-num">Day 69</div></a><a class="day-item" href="daily/2026-07-01/"><div class="day-left"><div class="day-date">2026-07-01</div><div class="day-title">The Blue Receipt · Episode 10</div></div><div class="day-num">Day 68</div></a><a class="day-item" href="daily/2026-06-30/"><div class="day-left"><div class="day-date">2026-06-30</div><div class="day-title">The Blue Receipt · Episode 9</div></div><div class="day-num">Day 67</div></a><a class="day-item" href="daily/2026-06-29/"><div class="day-left"><div class="day-date">2026-06-29</div><div class="day-title">The Blue Receipt · Episode 8</div></div><div class="day-num">Day 66</div></a>
@@ -565,6 +621,56 @@
     return isMac ? 'open-today.command' : 'open-today.ps1';
   }
 
+  function setStatus(el, text, cls) {
+    if (!el) return;
+    el.className = 'status-value' + (cls ? ' ' + cls : '');
+    el.innerHTML = '<span class="status-dot" aria-hidden="true"></span><span>' + text + '</span>';
+  }
+
+  async function refreshHomepageStatus() {
+    const serviceEl = document.getElementById('service-status');
+    const todayPageEl = document.getElementById('today-page-status');
+    const tipEl = document.getElementById('status-tip');
+    const launchHint = getLaunchScriptHint();
+
+    let serviceReady = false;
+    try {
+      const healthResp = await fetch('/__health', { cache: 'no-store' });
+      if (healthResp.ok) {
+        const health = await healthResp.json();
+        if (health && health.ok) {
+          serviceReady = true;
+          setStatus(serviceEl, '已连接', 'ok');
+          if (tipEl) tipEl.textContent = '生成服务已连接，可以直接生成或打开今日页面。';
+        }
+      }
+    } catch (_) {
+      // Ignore and fall through to unavailable status.
+    }
+
+    if (!serviceReady) {
+      setStatus(serviceEl, '未连接', 'bad');
+      setStatus(todayPageEl, '请先用 ' + launchHint + ' 启动', 'warn');
+      if (tipEl) tipEl.textContent = '当前只是静态页面或服务尚未启动，生成按钮不会成功。';
+      return;
+    }
+
+    try {
+      const todayResp = await fetch(`daily/${ymd}/index.html`, { cache: 'no-store' });
+      if (todayResp.ok) {
+        setStatus(todayPageEl, '已存在', 'ok');
+        document.getElementById('today-link').href = `daily/${ymd}/`;
+        if (tipEl) tipEl.textContent = '今日页面已存在，可以直接进入学习内容。';
+      } else {
+        setStatus(todayPageEl, '尚未生成', 'warn');
+        if (tipEl) tipEl.textContent = '服务已在线，但今日页面还没生成。';
+      }
+    } catch (_) {
+      setStatus(todayPageEl, '检查失败', 'bad');
+      if (tipEl) tipEl.textContent = '服务在线，但检查今日页面时发生错误。';
+    }
+  }
+
   async function generateTodayPage() {
     const note = document.getElementById('generate-note');
     const btn = document.getElementById('generate-today-btn');
@@ -596,8 +702,11 @@
       const result = payload.result || {};
       const copied = result.copiedFrom ? ('，页面来源：' + result.copiedFrom) : '';
       note.textContent = '已生成：' + (result.indexPath || 'daily/今日/index.html') + '，并生成 ' + (result.sentenceCount || 0) + ' 句音频' + copied;
-      alert('生成完成：\n' + (result.indexPath || '') + '\n' + (result.audioPath || '') + '\n可直接刷新进入今日页面。');
-      location.reload();
+      const generatedPath = result.indexPath || ('daily/' + ymd + '/index.html');
+      document.getElementById('today-link').href = generatedPath.replace(/\/index\.html$/, '/');
+      setStatus(document.getElementById('today-page-status'), '已存在', 'ok');
+      alert('生成完成：\n' + generatedPath + '\n' + (result.audioPath || '') + '\n即将打开今日页面。');
+      location.href = generatedPath;
     } catch (err) {
       if (err && err.name === 'AbortError') {
         note.textContent = '已取消生成。';
@@ -630,6 +739,7 @@
   });
 
   document.getElementById('generate-today-btn').addEventListener('click', generateTodayPage);
+  refreshHomepageStatus();
 </script>
 </body>
 </html>

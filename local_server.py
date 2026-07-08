@@ -691,6 +691,13 @@ class AppHandler(SimpleHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(data)
 
+    def do_GET(self):
+        if self.path == "/__health":
+            self._send_json({"ok": True, "service": "local_server", "root": str(self.repo_root)})
+            return
+
+        super().do_GET()
+
     def do_POST(self):
         if self.path != "/__generate_today":
             self._send_json({"ok": False, "error": "Not Found"}, status=HTTPStatus.NOT_FOUND)

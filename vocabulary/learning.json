@@ -2789,6 +2789,66 @@
       "reviewCount": 0,
       "nextReview": "2026-07-07",
       "lastReviewedDate": null
+    },
+    {
+      "word": "half",
+      "partOfSpeech": "n./adj.",
+      "chineseMeaning": "一半",
+      "exampleSentence": "I walked half the way.",
+      "dateAdded": "2026-07-08",
+      "reviewCount": 0,
+      "nextReview": "2026-07-09",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "earth",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "地球",
+      "exampleSentence": "The earth moves around the sun.",
+      "dateAdded": "2026-07-08",
+      "reviewCount": 0,
+      "nextReview": "2026-07-09",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "education",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "教育",
+      "exampleSentence": "Education is important.",
+      "dateAdded": "2026-07-08",
+      "reviewCount": 0,
+      "nextReview": "2026-07-09",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "helpful",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "有幫助的",
+      "exampleSentence": "The map is very helpful.",
+      "dateAdded": "2026-07-08",
+      "reviewCount": 0,
+      "nextReview": "2026-07-09",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "email",
+      "partOfSpeech": "n./v.",
+      "chineseMeaning": "電子郵件；寄信",
+      "exampleSentence": "Please email me the details.",
+      "dateAdded": "2026-07-08",
+      "reviewCount": 0,
+      "nextReview": "2026-07-09",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "engineer",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "工程師",
+      "exampleSentence": "My brother is an engineer.",
+      "dateAdded": "2026-07-08",
+      "reviewCount": 0,
+      "nextReview": "2026-07-09",
+      "lastReviewedDate": null
     }
   ]
 }

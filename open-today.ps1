@@ -7,24 +7,6 @@ $ErrorActionPreference = "Stop"
 $repoRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 $dailyDir = Join-Path $repoRoot "daily"
 
-if (-not (Test-Path $dailyDir)) {
-    Write-Host "daily folder not found: $dailyDir" -ForegroundColor Red
-    exit 1
-}
-
-# Find date folders with index.html, newest first.
-$dateItems = Get-ChildItem -Path $dailyDir -Directory |
-    Where-Object { $_.Name -match '^\d{4}-\d{2}-\d{2}$' -and (Test-Path (Join-Path $_.FullName 'index.html')) } |
-    Sort-Object Name -Descending
-
-if (-not $dateItems -or $dateItems.Count -eq 0) {
-    Write-Host "No learning pages found under daily/." -ForegroundColor Yellow
-    exit 1
-}
-
-$today = Get-Date -Format "yyyy-MM-dd"
-$targetDate = if ($dateItems.Name -contains $today) { $today } else { $dateItems[0].Name }
-
 # Stop process listening on the target port (if any).
 try {
     $connections = Get-NetTCPConnection -LocalPort $Port -State Listen -ErrorAction Stop
@@ -68,7 +50,7 @@ $pythonArgs = if ($pythonCmd -eq "py") {
 Start-Process -FilePath $pythonCmd -ArgumentList $pythonArgs -WorkingDirectory $repoRoot -WindowStyle Minimized
 Start-Sleep -Milliseconds 900
 
-$url = "http://localhost:$Port/daily/$targetDate/"
+$url = "http://localhost:$Port/index.html"
 Start-Process $url
 
 Write-Host "Opened: $url" -ForegroundColor Green

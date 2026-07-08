@@ -1,11 +1,12 @@
-#!/bin/bash
-set -euo pipefail
+#!/bin/sh
+set -eu
 
 PORT="${PORT:-8080}"
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 REPO_ROOT="$SCRIPT_DIR"
 DAILY_DIR="$REPO_ROOT/daily"
 SERVER_SCRIPT="$REPO_ROOT/local_server.py"
+LOG_FILE="${TMPDIR:-/tmp}/daily-english-server.log"
 
 if [ ! -f "$SERVER_SCRIPT" ]; then
   osascript -e 'display alert "找不到 local_server.py" message "請確認專案完整後再啟動" as warning'
@@ -23,50 +24,29 @@ else
   exit 1
 fi
 
-# 若目標 port 已在跑，先關掉舊服務。
-if lsof -ti tcp:"$PORT" >/dev/null 2>&1; then
-  lsof -ti tcp:"$PORT" | xargs kill -9 2>/dev/null || true
+if command -v lsof >/dev/null 2>&1; then
+  PIDS="$(lsof -ti tcp:"$PORT" 2>/dev/null || true)"
+  if [ -n "$PIDS" ]; then
+    echo "$PIDS" | xargs kill -9 >/dev/null 2>&1 || true
+  fi
 fi
 
 cd "$REPO_ROOT"
-nohup "$PYTHON_CMD" "$SERVER_SCRIPT" --port "$PORT" --root "$REPO_ROOT" >/tmp/daily-english-server.log 2>&1 &
-sleep 0.9
+nohup "$PYTHON_CMD" "$SERVER_SCRIPT" --port "$PORT" --root "$REPO_ROOT" >"$LOG_FILE" 2>&1 &
 
-# 取出可開啟的日期列表（由新到舊）。
-DATES_RAW=""
-if [ -d "$DAILY_DIR" ]; then
-  DATES_RAW=$(ls -1 "$DAILY_DIR" 2>/dev/null \
-    | grep -E '^[0-9]{4}-[0-9]{2}-[0-9]{2}$' \
-    | sort -r \
-    | while read -r d; do
-        [ -f "$DAILY_DIR/$d/index.html" ] && echo "$d"
-      done)
+HOME_URL="http://localhost:$PORT/index.html"
+
+if command -v curl >/dev/null 2>&1; then
+  i=0
+  while [ "$i" -lt 30 ]; do
+    if curl -fsS "http://127.0.0.1:$PORT/" >/dev/null 2>&1; then
+      break
+    fi
+    i=$((i + 1))
+    sleep 0.2
+  done
+else
+  sleep 1
 fi
 
-# 若尚無任何日期頁，直接進首頁（可用「生成今日页面+音频」）。
-if [ -z "$DATES_RAW" ]; then
-  open "http://localhost:$PORT/index.html"
-  exit 0
-fi
-
-TODAY=$(date +%Y-%m-%d)
-DATES_LABELED=$(echo "$DATES_RAW" | awk -v today="$TODAY" '
-  NR==1 && $0==today { print $0 " （今天）"; next }
-  { print }
-')
-DATES_AS=$(echo "$DATES_LABELED" | awk '{printf "\"%s\", ", $0}' | sed 's/, $//')
-
-SELECTED=$(osascript <<EOF
-set dateList to {$DATES_AS}
-set chosen to choose from list dateList ¬
-  with prompt "選擇要開啟哪一天的學習內容：" ¬
-  default items {item 1 of dateList} ¬
-  with title "📖 Daily English"
-if chosen is false then return ""
-return item 1 of chosen
-EOF
-)
-
-[ -z "$SELECTED" ] && exit 0
-DATE_KEY=$(echo "$SELECTED" | grep -oE '[0-9]{4}-[0-9]{2}-[0-9]{2}')
-open "http://localhost:$PORT/daily/$DATE_KEY/"
+open "$HOME_URL"
